@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    131425,       2875]
-NotebookOptionsPosition[    119471,       2605]
-NotebookOutlinePosition[    125809,       2746]
-CellTagsIndexPosition[    125766,       2743]
+NotebookDataLength[    114912,       2519]
+NotebookOptionsPosition[    102967,       2249]
+NotebookOutlinePosition[    109305,       2390]
+CellTagsIndexPosition[    109262,       2387]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -97,8 +97,8 @@ Cell[BoxData[
   3.707051382602344*^9, 3.707051395219282*^9}, {3.7070515979138803`*^9, 
   3.7070516160727777`*^9}, {3.707051808520751*^9, 3.707051814885715*^9}},
  CellLabel->
-  "6/22/17 22:38:37 \
-In[101]:=",ExpressionUUID->"946b7b79-9e78-4152-8981-1a2f46115509"],
+  "6/23/17 16:00:13 \
+In[387]:=",ExpressionUUID->"946b7b79-9e78-4152-8981-1a2f46115509"],
 
 Cell[BoxData[
  RowBox[{"{", 
@@ -245,10 +245,10 @@ Cell[BoxData[
   3.7051053751989946`*^9, 3.705684296006131*^9, 3.706950835566482*^9, 
    3.706987494895631*^9, 3.707051401607174*^9, 3.707051817574844*^9, {
    3.707067219972678*^9, 3.707067223014997*^9}, {3.707147717287775*^9, 
-   3.707147720131146*^9}, 3.707174317942625*^9},
+   3.707147720131146*^9}, 3.707174317942625*^9, 3.707236813944119*^9},
  CellLabel->
-  "6/22/17 22:38:37 \
-Out[101]=",ExpressionUUID->"ba5f1857-e693-4110-9990-6cdf63be5b87"]
+  "6/23/17 16:00:13 \
+Out[387]=",ExpressionUUID->"7d953e55-805c-4786-be66-2050bae112b9"]
 }, Open  ]],
 
 Cell[TextData[{
@@ -335,16 +335,8 @@ Cell[BoxData[
  RowBox[{"redEdges", " ", "=", " ", 
   RowBox[{"RandomChoice", "[", " ", 
    RowBox[{
-    RowBox[{"Flatten", "[", " ", 
-     RowBox[{"Table", "[", " ", 
-      RowBox[{
-       RowBox[{"i", " ", "\[UndirectedEdge]", " ", "j"}], ",", " ", 
-       RowBox[{"{", 
-        RowBox[{"i", ",", " ", "1", ",", " ", "6"}], "}"}], ",", " ", 
-       RowBox[{"{", 
-        RowBox[{"j", ",", " ", "1", ",", " ", 
-         RowBox[{"i", " ", "-", " ", "1"}]}], "}"}]}], " ", "]"}], " ", "]"}],
-     ",", " ", 
+    RowBox[{"EdgeList", "[", " ", 
+     RowBox[{"CompleteGraph", "[", "6", "]"}], " ", "]"}], ",", " ", 
     RowBox[{"RandomInteger", "[", " ", 
      RowBox[{"{", 
       RowBox[{"1", ",", " ", "15"}], "}"}], " ", "]"}]}], " ", 
@@ -369,27 +361,29 @@ Cell[BoxData[
    3.706991690302903*^9}, {3.707045708981512*^9, 3.7070457121319427`*^9}, {
    3.707051409567844*^9, 3.707051533989581*^9}, {3.707051623784256*^9, 
    3.707051632839329*^9}, {3.707051777362948*^9, 3.707051779433792*^9}, {
-   3.7070518328908367`*^9, 3.707051872042057*^9}, 3.7071477117327833`*^9},
+   3.7070518328908367`*^9, 3.707051872042057*^9}, 3.7071477117327833`*^9, {
+   3.7072367885172243`*^9, 3.707236807832478*^9}},
  CellLabel->
-  "6/22/17 22:38:38 \
-In[102]:=",ExpressionUUID->"d057c521-272f-4b8a-aef7-d6a84f40367c"],
+  "6/23/17 16:00:16 \
+In[396]:=",ExpressionUUID->"d057c521-272f-4b8a-aef7-d6a84f40367c"],
 
 Cell[BoxData[
  RowBox[{"{", 
   RowBox[{
-   RowBox[{"6", "\[UndirectedEdge]", "5"}], ",", 
-   RowBox[{"6", "\[UndirectedEdge]", "1"}], ",", 
-   RowBox[{"5", "\[UndirectedEdge]", "2"}], ",", 
-   RowBox[{"5", "\[UndirectedEdge]", "2"}], ",", 
-   RowBox[{"6", "\[UndirectedEdge]", "4"}], ",", 
-   RowBox[{"4", "\[UndirectedEdge]", "1"}], ",", 
-   RowBox[{"6", "\[UndirectedEdge]", "1"}]}], "}"}]], "Output",
+   RowBox[{"2", "\[UndirectedEdge]", "4"}], ",", 
+   RowBox[{"4", "\[UndirectedEdge]", "5"}], ",", 
+   RowBox[{"2", "\[UndirectedEdge]", "6"}], ",", 
+   RowBox[{"2", "\[UndirectedEdge]", "4"}], ",", 
+   RowBox[{"1", "\[UndirectedEdge]", "4"}], ",", 
+   RowBox[{"1", "\[UndirectedEdge]", "3"}], ",", 
+   RowBox[{"1", "\[UndirectedEdge]", "5"}]}], "}"}]], "Output",
  CellChangeTimes->{
   3.7069917278671494`*^9, 3.707045731816395*^9, {3.707067220478014*^9, 
-   3.707067223353829*^9}, 3.7071477176116657`*^9, 3.707174318889163*^9},
+   3.707067223353829*^9}, 3.7071477176116657`*^9, 3.707174318889163*^9, {
+   3.707236814475758*^9, 3.707236816876423*^9}},
  CellLabel->
-  "6/22/17 22:38:38 \
-Out[102]=",ExpressionUUID->"315ef08b-f5e6-4526-82cd-de7162a31896"]
+  "6/23/17 16:00:16 \
+Out[396]=",ExpressionUUID->"a641356f-b910-4763-b284-ce81f0109e64"]
 }, Open  ]],
 
 Cell["\<\
@@ -401,8 +395,8 @@ The set of blue edges is the complement of the set of red edges.\
   3.705105030495279*^9, 3.70510503226538*^9}, {3.7051051046345196`*^9, 
   3.7051052440884957`*^9}, {3.706950821346559*^9, 3.706950827836124*^9}, {
   3.706987513427573*^9, 3.706987524908773*^9}, {3.7069916949994993`*^9, 
-  3.7069917137442007`*^9}},
- ExpressionUUID -> "f91531d9-7ef2-4f97-9564-efa3c23c39ac"],
+  3.7069917137442007`*^9}},ExpressionUUID->"f91531d9-7ef2-4f97-9564-\
+efa3c23c39ac"],
 
 Cell[CellGroupData[{
 
@@ -410,16 +404,9 @@ Cell[BoxData[
  RowBox[{"blueEdges", " ", "=", " ", 
   RowBox[{"Complement", "[", " ", 
    RowBox[{
-    RowBox[{"Flatten", "[", " ", 
-     RowBox[{"Table", "[", " ", 
-      RowBox[{
-       RowBox[{"i", " ", "\[UndirectedEdge]", " ", "j"}], ",", " ", 
-       RowBox[{"{", 
-        RowBox[{"i", ",", " ", "1", ",", " ", "6"}], "}"}], ",", " ", 
-       RowBox[{"{", 
-        RowBox[{"j", ",", " ", "1", ",", " ", 
-         RowBox[{"i", " ", "-", " ", "1"}]}], "}"}]}], " ", "]"}], " ", "]"}],
-     ",", " ", "redEdges"}], " ", "]"}]}]], "Code",
+    RowBox[{"EdgeList", "[", " ", 
+     RowBox[{"CompleteGraph", "[", "6", "]"}], " ", "]"}], ",", " ", 
+    "redEdges"}], " ", "]"}]}]], "Code",
  CellChangeTimes->{{3.70698409866597*^9, 3.7069841038830853`*^9}, 
    3.70698795737908*^9, {3.7069887277277412`*^9, 3.706988778795165*^9}, {
    3.7069888159291563`*^9, 3.706988903880251*^9}, {3.706989059092107*^9, 
@@ -441,30 +428,30 @@ Cell[BoxData[
    3.707045706572219*^9, 3.707045706785831*^9}, {3.707051548735551*^9, 
    3.7070515921987867`*^9}, {3.707051637623704*^9, 3.70705166162755*^9}, {
    3.707051763253457*^9, 3.707051793747005*^9}, {3.707051840656148*^9, 
-   3.707051847428013*^9}},
+   3.707051847428013*^9}, 3.707236840433435*^9},
  CellLabel->
-  "6/22/17 22:38:39 \
-In[103]:=",ExpressionUUID->"6bbad41b-48e4-4314-b43d-a095201dfe96"],
+  "6/23/17 16:00:49 \
+In[397]:=",ExpressionUUID->"6bbad41b-48e4-4314-b43d-a095201dfe96"],
 
 Cell[BoxData[
  RowBox[{"{", 
   RowBox[{
-   RowBox[{"2", "\[UndirectedEdge]", "1"}], ",", 
-   RowBox[{"3", "\[UndirectedEdge]", "1"}], ",", 
-   RowBox[{"3", "\[UndirectedEdge]", "2"}], ",", 
-   RowBox[{"4", "\[UndirectedEdge]", "2"}], ",", 
-   RowBox[{"4", "\[UndirectedEdge]", "3"}], ",", 
-   RowBox[{"5", "\[UndirectedEdge]", "1"}], ",", 
-   RowBox[{"5", "\[UndirectedEdge]", "3"}], ",", 
-   RowBox[{"5", "\[UndirectedEdge]", "4"}], ",", 
-   RowBox[{"6", "\[UndirectedEdge]", "2"}], ",", 
-   RowBox[{"6", "\[UndirectedEdge]", "3"}]}], "}"}]], "Output",
+   RowBox[{"1", "\[UndirectedEdge]", "2"}], ",", 
+   RowBox[{"1", "\[UndirectedEdge]", "6"}], ",", 
+   RowBox[{"2", "\[UndirectedEdge]", "3"}], ",", 
+   RowBox[{"2", "\[UndirectedEdge]", "5"}], ",", 
+   RowBox[{"3", "\[UndirectedEdge]", "4"}], ",", 
+   RowBox[{"3", "\[UndirectedEdge]", "5"}], ",", 
+   RowBox[{"3", "\[UndirectedEdge]", "6"}], ",", 
+   RowBox[{"4", "\[UndirectedEdge]", "6"}], ",", 
+   RowBox[{"5", "\[UndirectedEdge]", "6"}]}], "}"}]], "Output",
  CellChangeTimes->{
   3.706991744345327*^9, 3.707045735615749*^9, {3.707067220696731*^9, 
-   3.707067223547402*^9}, 3.707147717839589*^9, 3.70717431918532*^9},
+   3.707067223547402*^9}, 3.707147717839589*^9, 3.70717431918532*^9, 
+   3.707236814757025*^9, 3.707236849354439*^9},
  CellLabel->
-  "6/22/17 22:38:39 \
-Out[103]=",ExpressionUUID->"a6d37562-43a4-4e38-abe0-ec1bd619d4bd"]
+  "6/23/17 16:00:49 \
+Out[397]=",ExpressionUUID->"385aba3d-ccb3-48ed-84cf-af74ee3b6df0"]
 }, Open  ]],
 
 Cell["\<\
@@ -532,8 +519,8 @@ Cell[BoxData[
    3.707067829178012*^9, 3.707067831299741*^9}, {3.707174379225078*^9, 
    3.7071743818919573`*^9}},
  CellLabel->
-  "6/22/17 22:39:42 \
-In[114]:=",ExpressionUUID->"2490feb8-2891-41b9-9551-d756035b177b"],
+  "6/23/17 16:01:19 \
+In[398]:=",ExpressionUUID->"2490feb8-2891-41b9-9551-d756035b177b"],
 
 Cell[BoxData[
  GraphicsBox[
@@ -548,10 +535,11 @@ Cell[BoxData[
       BaseStyle -> Directive[
          RGBColor[0, 0, 1], Thickness -> 0.02], 
        EdgeStyle -> {
-        UndirectedEdge[5, 2] -> RGBColor[1, 0, 0], UndirectedEdge[4, 1] -> 
-         RGBColor[1, 0, 0], UndirectedEdge[6, 5] -> RGBColor[1, 0, 0], 
-         UndirectedEdge[6, 4] -> RGBColor[1, 0, 0], UndirectedEdge[6, 1] -> 
-         RGBColor[1, 0, 0]}, GraphLayout -> "CircularEmbedding", VertexLabels -> {
+        UndirectedEdge[2, 4] -> RGBColor[1, 0, 0], UndirectedEdge[1, 5] -> 
+         RGBColor[1, 0, 0], UndirectedEdge[2, 6] -> RGBColor[1, 0, 0], 
+         UndirectedEdge[1, 4] -> RGBColor[1, 0, 0], UndirectedEdge[4, 5] -> 
+         RGBColor[1, 0, 0], UndirectedEdge[1, 3] -> RGBColor[1, 0, 0]}, 
+       GraphLayout -> "CircularEmbedding", VertexLabels -> {
          Placed[Automatic, Center]}, VertexLabelStyle -> {
          Directive[Bold, 14]}, VertexSize -> {Medium}, VertexStyle -> {
          GrayLevel[1]}}]]}, 
@@ -561,33 +549,35 @@ Cell[BoxData[
          ArrowBox[{{-0.8660254037844389, 
           0.5000000000000008}, {-0.8660254037844384, -0.4999999999999994}}, 
           0.09999999999999994]}, 
-        {Arrowheads[0.], 
-         ArrowBox[{{-0.8660254037844389, 0.5000000000000008}, {
-          3.8285686989269494`*^-16, -1.}}, 0.09999999999999994]}, 
+        {RGBColor[1, 0, 0], 
+         {Arrowheads[0.], 
+          ArrowBox[{{-0.8660254037844389, 0.5000000000000008}, {
+           3.8285686989269494`*^-16, -1.}}, 0.09999999999999994]}}, 
         {RGBColor[1, 0, 0], 
          {Arrowheads[0.], 
           ArrowBox[{{-0.8660254037844389, 0.5000000000000008}, {
            0.8660254037844389, -0.5000000000000012}}, 0.09999999999999994]}}, 
-        {Arrowheads[0.], 
-         ArrowBox[{{-0.8660254037844389, 0.5000000000000008}, {
-          0.8660254037844386, 0.4999999999999993}}, 0.09999999999999994]}, 
         {RGBColor[1, 0, 0], 
          {Arrowheads[0.], 
           ArrowBox[{{-0.8660254037844389, 0.5000000000000008}, {
-           1.8369701987210297`*^-16, 1.}}, 0.09999999999999994]}}, 
+           0.8660254037844386, 0.4999999999999993}}, 0.09999999999999994]}}, 
+        {Arrowheads[0.], 
+         ArrowBox[{{-0.8660254037844389, 0.5000000000000008}, {
+          1.8369701987210297`*^-16, 1.}}, 0.09999999999999994]}, 
         {Arrowheads[0.], 
          ArrowBox[{{-0.8660254037844384, -0.4999999999999994}, {
           3.8285686989269494`*^-16, -1.}}, 0.09999999999999994]}, 
-        {Arrowheads[0.], 
-         ArrowBox[{{-0.8660254037844384, -0.4999999999999994}, {
-          0.8660254037844389, -0.5000000000000012}}, 0.09999999999999994]}, 
         {RGBColor[1, 0, 0], 
          {Arrowheads[0.], 
           ArrowBox[{{-0.8660254037844384, -0.4999999999999994}, {
-           0.8660254037844386, 0.4999999999999993}}, 0.09999999999999994]}}, 
+           0.8660254037844389, -0.5000000000000012}}, 0.09999999999999994]}}, 
         {Arrowheads[0.], 
          ArrowBox[{{-0.8660254037844384, -0.4999999999999994}, {
-          1.8369701987210297`*^-16, 1.}}, 0.09999999999999994]}, 
+          0.8660254037844386, 0.4999999999999993}}, 0.09999999999999994]}, 
+        {RGBColor[1, 0, 0], 
+         {Arrowheads[0.], 
+          ArrowBox[{{-0.8660254037844384, -0.4999999999999994}, {
+           1.8369701987210297`*^-16, 1.}}, 0.09999999999999994]}}, 
         {Arrowheads[0.], 
          ArrowBox[{{3.8285686989269494`*^-16, -1.}, {
           0.8660254037844389, -0.5000000000000012}}, 0.09999999999999994]}, 
@@ -597,17 +587,16 @@ Cell[BoxData[
         {Arrowheads[0.], 
          ArrowBox[{{3.8285686989269494`*^-16, -1.}, {1.8369701987210297`*^-16,
            1.}}, 0.09999999999999994]}, 
-        {Arrowheads[0.], 
-         ArrowBox[{{0.8660254037844389, -0.5000000000000012}, {
-          0.8660254037844386, 0.4999999999999993}}, 0.09999999999999994]}, 
         {RGBColor[1, 0, 0], 
          {Arrowheads[0.], 
           ArrowBox[{{0.8660254037844389, -0.5000000000000012}, {
-           1.8369701987210297`*^-16, 1.}}, 0.09999999999999994]}}, 
-        {RGBColor[1, 0, 0], 
-         {Arrowheads[0.], 
-          ArrowBox[{{0.8660254037844386, 0.4999999999999993}, {
-           1.8369701987210297`*^-16, 1.}}, 0.09999999999999994]}}}, 
+           0.8660254037844386, 0.4999999999999993}}, 0.09999999999999994]}}, 
+        {Arrowheads[0.], 
+         ArrowBox[{{0.8660254037844389, -0.5000000000000012}, {
+          1.8369701987210297`*^-16, 1.}}, 0.09999999999999994]}, 
+        {Arrowheads[0.], 
+         ArrowBox[{{0.8660254037844386, 0.4999999999999993}, {
+          1.8369701987210297`*^-16, 1.}}, 0.09999999999999994]}}, 
        {GrayLevel[1], Thickness[0.02], EdgeForm[{GrayLevel[0], Opacity[
         0.7]}], {
          DiskBox[{-0.8660254037844389, 0.5000000000000008}, 
@@ -674,10 +663,11 @@ Cell[BoxData[
    3.706991426279924*^9}, {3.7069914890353737`*^9, 3.706991526047214*^9}, 
    3.706992439461812*^9, 3.707045740235121*^9, 3.707045886923156*^9, {
    3.70706722096416*^9, 3.707067224156727*^9}, 3.707067831924559*^9, 
-   3.707147718474173*^9, 3.707174319726122*^9, 3.707174382349819*^9},
+   3.707147718474173*^9, 3.707174319726122*^9, 3.707174382349819*^9, 
+   3.707236815084251*^9, 3.707236879324552*^9},
  CellLabel->
-  "6/22/17 22:39:42 \
-Out[114]=",ExpressionUUID->"74ac1fa3-87f7-4da2-8e61-f8f65c84b119"]
+  "6/23/17 16:01:19 \
+Out[398]=",ExpressionUUID->"15cce506-d7c0-4985-bdaf-a3538088ce29"]
 }, Open  ]],
 
 Cell[BoxData[""], "Input",
@@ -778,8 +768,8 @@ yBflCJWK/AukeMey8FMfLcD5eILQ9kVmB4sG7k6aYVJhaoc/7FQHXOC5O+Fj
 htMNgxsWBVTnJzSwZKvXAEWTe4TMP+oH7IoMloeK/gMmjfjZ
   "],
  CellLabel->
-  "6/22/17 22:38:40 \
-In[105]:=",ExpressionUUID->"ad5418f1-950d-451a-a7ff-d5bc176feedf"],
+  "6/23/17 16:01:24 \
+In[399]:=",ExpressionUUID->"ad5418f1-950d-451a-a7ff-d5bc176feedf"],
 
 Cell[BoxData[
  RowBox[{"{", 
@@ -796,203 +786,29 @@ Cell[BoxData[
               3}, {4}, {5}, {6}, {1}, {2}, {4}, {5}, {6}, {1}, {2}, {3}, {
               5}, {6}, {1}, {2}, {3}, {4}, {6}, {1}, {2}, {3}, {4}, {5}}}, 
              Pattern}]}, {BaseStyle -> Directive[
-             RGBColor[0, 0, 1], 
-             Thickness[Large]], 
+             RGBColor[0, 0, 1], Thickness -> 0.02], 
            EdgeStyle -> {
-            UndirectedEdge[4, 1] -> RGBColor[1, 0, 0], UndirectedEdge[6, 4] -> 
-             RGBColor[1, 0, 0], UndirectedEdge[5, 2] -> RGBColor[1, 0, 0], 
-             UndirectedEdge[6, 1] -> RGBColor[1, 0, 0], UndirectedEdge[6, 5] -> 
-             RGBColor[1, 0, 0]}, GraphHighlight -> {
-             UndirectedEdge[4, 3], 4, 
-             UndirectedEdge[5, 3], 3, 
-             UndirectedEdge[5, 4], 5}, 
-           GraphHighlightStyle -> {UndirectedEdge[5, 3] -> {EdgeStyle -> {
+            UndirectedEdge[2, 6] -> RGBColor[1, 0, 0], UndirectedEdge[2, 4] -> 
+             RGBColor[1, 0, 0], UndirectedEdge[4, 5] -> RGBColor[1, 0, 0], 
+             UndirectedEdge[1, 4] -> RGBColor[1, 0, 0], UndirectedEdge[1, 5] -> 
+             RGBColor[1, 0, 0], UndirectedEdge[1, 3] -> RGBColor[1, 0, 0]}, 
+           GraphHighlight -> {
+             UndirectedEdge[2, 3], 
+             UndirectedEdge[3, 5], 2, 
+             UndirectedEdge[2, 5], 3, 5}, 
+           GraphHighlightStyle -> {UndirectedEdge[3, 5] -> {EdgeStyle -> {
                  Directive[
                   RGBColor[0, 
                    Rational[2, 3], 0], "Thickness" -> 0.05, 
-                  Opacity[1]]}}, UndirectedEdge[4, 3] -> {EdgeStyle -> {
+                  Opacity[1]]}}, 2 -> {VertexStyle -> {
                  Directive[
                   RGBColor[0, 
                    Rational[2, 3], 0], "Thickness" -> 0.05, 
-                  Opacity[1]]}}, 3 -> {VertexStyle -> {
+                  Opacity[1]]}}, UndirectedEdge[2, 3] -> {EdgeStyle -> {
                  Directive[
                   RGBColor[0, 
                    Rational[2, 3], 0], "Thickness" -> 0.05, 
-                  Opacity[1]]}}, UndirectedEdge[5, 4] -> {EdgeStyle -> {
-                 Directive[
-                  RGBColor[0, 
-                   Rational[2, 3], 0], "Thickness" -> 0.05, 
-                  Opacity[1]]}}, 5 -> {VertexStyle -> {
-                 Directive[
-                  RGBColor[0, 
-                   Rational[2, 3], 0], "Thickness" -> 0.05, 
-                  Opacity[1]]}}, 4 -> {VertexStyle -> {
-                 Directive[
-                  RGBColor[0, 
-                   Rational[2, 3], 0], "Thickness" -> 0.05, 
-                  Opacity[1]]}}}, GraphLayout -> "CircularEmbedding", 
-           VertexLabels -> {
-             Placed[Automatic, Center]}, VertexLabelStyle -> {
-             Directive[Bold, 14]}, VertexSize -> {Medium}, VertexStyle -> {
-             GrayLevel[1]}}]]}, 
-        TagBox[GraphicsGroupBox[{
-           {RGBColor[0, 0, 1], Thickness[Large], Opacity[0.7], 
-            {Arrowheads[0.], 
-             ArrowBox[{{-0.8660254037844389, 
-              0.5000000000000008}, {-0.8660254037844384, \
--0.4999999999999994}}, 0.09999999999999994]}, 
-            {Arrowheads[0.], 
-             ArrowBox[{{-0.8660254037844389, 0.5000000000000008}, {
-              3.8285686989269494`*^-16, -1.}}, 0.09999999999999994]}, 
-            {RGBColor[1, 0, 0], 
-             {Arrowheads[0.], 
-              ArrowBox[{{-0.8660254037844389, 0.5000000000000008}, {
-               0.8660254037844389, -0.5000000000000012}}, 
-               0.09999999999999994]}}, 
-            {Arrowheads[0.], 
-             ArrowBox[{{-0.8660254037844389, 0.5000000000000008}, {
-              0.8660254037844386, 0.4999999999999993}}, 0.09999999999999994]}, 
-            {RGBColor[1, 0, 0], 
-             {Arrowheads[0.], 
-              ArrowBox[{{-0.8660254037844389, 0.5000000000000008}, {
-               1.8369701987210297`*^-16, 1.}}, 0.09999999999999994]}}, 
-            {Arrowheads[0.], 
-             ArrowBox[{{-0.8660254037844384, -0.4999999999999994}, {
-              3.8285686989269494`*^-16, -1.}}, 0.09999999999999994]}, 
-            {Arrowheads[0.], 
-             ArrowBox[{{-0.8660254037844384, -0.4999999999999994}, {
-              0.8660254037844389, -0.5000000000000012}}, 
-              0.09999999999999994]}, 
-            {RGBColor[1, 0, 0], 
-             {Arrowheads[0.], 
-              ArrowBox[{{-0.8660254037844384, -0.4999999999999994}, {
-               0.8660254037844386, 0.4999999999999993}}, 
-               0.09999999999999994]}}, 
-            {Arrowheads[0.], 
-             ArrowBox[{{-0.8660254037844384, -0.4999999999999994}, {
-              1.8369701987210297`*^-16, 1.}}, 0.09999999999999994]}, 
-            {RGBColor[0, 
-              Rational[2, 3], 0], Thickness[0.05], Opacity[1], 
-             {Arrowheads[0.], 
-              ArrowBox[{{3.8285686989269494`*^-16, -1.}, {
-               0.8660254037844389, -0.5000000000000012}}, 
-               0.09999999999999994]}}, 
-            {RGBColor[0, 
-              Rational[2, 3], 0], Thickness[0.05], Opacity[1], 
-             {Arrowheads[0.], 
-              ArrowBox[{{3.8285686989269494`*^-16, -1.}, {0.8660254037844386, 
-               0.4999999999999993}}, 0.09999999999999994]}}, 
-            {Arrowheads[0.], 
-             ArrowBox[{{3.8285686989269494`*^-16, -1.}, {
-              1.8369701987210297`*^-16, 1.}}, 0.09999999999999994]}, 
-            {RGBColor[0, 
-              Rational[2, 3], 0], Thickness[0.05], Opacity[1], 
-             {Arrowheads[0.], 
-              ArrowBox[{{0.8660254037844389, -0.5000000000000012}, {
-               0.8660254037844386, 0.4999999999999993}}, 
-               0.09999999999999994]}}, 
-            {RGBColor[1, 0, 0], 
-             {Arrowheads[0.], 
-              ArrowBox[{{0.8660254037844389, -0.5000000000000012}, {
-               1.8369701987210297`*^-16, 1.}}, 0.09999999999999994]}}, 
-            {RGBColor[1, 0, 0], 
-             {Arrowheads[0.], 
-              ArrowBox[{{0.8660254037844386, 0.4999999999999993}, {
-               1.8369701987210297`*^-16, 1.}}, 0.09999999999999994]}}}, 
-           {GrayLevel[1], Thickness[Large], EdgeForm[{GrayLevel[0], Opacity[
-            0.7]}], {
-             DiskBox[{-0.8660254037844389, 0.5000000000000008}, 
-              0.09999999999999994], InsetBox[
-              StyleBox["1",
-               StripOnInput->False,
-               FontSize->14,
-               FontWeight->Bold], {-0.8660254037844389, 0.5000000000000008},
-              BaseStyle->"Graphics"]}, {
-             DiskBox[{-0.8660254037844384, -0.4999999999999994}, 
-              0.09999999999999994], InsetBox[
-              StyleBox["2",
-               StripOnInput->False,
-               FontSize->14,
-               FontWeight->Bold], {-0.8660254037844384, -0.4999999999999994},
-              BaseStyle->"Graphics"]}, {
-             {RGBColor[0, 
-               Rational[2, 3], 0], Thickness[0.05], Opacity[1], 
-              DiskBox[{3.8285686989269494*^-16, -1.}, 0.09999999999999994]}, 
-             InsetBox[
-              StyleBox["3",
-               StripOnInput->False,
-               FontSize->14,
-               FontWeight->Bold], {3.8285686989269494*^-16, -1.},
-              BaseStyle->"Graphics"]}, {
-             {RGBColor[0, 
-               Rational[2, 3], 0], Thickness[0.05], Opacity[1], 
-              DiskBox[{0.8660254037844389, -0.5000000000000012}, 
-               0.09999999999999994]}, InsetBox[
-              StyleBox["4",
-               StripOnInput->False,
-               FontSize->14,
-               FontWeight->Bold], {0.8660254037844389, -0.5000000000000012},
-              BaseStyle->"Graphics"]}, {
-             {RGBColor[0, 
-               Rational[2, 3], 0], Thickness[0.05], Opacity[1], 
-              DiskBox[{0.8660254037844386, 0.4999999999999993}, 
-               0.09999999999999994]}, InsetBox[
-              StyleBox["5",
-               StripOnInput->False,
-               FontSize->14,
-               FontWeight->Bold], {0.8660254037844386, 0.4999999999999993},
-              BaseStyle->"Graphics"]}, {
-             DiskBox[{1.8369701987210297*^-16, 1.}, 0.09999999999999994], 
-             InsetBox[
-              StyleBox["6",
-               StripOnInput->False,
-               FontSize->14,
-               FontWeight->Bold], {1.8369701987210297*^-16, 1.},
-              BaseStyle->"Graphics"]}}}],
-         MouseAppearanceTag["NetworkGraphics"]],
-        AllowKernelInitialization->False]],
-      BaseStyle->{
-        Directive[
-         RGBColor[0, 0, 1], 
-         Thickness[Large]]},
-      DefaultBaseStyle->{
-       "NetworkGraphics", FrontEnd`GraphicsHighlightColor -> 
-        Hue[0.8, 1., 0.6]},
-      FormatType->TraditionalForm,
-      FrameTicks->None], ",", 
-     GraphicsBox[
-      NamespaceBox["NetworkGraphics",
-       DynamicModuleBox[{Typeset`graph = HoldComplete[
-         Graph[{1, 2, 3, 4, 5, 6}, {Null, 
-           SparseArray[
-           Automatic, {6, 6}, 0, {
-            1, {{0, 5, 10, 15, 20, 25, 30}, {{2}, {3}, {4}, {5}, {6}, {1}, {
-              3}, {4}, {5}, {6}, {1}, {2}, {4}, {5}, {6}, {1}, {2}, {3}, {
-              5}, {6}, {1}, {2}, {3}, {4}, {6}, {1}, {2}, {3}, {4}, {5}}}, 
-             Pattern}]}, {BaseStyle -> Directive[
-             RGBColor[0, 0, 1], 
-             Thickness[Large]], 
-           EdgeStyle -> {
-            UndirectedEdge[4, 1] -> RGBColor[1, 0, 0], UndirectedEdge[6, 4] -> 
-             RGBColor[1, 0, 0], UndirectedEdge[5, 2] -> RGBColor[1, 0, 0], 
-             UndirectedEdge[6, 1] -> RGBColor[1, 0, 0], UndirectedEdge[6, 5] -> 
-             RGBColor[1, 0, 0]}, GraphHighlight -> {1, 
-             UndirectedEdge[5, 3], 
-             UndirectedEdge[5, 1], 
-             UndirectedEdge[3, 1], 3, 5}, 
-           GraphHighlightStyle -> {UndirectedEdge[5, 3] -> {EdgeStyle -> {
-                 Directive[
-                  RGBColor[0, 
-                   Rational[2, 3], 0], "Thickness" -> 0.05, 
-                  Opacity[1]]}}, 1 -> {VertexStyle -> {
-                 Directive[
-                  RGBColor[0, 
-                   Rational[2, 3], 0], "Thickness" -> 0.05, 
-                  Opacity[1]]}}, UndirectedEdge[5, 1] -> {EdgeStyle -> {
-                 Directive[
-                  RGBColor[0, 
-                   Rational[2, 3], 0], "Thickness" -> 0.05, 
-                  Opacity[1]]}}, UndirectedEdge[3, 1] -> {EdgeStyle -> {
+                  Opacity[1]]}}, UndirectedEdge[2, 5] -> {EdgeStyle -> {
                  Directive[
                   RGBColor[0, 
                    Rational[2, 3], 0], "Thickness" -> 0.05, 
@@ -1010,13 +826,12 @@ Cell[BoxData[
              Directive[Bold, 14]}, VertexSize -> {Medium}, VertexStyle -> {
              GrayLevel[1]}}]]}, 
         TagBox[GraphicsGroupBox[{
-           {RGBColor[0, 0, 1], Thickness[Large], Opacity[0.7], 
+           {RGBColor[0, 0, 1], Thickness[0.02], Opacity[0.7], 
             {Arrowheads[0.], 
              ArrowBox[{{-0.8660254037844389, 
               0.5000000000000008}, {-0.8660254037844384, \
 -0.4999999999999994}}, 0.09999999999999994]}, 
-            {RGBColor[0, 
-              Rational[2, 3], 0], Thickness[0.05], Opacity[1], 
+            {RGBColor[1, 0, 0], 
              {Arrowheads[0.], 
               ArrowBox[{{-0.8660254037844389, 0.5000000000000008}, {
                3.8285686989269494`*^-16, -1.}}, 0.09999999999999994]}}, 
@@ -1025,31 +840,34 @@ Cell[BoxData[
               ArrowBox[{{-0.8660254037844389, 0.5000000000000008}, {
                0.8660254037844389, -0.5000000000000012}}, 
                0.09999999999999994]}}, 
-            {RGBColor[0, 
-              Rational[2, 3], 0], Thickness[0.05], Opacity[1], 
+            {RGBColor[1, 0, 0], 
              {Arrowheads[0.], 
               ArrowBox[{{-0.8660254037844389, 0.5000000000000008}, {
                0.8660254037844386, 0.4999999999999993}}, 
                0.09999999999999994]}}, 
+            {Arrowheads[0.], 
+             ArrowBox[{{-0.8660254037844389, 0.5000000000000008}, {
+              1.8369701987210297`*^-16, 1.}}, 0.09999999999999994]}, 
+            {RGBColor[0, 
+              Rational[2, 3], 0], Thickness[0.05], Opacity[1], 
+             {Arrowheads[0.], 
+              ArrowBox[{{-0.8660254037844384, -0.4999999999999994}, {
+               3.8285686989269494`*^-16, -1.}}, 0.09999999999999994]}}, 
             {RGBColor[1, 0, 0], 
              {Arrowheads[0.], 
-              ArrowBox[{{-0.8660254037844389, 0.5000000000000008}, {
-               1.8369701987210297`*^-16, 1.}}, 0.09999999999999994]}}, 
-            {Arrowheads[0.], 
-             ArrowBox[{{-0.8660254037844384, -0.4999999999999994}, {
-              3.8285686989269494`*^-16, -1.}}, 0.09999999999999994]}, 
-            {Arrowheads[0.], 
-             ArrowBox[{{-0.8660254037844384, -0.4999999999999994}, {
-              0.8660254037844389, -0.5000000000000012}}, 
-              0.09999999999999994]}, 
-            {RGBColor[1, 0, 0], 
+              ArrowBox[{{-0.8660254037844384, -0.4999999999999994}, {
+               0.8660254037844389, -0.5000000000000012}}, 
+               0.09999999999999994]}}, 
+            {RGBColor[0, 
+              Rational[2, 3], 0], Thickness[0.05], Opacity[1], 
              {Arrowheads[0.], 
               ArrowBox[{{-0.8660254037844384, -0.4999999999999994}, {
                0.8660254037844386, 0.4999999999999993}}, 
                0.09999999999999994]}}, 
-            {Arrowheads[0.], 
-             ArrowBox[{{-0.8660254037844384, -0.4999999999999994}, {
-              1.8369701987210297`*^-16, 1.}}, 0.09999999999999994]}, 
+            {RGBColor[1, 0, 0], 
+             {Arrowheads[0.], 
+              ArrowBox[{{-0.8660254037844384, -0.4999999999999994}, {
+               1.8369701987210297`*^-16, 1.}}, 0.09999999999999994]}}, 
             {Arrowheads[0.], 
              ArrowBox[{{3.8285686989269494`*^-16, -1.}, {
               0.8660254037844389, -0.5000000000000012}}, 
@@ -1062,190 +880,18 @@ Cell[BoxData[
             {Arrowheads[0.], 
              ArrowBox[{{3.8285686989269494`*^-16, -1.}, {
               1.8369701987210297`*^-16, 1.}}, 0.09999999999999994]}, 
-            {Arrowheads[0.], 
-             ArrowBox[{{0.8660254037844389, -0.5000000000000012}, {
-              0.8660254037844386, 0.4999999999999993}}, 0.09999999999999994]}, 
             {RGBColor[1, 0, 0], 
              {Arrowheads[0.], 
               ArrowBox[{{0.8660254037844389, -0.5000000000000012}, {
-               1.8369701987210297`*^-16, 1.}}, 0.09999999999999994]}}, 
-            {RGBColor[1, 0, 0], 
-             {Arrowheads[0.], 
-              ArrowBox[{{0.8660254037844386, 0.4999999999999993}, {
-               1.8369701987210297`*^-16, 1.}}, 0.09999999999999994]}}}, 
-           {GrayLevel[1], Thickness[Large], EdgeForm[{GrayLevel[0], Opacity[
-            0.7]}], {
-             {RGBColor[0, 
-               Rational[2, 3], 0], Thickness[0.05], Opacity[1], 
-              DiskBox[{-0.8660254037844389, 0.5000000000000008}, 
-               0.09999999999999994]}, InsetBox[
-              StyleBox["1",
-               StripOnInput->False,
-               FontSize->14,
-               FontWeight->Bold], {-0.8660254037844389, 0.5000000000000008},
-              BaseStyle->"Graphics"]}, {
-             DiskBox[{-0.8660254037844384, -0.4999999999999994}, 
-              0.09999999999999994], InsetBox[
-              StyleBox["2",
-               StripOnInput->False,
-               FontSize->14,
-               FontWeight->Bold], {-0.8660254037844384, -0.4999999999999994},
-              BaseStyle->"Graphics"]}, {
-             {RGBColor[0, 
-               Rational[2, 3], 0], Thickness[0.05], Opacity[1], 
-              DiskBox[{3.8285686989269494*^-16, -1.}, 0.09999999999999994]}, 
-             InsetBox[
-              StyleBox["3",
-               StripOnInput->False,
-               FontSize->14,
-               FontWeight->Bold], {3.8285686989269494*^-16, -1.},
-              BaseStyle->"Graphics"]}, {
-             DiskBox[{0.8660254037844389, -0.5000000000000012}, 
-              0.09999999999999994], InsetBox[
-              StyleBox["4",
-               StripOnInput->False,
-               FontSize->14,
-               FontWeight->Bold], {0.8660254037844389, -0.5000000000000012},
-              BaseStyle->"Graphics"]}, {
-             {RGBColor[0, 
-               Rational[2, 3], 0], Thickness[0.05], Opacity[1], 
-              DiskBox[{0.8660254037844386, 0.4999999999999993}, 
-               0.09999999999999994]}, InsetBox[
-              StyleBox["5",
-               StripOnInput->False,
-               FontSize->14,
-               FontWeight->Bold], {0.8660254037844386, 0.4999999999999993},
-              BaseStyle->"Graphics"]}, {
-             DiskBox[{1.8369701987210297*^-16, 1.}, 0.09999999999999994], 
-             InsetBox[
-              StyleBox["6",
-               StripOnInput->False,
-               FontSize->14,
-               FontWeight->Bold], {1.8369701987210297*^-16, 1.},
-              BaseStyle->"Graphics"]}}}],
-         MouseAppearanceTag["NetworkGraphics"]],
-        AllowKernelInitialization->False]],
-      BaseStyle->{
-        Directive[
-         RGBColor[0, 0, 1], 
-         Thickness[Large]]},
-      DefaultBaseStyle->{
-       "NetworkGraphics", FrontEnd`GraphicsHighlightColor -> 
-        Hue[0.8, 1., 0.6]},
-      FormatType->TraditionalForm,
-      FrameTicks->None], ",", 
-     GraphicsBox[
-      NamespaceBox["NetworkGraphics",
-       DynamicModuleBox[{Typeset`graph = HoldComplete[
-         Graph[{1, 2, 3, 4, 5, 6}, {Null, 
-           SparseArray[
-           Automatic, {6, 6}, 0, {
-            1, {{0, 5, 10, 15, 20, 25, 30}, {{2}, {3}, {4}, {5}, {6}, {1}, {
-              3}, {4}, {5}, {6}, {1}, {2}, {4}, {5}, {6}, {1}, {2}, {3}, {
-              5}, {6}, {1}, {2}, {3}, {4}, {6}, {1}, {2}, {3}, {4}, {5}}}, 
-             Pattern}]}, {BaseStyle -> Directive[
-             RGBColor[0, 0, 1], 
-             Thickness[Large]], 
-           EdgeStyle -> {
-            UndirectedEdge[4, 1] -> RGBColor[1, 0, 0], UndirectedEdge[6, 4] -> 
-             RGBColor[1, 0, 0], UndirectedEdge[5, 2] -> RGBColor[1, 0, 0], 
-             UndirectedEdge[6, 1] -> RGBColor[1, 0, 0], UndirectedEdge[6, 5] -> 
-             RGBColor[1, 0, 0]}, GraphHighlight -> {6, 2, 
-             UndirectedEdge[6, 2], 
-             UndirectedEdge[3, 2], 3, 
-             UndirectedEdge[6, 3]}, GraphHighlightStyle -> {2 -> {VertexStyle -> {
-                 Directive[
-                  RGBColor[0, 
-                   Rational[2, 3], 0], "Thickness" -> 0.05, 
-                  Opacity[1]]}}, UndirectedEdge[6, 3] -> {EdgeStyle -> {
-                 Directive[
-                  RGBColor[0, 
-                   Rational[2, 3], 0], "Thickness" -> 0.05, 
-                  Opacity[1]]}}, 3 -> {VertexStyle -> {
-                 Directive[
-                  RGBColor[0, 
-                   Rational[2, 3], 0], "Thickness" -> 0.05, 
-                  Opacity[1]]}}, UndirectedEdge[6, 2] -> {EdgeStyle -> {
-                 Directive[
-                  RGBColor[0, 
-                   Rational[2, 3], 0], "Thickness" -> 0.05, 
-                  Opacity[1]]}}, 6 -> {VertexStyle -> {
-                 Directive[
-                  RGBColor[0, 
-                   Rational[2, 3], 0], "Thickness" -> 0.05, 
-                  Opacity[1]]}}, UndirectedEdge[3, 2] -> {EdgeStyle -> {
-                 Directive[
-                  RGBColor[0, 
-                   Rational[2, 3], 0], "Thickness" -> 0.05, 
-                  Opacity[1]]}}}, GraphLayout -> "CircularEmbedding", 
-           VertexLabels -> {
-             Placed[Automatic, Center]}, VertexLabelStyle -> {
-             Directive[Bold, 14]}, VertexSize -> {Medium}, VertexStyle -> {
-             GrayLevel[1]}}]]}, 
-        TagBox[GraphicsGroupBox[{
-           {RGBColor[0, 0, 1], Thickness[Large], Opacity[0.7], 
-            {Arrowheads[0.], 
-             ArrowBox[{{-0.8660254037844389, 
-              0.5000000000000008}, {-0.8660254037844384, \
--0.4999999999999994}}, 0.09999999999999994]}, 
-            {Arrowheads[0.], 
-             ArrowBox[{{-0.8660254037844389, 0.5000000000000008}, {
-              3.8285686989269494`*^-16, -1.}}, 0.09999999999999994]}, 
-            {RGBColor[1, 0, 0], 
-             {Arrowheads[0.], 
-              ArrowBox[{{-0.8660254037844389, 0.5000000000000008}, {
-               0.8660254037844389, -0.5000000000000012}}, 
-               0.09999999999999994]}}, 
-            {Arrowheads[0.], 
-             ArrowBox[{{-0.8660254037844389, 0.5000000000000008}, {
-              0.8660254037844386, 0.4999999999999993}}, 0.09999999999999994]}, 
-            {RGBColor[1, 0, 0], 
-             {Arrowheads[0.], 
-              ArrowBox[{{-0.8660254037844389, 0.5000000000000008}, {
-               1.8369701987210297`*^-16, 1.}}, 0.09999999999999994]}}, 
-            {RGBColor[0, 
-              Rational[2, 3], 0], Thickness[0.05], Opacity[1], 
-             {Arrowheads[0.], 
-              ArrowBox[{{-0.8660254037844384, -0.4999999999999994}, {
-               3.8285686989269494`*^-16, -1.}}, 0.09999999999999994]}}, 
-            {Arrowheads[0.], 
-             ArrowBox[{{-0.8660254037844384, -0.4999999999999994}, {
-              0.8660254037844389, -0.5000000000000012}}, 
-              0.09999999999999994]}, 
-            {RGBColor[1, 0, 0], 
-             {Arrowheads[0.], 
-              ArrowBox[{{-0.8660254037844384, -0.4999999999999994}, {
                0.8660254037844386, 0.4999999999999993}}, 
                0.09999999999999994]}}, 
-            {RGBColor[0, 
-              Rational[2, 3], 0], Thickness[0.05], Opacity[1], 
-             {Arrowheads[0.], 
-              ArrowBox[{{-0.8660254037844384, -0.4999999999999994}, {
-               1.8369701987210297`*^-16, 1.}}, 0.09999999999999994]}}, 
-            {Arrowheads[0.], 
-             ArrowBox[{{3.8285686989269494`*^-16, -1.}, {
-              0.8660254037844389, -0.5000000000000012}}, 
-              0.09999999999999994]}, 
-            {Arrowheads[0.], 
-             ArrowBox[{{3.8285686989269494`*^-16, -1.}, {0.8660254037844386, 
-              0.4999999999999993}}, 0.09999999999999994]}, 
-            {RGBColor[0, 
-              Rational[2, 3], 0], Thickness[0.05], Opacity[1], 
-             {Arrowheads[0.], 
-              ArrowBox[{{3.8285686989269494`*^-16, -1.}, {
-               1.8369701987210297`*^-16, 1.}}, 0.09999999999999994]}}, 
             {Arrowheads[0.], 
              ArrowBox[{{0.8660254037844389, -0.5000000000000012}, {
-              0.8660254037844386, 0.4999999999999993}}, 0.09999999999999994]}, 
-            {RGBColor[1, 0, 0], 
-             {Arrowheads[0.], 
-              ArrowBox[{{0.8660254037844389, -0.5000000000000012}, {
-               1.8369701987210297`*^-16, 1.}}, 0.09999999999999994]}}, 
-            {RGBColor[1, 0, 0], 
-             {Arrowheads[0.], 
-              ArrowBox[{{0.8660254037844386, 0.4999999999999993}, {
-               1.8369701987210297`*^-16, 1.}}, 0.09999999999999994]}}}, 
-           {GrayLevel[1], Thickness[Large], EdgeForm[{GrayLevel[0], Opacity[
+              1.8369701987210297`*^-16, 1.}}, 0.09999999999999994]}, 
+            {Arrowheads[0.], 
+             ArrowBox[{{0.8660254037844386, 0.4999999999999993}, {
+              1.8369701987210297`*^-16, 1.}}, 0.09999999999999994]}}, 
+           {GrayLevel[1], Thickness[0.02], EdgeForm[{GrayLevel[0], Opacity[
             0.7]}], {
              DiskBox[{-0.8660254037844389, 0.5000000000000008}, 
               0.09999999999999994], InsetBox[
@@ -1274,6 +920,180 @@ Cell[BoxData[
               BaseStyle->"Graphics"]}, {
              DiskBox[{0.8660254037844389, -0.5000000000000012}, 
               0.09999999999999994], InsetBox[
+              StyleBox["4",
+               StripOnInput->False,
+               FontSize->14,
+               FontWeight->Bold], {0.8660254037844389, -0.5000000000000012},
+              BaseStyle->"Graphics"]}, {
+             {RGBColor[0, 
+               Rational[2, 3], 0], Thickness[0.05], Opacity[1], 
+              DiskBox[{0.8660254037844386, 0.4999999999999993}, 
+               0.09999999999999994]}, InsetBox[
+              StyleBox["5",
+               StripOnInput->False,
+               FontSize->14,
+               FontWeight->Bold], {0.8660254037844386, 0.4999999999999993},
+              BaseStyle->"Graphics"]}, {
+             DiskBox[{1.8369701987210297*^-16, 1.}, 0.09999999999999994], 
+             InsetBox[
+              StyleBox["6",
+               StripOnInput->False,
+               FontSize->14,
+               FontWeight->Bold], {1.8369701987210297*^-16, 1.},
+              BaseStyle->"Graphics"]}}}],
+         MouseAppearanceTag["NetworkGraphics"]],
+        AllowKernelInitialization->False]],
+      BaseStyle->{
+        Directive[
+         RGBColor[0, 0, 1], Thickness -> 0.02]},
+      DefaultBaseStyle->{
+       "NetworkGraphics", FrontEnd`GraphicsHighlightColor -> 
+        Hue[0.8, 1., 0.6]},
+      FormatType->TraditionalForm,
+      FrameTicks->None], ",", 
+     GraphicsBox[
+      NamespaceBox["NetworkGraphics",
+       DynamicModuleBox[{Typeset`graph = HoldComplete[
+         Graph[{1, 2, 3, 4, 5, 6}, {Null, 
+           SparseArray[
+           Automatic, {6, 6}, 0, {
+            1, {{0, 5, 10, 15, 20, 25, 30}, {{2}, {3}, {4}, {5}, {6}, {1}, {
+              3}, {4}, {5}, {6}, {1}, {2}, {4}, {5}, {6}, {1}, {2}, {3}, {
+              5}, {6}, {1}, {2}, {3}, {4}, {6}, {1}, {2}, {3}, {4}, {5}}}, 
+             Pattern}]}, {BaseStyle -> Directive[
+             RGBColor[0, 0, 1], Thickness -> 0.02], 
+           EdgeStyle -> {
+            UndirectedEdge[2, 6] -> RGBColor[1, 0, 0], UndirectedEdge[2, 4] -> 
+             RGBColor[1, 0, 0], UndirectedEdge[4, 5] -> RGBColor[1, 0, 0], 
+             UndirectedEdge[1, 4] -> RGBColor[1, 0, 0], UndirectedEdge[1, 5] -> 
+             RGBColor[1, 0, 0], UndirectedEdge[1, 3] -> RGBColor[1, 0, 0]}, 
+           GraphHighlight -> {6, 
+             UndirectedEdge[3, 4], 
+             UndirectedEdge[3, 6], 4, 
+             UndirectedEdge[4, 6], 3}, 
+           GraphHighlightStyle -> {UndirectedEdge[3, 6] -> {EdgeStyle -> {
+                 Directive[
+                  RGBColor[0, 
+                   Rational[2, 3], 0], "Thickness" -> 0.05, 
+                  Opacity[1]]}}, 3 -> {VertexStyle -> {
+                 Directive[
+                  RGBColor[0, 
+                   Rational[2, 3], 0], "Thickness" -> 0.05, 
+                  Opacity[1]]}}, 6 -> {VertexStyle -> {
+                 Directive[
+                  RGBColor[0, 
+                   Rational[2, 3], 0], "Thickness" -> 0.05, 
+                  Opacity[1]]}}, UndirectedEdge[4, 6] -> {EdgeStyle -> {
+                 Directive[
+                  RGBColor[0, 
+                   Rational[2, 3], 0], "Thickness" -> 0.05, 
+                  Opacity[1]]}}, UndirectedEdge[3, 4] -> {EdgeStyle -> {
+                 Directive[
+                  RGBColor[0, 
+                   Rational[2, 3], 0], "Thickness" -> 0.05, 
+                  Opacity[1]]}}, 4 -> {VertexStyle -> {
+                 Directive[
+                  RGBColor[0, 
+                   Rational[2, 3], 0], "Thickness" -> 0.05, 
+                  Opacity[1]]}}}, GraphLayout -> "CircularEmbedding", 
+           VertexLabels -> {
+             Placed[Automatic, Center]}, VertexLabelStyle -> {
+             Directive[Bold, 14]}, VertexSize -> {Medium}, VertexStyle -> {
+             GrayLevel[1]}}]]}, 
+        TagBox[GraphicsGroupBox[{
+           {RGBColor[0, 0, 1], Thickness[0.02], Opacity[0.7], 
+            {Arrowheads[0.], 
+             ArrowBox[{{-0.8660254037844389, 
+              0.5000000000000008}, {-0.8660254037844384, \
+-0.4999999999999994}}, 0.09999999999999994]}, 
+            {RGBColor[1, 0, 0], 
+             {Arrowheads[0.], 
+              ArrowBox[{{-0.8660254037844389, 0.5000000000000008}, {
+               3.8285686989269494`*^-16, -1.}}, 0.09999999999999994]}}, 
+            {RGBColor[1, 0, 0], 
+             {Arrowheads[0.], 
+              ArrowBox[{{-0.8660254037844389, 0.5000000000000008}, {
+               0.8660254037844389, -0.5000000000000012}}, 
+               0.09999999999999994]}}, 
+            {RGBColor[1, 0, 0], 
+             {Arrowheads[0.], 
+              ArrowBox[{{-0.8660254037844389, 0.5000000000000008}, {
+               0.8660254037844386, 0.4999999999999993}}, 
+               0.09999999999999994]}}, 
+            {Arrowheads[0.], 
+             ArrowBox[{{-0.8660254037844389, 0.5000000000000008}, {
+              1.8369701987210297`*^-16, 1.}}, 0.09999999999999994]}, 
+            {Arrowheads[0.], 
+             ArrowBox[{{-0.8660254037844384, -0.4999999999999994}, {
+              3.8285686989269494`*^-16, -1.}}, 0.09999999999999994]}, 
+            {RGBColor[1, 0, 0], 
+             {Arrowheads[0.], 
+              ArrowBox[{{-0.8660254037844384, -0.4999999999999994}, {
+               0.8660254037844389, -0.5000000000000012}}, 
+               0.09999999999999994]}}, 
+            {Arrowheads[0.], 
+             ArrowBox[{{-0.8660254037844384, -0.4999999999999994}, {
+              0.8660254037844386, 0.4999999999999993}}, 0.09999999999999994]}, 
+            {RGBColor[1, 0, 0], 
+             {Arrowheads[0.], 
+              ArrowBox[{{-0.8660254037844384, -0.4999999999999994}, {
+               1.8369701987210297`*^-16, 1.}}, 0.09999999999999994]}}, 
+            {RGBColor[0, 
+              Rational[2, 3], 0], Thickness[0.05], Opacity[1], 
+             {Arrowheads[0.], 
+              ArrowBox[{{3.8285686989269494`*^-16, -1.}, {
+               0.8660254037844389, -0.5000000000000012}}, 
+               0.09999999999999994]}}, 
+            {Arrowheads[0.], 
+             ArrowBox[{{3.8285686989269494`*^-16, -1.}, {0.8660254037844386, 
+              0.4999999999999993}}, 0.09999999999999994]}, 
+            {RGBColor[0, 
+              Rational[2, 3], 0], Thickness[0.05], Opacity[1], 
+             {Arrowheads[0.], 
+              ArrowBox[{{3.8285686989269494`*^-16, -1.}, {
+               1.8369701987210297`*^-16, 1.}}, 0.09999999999999994]}}, 
+            {RGBColor[1, 0, 0], 
+             {Arrowheads[0.], 
+              ArrowBox[{{0.8660254037844389, -0.5000000000000012}, {
+               0.8660254037844386, 0.4999999999999993}}, 
+               0.09999999999999994]}}, 
+            {RGBColor[0, 
+              Rational[2, 3], 0], Thickness[0.05], Opacity[1], 
+             {Arrowheads[0.], 
+              ArrowBox[{{0.8660254037844389, -0.5000000000000012}, {
+               1.8369701987210297`*^-16, 1.}}, 0.09999999999999994]}}, 
+            {Arrowheads[0.], 
+             ArrowBox[{{0.8660254037844386, 0.4999999999999993}, {
+              1.8369701987210297`*^-16, 1.}}, 0.09999999999999994]}}, 
+           {GrayLevel[1], Thickness[0.02], EdgeForm[{GrayLevel[0], Opacity[
+            0.7]}], {
+             DiskBox[{-0.8660254037844389, 0.5000000000000008}, 
+              0.09999999999999994], InsetBox[
+              StyleBox["1",
+               StripOnInput->False,
+               FontSize->14,
+               FontWeight->Bold], {-0.8660254037844389, 0.5000000000000008},
+              BaseStyle->"Graphics"]}, {
+             DiskBox[{-0.8660254037844384, -0.4999999999999994}, 
+              0.09999999999999994], InsetBox[
+              StyleBox["2",
+               StripOnInput->False,
+               FontSize->14,
+               FontWeight->Bold], {-0.8660254037844384, -0.4999999999999994},
+              BaseStyle->"Graphics"]}, {
+             {RGBColor[0, 
+               Rational[2, 3], 0], Thickness[0.05], Opacity[1], 
+              DiskBox[{3.8285686989269494*^-16, -1.}, 0.09999999999999994]}, 
+             InsetBox[
+              StyleBox["3",
+               StripOnInput->False,
+               FontSize->14,
+               FontWeight->Bold], {3.8285686989269494*^-16, -1.},
+              BaseStyle->"Graphics"]}, {
+             {RGBColor[0, 
+               Rational[2, 3], 0], Thickness[0.05], Opacity[1], 
+              DiskBox[{0.8660254037844389, -0.5000000000000012}, 
+               0.09999999999999994]}, InsetBox[
               StyleBox["4",
                StripOnInput->False,
                FontSize->14,
@@ -1299,8 +1119,7 @@ Cell[BoxData[
         AllowKernelInitialization->False]],
       BaseStyle->{
         Directive[
-         RGBColor[0, 0, 1], 
-         Thickness[Large]]},
+         RGBColor[0, 0, 1], Thickness -> 0.02]},
       DefaultBaseStyle->{
        "NetworkGraphics", FrontEnd`GraphicsHighlightColor -> 
         Hue[0.8, 1., 0.6]},
@@ -1316,21 +1135,21 @@ Cell[BoxData[
               3}, {4}, {5}, {6}, {1}, {2}, {4}, {5}, {6}, {1}, {2}, {3}, {
               5}, {6}, {1}, {2}, {3}, {4}, {6}, {1}, {2}, {3}, {4}, {5}}}, 
              Pattern}]}, {BaseStyle -> Directive[
-             RGBColor[0, 0, 1], 
-             Thickness[Large]], 
+             RGBColor[0, 0, 1], Thickness -> 0.02], 
            EdgeStyle -> {
-            UndirectedEdge[4, 1] -> RGBColor[1, 0, 0], UndirectedEdge[6, 4] -> 
-             RGBColor[1, 0, 0], UndirectedEdge[5, 2] -> RGBColor[1, 0, 0], 
-             UndirectedEdge[6, 1] -> RGBColor[1, 0, 0], UndirectedEdge[6, 5] -> 
-             RGBColor[1, 0, 0]}, GraphHighlight -> {2, 
-             UndirectedEdge[4, 3], 
-             UndirectedEdge[4, 2], 4, 
-             UndirectedEdge[3, 2], 3}, 
-           GraphHighlightStyle -> {UndirectedEdge[4, 3] -> {EdgeStyle -> {
+            UndirectedEdge[2, 6] -> RGBColor[1, 0, 0], UndirectedEdge[2, 4] -> 
+             RGBColor[1, 0, 0], UndirectedEdge[4, 5] -> RGBColor[1, 0, 0], 
+             UndirectedEdge[1, 4] -> RGBColor[1, 0, 0], UndirectedEdge[1, 5] -> 
+             RGBColor[1, 0, 0], UndirectedEdge[1, 3] -> RGBColor[1, 0, 0]}, 
+           GraphHighlight -> {6, 
+             UndirectedEdge[3, 5], 
+             UndirectedEdge[3, 6], 
+             UndirectedEdge[5, 6], 3, 5}, 
+           GraphHighlightStyle -> {UndirectedEdge[3, 5] -> {EdgeStyle -> {
                  Directive[
                   RGBColor[0, 
                    Rational[2, 3], 0], "Thickness" -> 0.05, 
-                  Opacity[1]]}}, 2 -> {VertexStyle -> {
+                  Opacity[1]]}}, UndirectedEdge[3, 6] -> {EdgeStyle -> {
                  Directive[
                   RGBColor[0, 
                    Rational[2, 3], 0], "Thickness" -> 0.05, 
@@ -1338,15 +1157,15 @@ Cell[BoxData[
                  Directive[
                   RGBColor[0, 
                    Rational[2, 3], 0], "Thickness" -> 0.05, 
-                  Opacity[1]]}}, UndirectedEdge[4, 2] -> {EdgeStyle -> {
+                  Opacity[1]]}}, 6 -> {VertexStyle -> {
                  Directive[
                   RGBColor[0, 
                    Rational[2, 3], 0], "Thickness" -> 0.05, 
-                  Opacity[1]]}}, UndirectedEdge[3, 2] -> {EdgeStyle -> {
+                  Opacity[1]]}}, UndirectedEdge[5, 6] -> {EdgeStyle -> {
                  Directive[
                   RGBColor[0, 
                    Rational[2, 3], 0], "Thickness" -> 0.05, 
-                  Opacity[1]]}}, 4 -> {VertexStyle -> {
+                  Opacity[1]]}}, 5 -> {VertexStyle -> {
                  Directive[
                   RGBColor[0, 
                    Rational[2, 3], 0], "Thickness" -> 0.05, 
@@ -1356,69 +1175,71 @@ Cell[BoxData[
              Directive[Bold, 14]}, VertexSize -> {Medium}, VertexStyle -> {
              GrayLevel[1]}}]]}, 
         TagBox[GraphicsGroupBox[{
-           {RGBColor[0, 0, 1], Thickness[Large], Opacity[0.7], 
+           {RGBColor[0, 0, 1], Thickness[0.02], Opacity[0.7], 
             {Arrowheads[0.], 
              ArrowBox[{{-0.8660254037844389, 
               0.5000000000000008}, {-0.8660254037844384, \
 -0.4999999999999994}}, 0.09999999999999994]}, 
-            {Arrowheads[0.], 
-             ArrowBox[{{-0.8660254037844389, 0.5000000000000008}, {
-              3.8285686989269494`*^-16, -1.}}, 0.09999999999999994]}, 
             {RGBColor[1, 0, 0], 
              {Arrowheads[0.], 
               ArrowBox[{{-0.8660254037844389, 0.5000000000000008}, {
-               0.8660254037844389, -0.5000000000000012}}, 
-               0.09999999999999994]}}, 
-            {Arrowheads[0.], 
-             ArrowBox[{{-0.8660254037844389, 0.5000000000000008}, {
-              0.8660254037844386, 0.4999999999999993}}, 0.09999999999999994]}, 
-            {RGBColor[1, 0, 0], 
-             {Arrowheads[0.], 
-              ArrowBox[{{-0.8660254037844389, 0.5000000000000008}, {
-               1.8369701987210297`*^-16, 1.}}, 0.09999999999999994]}}, 
-            {RGBColor[0, 
-              Rational[2, 3], 0], Thickness[0.05], Opacity[1], 
-             {Arrowheads[0.], 
-              ArrowBox[{{-0.8660254037844384, -0.4999999999999994}, {
                3.8285686989269494`*^-16, -1.}}, 0.09999999999999994]}}, 
-            {RGBColor[0, 
-              Rational[2, 3], 0], Thickness[0.05], Opacity[1], 
+            {RGBColor[1, 0, 0], 
              {Arrowheads[0.], 
-              ArrowBox[{{-0.8660254037844384, -0.4999999999999994}, {
+              ArrowBox[{{-0.8660254037844389, 0.5000000000000008}, {
                0.8660254037844389, -0.5000000000000012}}, 
                0.09999999999999994]}}, 
             {RGBColor[1, 0, 0], 
              {Arrowheads[0.], 
-              ArrowBox[{{-0.8660254037844384, -0.4999999999999994}, {
+              ArrowBox[{{-0.8660254037844389, 0.5000000000000008}, {
                0.8660254037844386, 0.4999999999999993}}, 
                0.09999999999999994]}}, 
             {Arrowheads[0.], 
-             ArrowBox[{{-0.8660254037844384, -0.4999999999999994}, {
+             ArrowBox[{{-0.8660254037844389, 0.5000000000000008}, {
               1.8369701987210297`*^-16, 1.}}, 0.09999999999999994]}, 
+            {Arrowheads[0.], 
+             ArrowBox[{{-0.8660254037844384, -0.4999999999999994}, {
+              3.8285686989269494`*^-16, -1.}}, 0.09999999999999994]}, 
+            {RGBColor[1, 0, 0], 
+             {Arrowheads[0.], 
+              ArrowBox[{{-0.8660254037844384, -0.4999999999999994}, {
+               0.8660254037844389, -0.5000000000000012}}, 
+               0.09999999999999994]}}, 
+            {Arrowheads[0.], 
+             ArrowBox[{{-0.8660254037844384, -0.4999999999999994}, {
+              0.8660254037844386, 0.4999999999999993}}, 0.09999999999999994]}, 
+            {RGBColor[1, 0, 0], 
+             {Arrowheads[0.], 
+              ArrowBox[{{-0.8660254037844384, -0.4999999999999994}, {
+               1.8369701987210297`*^-16, 1.}}, 0.09999999999999994]}}, 
+            {Arrowheads[0.], 
+             ArrowBox[{{3.8285686989269494`*^-16, -1.}, {
+              0.8660254037844389, -0.5000000000000012}}, 
+              0.09999999999999994]}, 
+            {RGBColor[0, 
+              Rational[2, 3], 0], Thickness[0.05], Opacity[1], 
+             {Arrowheads[0.], 
+              ArrowBox[{{3.8285686989269494`*^-16, -1.}, {0.8660254037844386, 
+               0.4999999999999993}}, 0.09999999999999994]}}, 
             {RGBColor[0, 
               Rational[2, 3], 0], Thickness[0.05], Opacity[1], 
              {Arrowheads[0.], 
               ArrowBox[{{3.8285686989269494`*^-16, -1.}, {
-               0.8660254037844389, -0.5000000000000012}}, 
-               0.09999999999999994]}}, 
-            {Arrowheads[0.], 
-             ArrowBox[{{3.8285686989269494`*^-16, -1.}, {0.8660254037844386, 
-              0.4999999999999993}}, 0.09999999999999994]}, 
-            {Arrowheads[0.], 
-             ArrowBox[{{3.8285686989269494`*^-16, -1.}, {
-              1.8369701987210297`*^-16, 1.}}, 0.09999999999999994]}, 
-            {Arrowheads[0.], 
-             ArrowBox[{{0.8660254037844389, -0.5000000000000012}, {
-              0.8660254037844386, 0.4999999999999993}}, 0.09999999999999994]}, 
-            {RGBColor[1, 0, 0], 
-             {Arrowheads[0.], 
-              ArrowBox[{{0.8660254037844389, -0.5000000000000012}, {
                1.8369701987210297`*^-16, 1.}}, 0.09999999999999994]}}, 
             {RGBColor[1, 0, 0], 
              {Arrowheads[0.], 
+              ArrowBox[{{0.8660254037844389, -0.5000000000000012}, {
+               0.8660254037844386, 0.4999999999999993}}, 
+               0.09999999999999994]}}, 
+            {Arrowheads[0.], 
+             ArrowBox[{{0.8660254037844389, -0.5000000000000012}, {
+              1.8369701987210297`*^-16, 1.}}, 0.09999999999999994]}, 
+            {RGBColor[0, 
+              Rational[2, 3], 0], Thickness[0.05], Opacity[1], 
+             {Arrowheads[0.], 
               ArrowBox[{{0.8660254037844386, 0.4999999999999993}, {
                1.8369701987210297`*^-16, 1.}}, 0.09999999999999994]}}}, 
-           {GrayLevel[1], Thickness[Large], EdgeForm[{GrayLevel[0], Opacity[
+           {GrayLevel[1], Thickness[0.02], EdgeForm[{GrayLevel[0], Opacity[
             0.7]}], {
              DiskBox[{-0.8660254037844389, 0.5000000000000008}, 
               0.09999999999999994], InsetBox[
@@ -1427,185 +1248,8 @@ Cell[BoxData[
                FontSize->14,
                FontWeight->Bold], {-0.8660254037844389, 0.5000000000000008},
               BaseStyle->"Graphics"]}, {
-             {RGBColor[0, 
-               Rational[2, 3], 0], Thickness[0.05], Opacity[1], 
-              DiskBox[{-0.8660254037844384, -0.4999999999999994}, 
-               0.09999999999999994]}, InsetBox[
-              StyleBox["2",
-               StripOnInput->False,
-               FontSize->14,
-               FontWeight->Bold], {-0.8660254037844384, -0.4999999999999994},
-              BaseStyle->"Graphics"]}, {
-             {RGBColor[0, 
-               Rational[2, 3], 0], Thickness[0.05], Opacity[1], 
-              DiskBox[{3.8285686989269494*^-16, -1.}, 0.09999999999999994]}, 
-             InsetBox[
-              StyleBox["3",
-               StripOnInput->False,
-               FontSize->14,
-               FontWeight->Bold], {3.8285686989269494*^-16, -1.},
-              BaseStyle->"Graphics"]}, {
-             {RGBColor[0, 
-               Rational[2, 3], 0], Thickness[0.05], Opacity[1], 
-              DiskBox[{0.8660254037844389, -0.5000000000000012}, 
-               0.09999999999999994]}, InsetBox[
-              StyleBox["4",
-               StripOnInput->False,
-               FontSize->14,
-               FontWeight->Bold], {0.8660254037844389, -0.5000000000000012},
-              BaseStyle->"Graphics"]}, {
-             DiskBox[{0.8660254037844386, 0.4999999999999993}, 
+             DiskBox[{-0.8660254037844384, -0.4999999999999994}, 
               0.09999999999999994], InsetBox[
-              StyleBox["5",
-               StripOnInput->False,
-               FontSize->14,
-               FontWeight->Bold], {0.8660254037844386, 0.4999999999999993},
-              BaseStyle->"Graphics"]}, {
-             DiskBox[{1.8369701987210297*^-16, 1.}, 0.09999999999999994], 
-             InsetBox[
-              StyleBox["6",
-               StripOnInput->False,
-               FontSize->14,
-               FontWeight->Bold], {1.8369701987210297*^-16, 1.},
-              BaseStyle->"Graphics"]}}}],
-         MouseAppearanceTag["NetworkGraphics"]],
-        AllowKernelInitialization->False]],
-      BaseStyle->{
-        Directive[
-         RGBColor[0, 0, 1], 
-         Thickness[Large]]},
-      DefaultBaseStyle->{
-       "NetworkGraphics", FrontEnd`GraphicsHighlightColor -> 
-        Hue[0.8, 1., 0.6]},
-      FormatType->TraditionalForm,
-      FrameTicks->None], ",", 
-     GraphicsBox[
-      NamespaceBox["NetworkGraphics",
-       DynamicModuleBox[{Typeset`graph = HoldComplete[
-         Graph[{1, 2, 3, 4, 5, 6}, {Null, 
-           SparseArray[
-           Automatic, {6, 6}, 0, {
-            1, {{0, 5, 10, 15, 20, 25, 30}, {{2}, {3}, {4}, {5}, {6}, {1}, {
-              3}, {4}, {5}, {6}, {1}, {2}, {4}, {5}, {6}, {1}, {2}, {3}, {
-              5}, {6}, {1}, {2}, {3}, {4}, {6}, {1}, {2}, {3}, {4}, {5}}}, 
-             Pattern}]}, {BaseStyle -> Directive[
-             RGBColor[0, 0, 1], 
-             Thickness[Large]], 
-           EdgeStyle -> {
-            UndirectedEdge[4, 1] -> RGBColor[1, 0, 0], UndirectedEdge[6, 4] -> 
-             RGBColor[1, 0, 0], UndirectedEdge[5, 2] -> RGBColor[1, 0, 0], 
-             UndirectedEdge[6, 1] -> RGBColor[1, 0, 0], UndirectedEdge[6, 5] -> 
-             RGBColor[1, 0, 0]}, GraphHighlight -> {
-             UndirectedEdge[2, 1], 1, 2, 
-             UndirectedEdge[3, 2], 
-             UndirectedEdge[3, 1], 3}, 
-           GraphHighlightStyle -> {1 -> {VertexStyle -> {
-                 Directive[
-                  RGBColor[0, 
-                   Rational[2, 3], 0], "Thickness" -> 0.05, 
-                  Opacity[1]]}}, UndirectedEdge[2, 1] -> {EdgeStyle -> {
-                 Directive[
-                  RGBColor[0, 
-                   Rational[2, 3], 0], "Thickness" -> 0.05, 
-                  Opacity[1]]}}, 2 -> {VertexStyle -> {
-                 Directive[
-                  RGBColor[0, 
-                   Rational[2, 3], 0], "Thickness" -> 0.05, 
-                  Opacity[1]]}}, UndirectedEdge[3, 1] -> {EdgeStyle -> {
-                 Directive[
-                  RGBColor[0, 
-                   Rational[2, 3], 0], "Thickness" -> 0.05, 
-                  Opacity[1]]}}, 3 -> {VertexStyle -> {
-                 Directive[
-                  RGBColor[0, 
-                   Rational[2, 3], 0], "Thickness" -> 0.05, 
-                  Opacity[1]]}}, UndirectedEdge[3, 2] -> {EdgeStyle -> {
-                 Directive[
-                  RGBColor[0, 
-                   Rational[2, 3], 0], "Thickness" -> 0.05, 
-                  Opacity[1]]}}}, GraphLayout -> "CircularEmbedding", 
-           VertexLabels -> {
-             Placed[Automatic, Center]}, VertexLabelStyle -> {
-             Directive[Bold, 14]}, VertexSize -> {Medium}, VertexStyle -> {
-             GrayLevel[1]}}]]}, 
-        TagBox[GraphicsGroupBox[{
-           {RGBColor[0, 0, 1], Thickness[Large], Opacity[0.7], 
-            {RGBColor[0, 
-              Rational[2, 3], 0], Thickness[0.05], Opacity[1], 
-             {Arrowheads[0.], 
-              ArrowBox[{{-0.8660254037844389, 
-               0.5000000000000008}, {-0.8660254037844384, \
--0.4999999999999994}}, 0.09999999999999994]}}, 
-            {RGBColor[0, 
-              Rational[2, 3], 0], Thickness[0.05], Opacity[1], 
-             {Arrowheads[0.], 
-              ArrowBox[{{-0.8660254037844389, 0.5000000000000008}, {
-               3.8285686989269494`*^-16, -1.}}, 0.09999999999999994]}}, 
-            {RGBColor[1, 0, 0], 
-             {Arrowheads[0.], 
-              ArrowBox[{{-0.8660254037844389, 0.5000000000000008}, {
-               0.8660254037844389, -0.5000000000000012}}, 
-               0.09999999999999994]}}, 
-            {Arrowheads[0.], 
-             ArrowBox[{{-0.8660254037844389, 0.5000000000000008}, {
-              0.8660254037844386, 0.4999999999999993}}, 0.09999999999999994]}, 
-            {RGBColor[1, 0, 0], 
-             {Arrowheads[0.], 
-              ArrowBox[{{-0.8660254037844389, 0.5000000000000008}, {
-               1.8369701987210297`*^-16, 1.}}, 0.09999999999999994]}}, 
-            {RGBColor[0, 
-              Rational[2, 3], 0], Thickness[0.05], Opacity[1], 
-             {Arrowheads[0.], 
-              ArrowBox[{{-0.8660254037844384, -0.4999999999999994}, {
-               3.8285686989269494`*^-16, -1.}}, 0.09999999999999994]}}, 
-            {Arrowheads[0.], 
-             ArrowBox[{{-0.8660254037844384, -0.4999999999999994}, {
-              0.8660254037844389, -0.5000000000000012}}, 
-              0.09999999999999994]}, 
-            {RGBColor[1, 0, 0], 
-             {Arrowheads[0.], 
-              ArrowBox[{{-0.8660254037844384, -0.4999999999999994}, {
-               0.8660254037844386, 0.4999999999999993}}, 
-               0.09999999999999994]}}, 
-            {Arrowheads[0.], 
-             ArrowBox[{{-0.8660254037844384, -0.4999999999999994}, {
-              1.8369701987210297`*^-16, 1.}}, 0.09999999999999994]}, 
-            {Arrowheads[0.], 
-             ArrowBox[{{3.8285686989269494`*^-16, -1.}, {
-              0.8660254037844389, -0.5000000000000012}}, 
-              0.09999999999999994]}, 
-            {Arrowheads[0.], 
-             ArrowBox[{{3.8285686989269494`*^-16, -1.}, {0.8660254037844386, 
-              0.4999999999999993}}, 0.09999999999999994]}, 
-            {Arrowheads[0.], 
-             ArrowBox[{{3.8285686989269494`*^-16, -1.}, {
-              1.8369701987210297`*^-16, 1.}}, 0.09999999999999994]}, 
-            {Arrowheads[0.], 
-             ArrowBox[{{0.8660254037844389, -0.5000000000000012}, {
-              0.8660254037844386, 0.4999999999999993}}, 0.09999999999999994]}, 
-            {RGBColor[1, 0, 0], 
-             {Arrowheads[0.], 
-              ArrowBox[{{0.8660254037844389, -0.5000000000000012}, {
-               1.8369701987210297`*^-16, 1.}}, 0.09999999999999994]}}, 
-            {RGBColor[1, 0, 0], 
-             {Arrowheads[0.], 
-              ArrowBox[{{0.8660254037844386, 0.4999999999999993}, {
-               1.8369701987210297`*^-16, 1.}}, 0.09999999999999994]}}}, 
-           {GrayLevel[1], Thickness[Large], EdgeForm[{GrayLevel[0], Opacity[
-            0.7]}], {
-             {RGBColor[0, 
-               Rational[2, 3], 0], Thickness[0.05], Opacity[1], 
-              DiskBox[{-0.8660254037844389, 0.5000000000000008}, 
-               0.09999999999999994]}, InsetBox[
-              StyleBox["1",
-               StripOnInput->False,
-               FontSize->14,
-               FontWeight->Bold], {-0.8660254037844389, 0.5000000000000008},
-              BaseStyle->"Graphics"]}, {
-             {RGBColor[0, 
-               Rational[2, 3], 0], Thickness[0.05], Opacity[1], 
-              DiskBox[{-0.8660254037844384, -0.4999999999999994}, 
-               0.09999999999999994]}, InsetBox[
               StyleBox["2",
                StripOnInput->False,
                FontSize->14,
@@ -1627,14 +1271,18 @@ Cell[BoxData[
                FontSize->14,
                FontWeight->Bold], {0.8660254037844389, -0.5000000000000012},
               BaseStyle->"Graphics"]}, {
-             DiskBox[{0.8660254037844386, 0.4999999999999993}, 
-              0.09999999999999994], InsetBox[
+             {RGBColor[0, 
+               Rational[2, 3], 0], Thickness[0.05], Opacity[1], 
+              DiskBox[{0.8660254037844386, 0.4999999999999993}, 
+               0.09999999999999994]}, InsetBox[
               StyleBox["5",
                StripOnInput->False,
                FontSize->14,
                FontWeight->Bold], {0.8660254037844386, 0.4999999999999993},
               BaseStyle->"Graphics"]}, {
-             DiskBox[{1.8369701987210297*^-16, 1.}, 0.09999999999999994], 
+             {RGBColor[0, 
+               Rational[2, 3], 0], Thickness[0.05], Opacity[1], 
+              DiskBox[{1.8369701987210297*^-16, 1.}, 0.09999999999999994]}, 
              InsetBox[
               StyleBox["6",
                StripOnInput->False,
@@ -1645,8 +1293,7 @@ Cell[BoxData[
         AllowKernelInitialization->False]],
       BaseStyle->{
         Directive[
-         RGBColor[0, 0, 1], 
-         Thickness[Large]]},
+         RGBColor[0, 0, 1], Thickness -> 0.02]},
       DefaultBaseStyle->{
        "NetworkGraphics", FrontEnd`GraphicsHighlightColor -> 
         Hue[0.8, 1., 0.6]},
@@ -1663,29 +1310,29 @@ Cell[BoxData[
              3}, {4}, {5}, {6}, {1}, {2}, {4}, {5}, {6}, {1}, {2}, {3}, {5}, {
              6}, {1}, {2}, {3}, {4}, {6}, {1}, {2}, {3}, {4}, {5}}}, 
             Pattern}]}, {BaseStyle -> Directive[
-            RGBColor[0, 0, 1], 
-            Thickness[Large]], 
+            RGBColor[0, 0, 1], Thickness -> 0.02], 
           EdgeStyle -> {
-           UndirectedEdge[4, 1] -> RGBColor[1, 0, 0], UndirectedEdge[6, 4] -> 
-            RGBColor[1, 0, 0], UndirectedEdge[5, 2] -> RGBColor[1, 0, 0], 
-            UndirectedEdge[6, 1] -> RGBColor[1, 0, 0], UndirectedEdge[6, 5] -> 
-            RGBColor[1, 0, 0]}, GraphHighlight -> {
-            UndirectedEdge[4, 1], 1, 
-            UndirectedEdge[6, 1], 6, 
-            UndirectedEdge[6, 4], 4}, 
-          GraphHighlightStyle -> {UndirectedEdge[4, 1] -> {EdgeStyle -> {
+           UndirectedEdge[2, 6] -> RGBColor[1, 0, 0], UndirectedEdge[2, 4] -> 
+            RGBColor[1, 0, 0], UndirectedEdge[4, 5] -> RGBColor[1, 0, 0], 
+            UndirectedEdge[1, 4] -> RGBColor[1, 0, 0], UndirectedEdge[1, 5] -> 
+            RGBColor[1, 0, 0], UndirectedEdge[1, 3] -> RGBColor[1, 0, 0]}, 
+          GraphHighlight -> {
+            UndirectedEdge[1, 4], 1, 
+            UndirectedEdge[4, 5], 4, 
+            UndirectedEdge[1, 5], 5}, 
+          GraphHighlightStyle -> {UndirectedEdge[1, 4] -> {EdgeStyle -> {
+                Directive[
+                 RGBColor[1, 0.5, 0], "Thickness" -> 0.05, 
+                 Opacity[1]]}}, UndirectedEdge[1, 5] -> {EdgeStyle -> {
                 Directive[
                  RGBColor[1, 0.5, 0], "Thickness" -> 0.05, 
                  Opacity[1]]}}, 1 -> {VertexStyle -> {
                 Directive[
                  RGBColor[1, 0.5, 0], "Thickness" -> 0.05, 
-                 Opacity[1]]}}, 
-            UndirectedEdge[6, 1] -> {EdgeStyle -> Directive[
-                RGBColor[1, 0.5, 0], "Thickness" -> 0.05, 
-                Opacity[1]]}, UndirectedEdge[6, 4] -> {EdgeStyle -> {
+                 Opacity[1]]}}, UndirectedEdge[4, 5] -> {EdgeStyle -> {
                 Directive[
                  RGBColor[1, 0.5, 0], "Thickness" -> 0.05, 
-                 Opacity[1]]}}, 6 -> {VertexStyle -> {
+                 Opacity[1]]}}, 5 -> {VertexStyle -> {
                 Directive[
                  RGBColor[1, 0.5, 0], "Thickness" -> 0.05, 
                  Opacity[1]]}}, 4 -> {VertexStyle -> {
@@ -1697,40 +1344,43 @@ Cell[BoxData[
             Directive[Bold, 14]}, VertexSize -> {Medium}, VertexStyle -> {
             GrayLevel[1]}}]]}, 
        TagBox[GraphicsGroupBox[{
-          {RGBColor[0, 0, 1], Thickness[Large], Opacity[0.7], 
+          {RGBColor[0, 0, 1], Thickness[0.02], Opacity[0.7], 
            {Arrowheads[0.], 
             ArrowBox[{{-0.8660254037844389, 
              0.5000000000000008}, {-0.8660254037844384, -0.4999999999999994}},
               0.09999999999999994]}, 
-           {Arrowheads[0.], 
-            ArrowBox[{{-0.8660254037844389, 0.5000000000000008}, {
-             3.8285686989269494`*^-16, -1.}}, 0.09999999999999994]}, 
+           {RGBColor[1, 0, 0], 
+            {Arrowheads[0.], 
+             ArrowBox[{{-0.8660254037844389, 0.5000000000000008}, {
+              3.8285686989269494`*^-16, -1.}}, 0.09999999999999994]}}, 
            {RGBColor[1, 0.5, 0], Thickness[0.05], Opacity[1], 
             {Arrowheads[0.], 
              ArrowBox[{{-0.8660254037844389, 0.5000000000000008}, {
               0.8660254037844389, -0.5000000000000012}}, 
               0.09999999999999994]}}, 
-           {Arrowheads[0.], 
-            ArrowBox[{{-0.8660254037844389, 0.5000000000000008}, {
-             0.8660254037844386, 0.4999999999999993}}, 0.09999999999999994]}, 
            {RGBColor[1, 0.5, 0], Thickness[0.05], Opacity[1], 
             {Arrowheads[0.], 
              ArrowBox[{{-0.8660254037844389, 0.5000000000000008}, {
-              1.8369701987210297`*^-16, 1.}}, 0.09999999999999994]}}, 
-           {Arrowheads[0.], 
-            ArrowBox[{{-0.8660254037844384, -0.4999999999999994}, {
-             3.8285686989269494`*^-16, -1.}}, 0.09999999999999994]}, 
-           {Arrowheads[0.], 
-            ArrowBox[{{-0.8660254037844384, -0.4999999999999994}, {
-             0.8660254037844389, -0.5000000000000012}}, 0.09999999999999994]}, 
-           {RGBColor[1, 0, 0], 
-            {Arrowheads[0.], 
-             ArrowBox[{{-0.8660254037844384, -0.4999999999999994}, {
               0.8660254037844386, 0.4999999999999993}}, 
               0.09999999999999994]}}, 
            {Arrowheads[0.], 
-            ArrowBox[{{-0.8660254037844384, -0.4999999999999994}, {
+            ArrowBox[{{-0.8660254037844389, 0.5000000000000008}, {
              1.8369701987210297`*^-16, 1.}}, 0.09999999999999994]}, 
+           {Arrowheads[0.], 
+            ArrowBox[{{-0.8660254037844384, -0.4999999999999994}, {
+             3.8285686989269494`*^-16, -1.}}, 0.09999999999999994]}, 
+           {RGBColor[1, 0, 0], 
+            {Arrowheads[0.], 
+             ArrowBox[{{-0.8660254037844384, -0.4999999999999994}, {
+              0.8660254037844389, -0.5000000000000012}}, 
+              0.09999999999999994]}}, 
+           {Arrowheads[0.], 
+            ArrowBox[{{-0.8660254037844384, -0.4999999999999994}, {
+             0.8660254037844386, 0.4999999999999993}}, 0.09999999999999994]}, 
+           {RGBColor[1, 0, 0], 
+            {Arrowheads[0.], 
+             ArrowBox[{{-0.8660254037844384, -0.4999999999999994}, {
+              1.8369701987210297`*^-16, 1.}}, 0.09999999999999994]}}, 
            {Arrowheads[0.], 
             ArrowBox[{{3.8285686989269494`*^-16, -1.}, {
              0.8660254037844389, -0.5000000000000012}}, 0.09999999999999994]}, 
@@ -1740,18 +1390,18 @@ Cell[BoxData[
            {Arrowheads[0.], 
             ArrowBox[{{3.8285686989269494`*^-16, -1.}, {
              1.8369701987210297`*^-16, 1.}}, 0.09999999999999994]}, 
-           {Arrowheads[0.], 
-            ArrowBox[{{0.8660254037844389, -0.5000000000000012}, {
-             0.8660254037844386, 0.4999999999999993}}, 0.09999999999999994]}, 
            {RGBColor[1, 0.5, 0], Thickness[0.05], Opacity[1], 
             {Arrowheads[0.], 
              ArrowBox[{{0.8660254037844389, -0.5000000000000012}, {
-              1.8369701987210297`*^-16, 1.}}, 0.09999999999999994]}}, 
-           {RGBColor[1, 0, 0], 
-            {Arrowheads[0.], 
-             ArrowBox[{{0.8660254037844386, 0.4999999999999993}, {
-              1.8369701987210297`*^-16, 1.}}, 0.09999999999999994]}}}, 
-          {GrayLevel[1], Thickness[Large], EdgeForm[{GrayLevel[0], Opacity[
+              0.8660254037844386, 0.4999999999999993}}, 
+              0.09999999999999994]}}, 
+           {Arrowheads[0.], 
+            ArrowBox[{{0.8660254037844389, -0.5000000000000012}, {
+             1.8369701987210297`*^-16, 1.}}, 0.09999999999999994]}, 
+           {Arrowheads[0.], 
+            ArrowBox[{{0.8660254037844386, 0.4999999999999993}, {
+             1.8369701987210297`*^-16, 1.}}, 0.09999999999999994]}}, 
+          {GrayLevel[1], Thickness[0.02], EdgeForm[{GrayLevel[0], Opacity[
            0.7]}], {
             {RGBColor[1, 0.5, 0], Thickness[0.05], Opacity[1], 
              DiskBox[{-0.8660254037844389, 0.5000000000000008}, 
@@ -1783,15 +1433,15 @@ Cell[BoxData[
               FontSize->14,
               FontWeight->Bold], {0.8660254037844389, -0.5000000000000012},
              BaseStyle->"Graphics"]}, {
-            DiskBox[{0.8660254037844386, 0.4999999999999993}, 
-             0.09999999999999994], InsetBox[
+            {RGBColor[1, 0.5, 0], Thickness[0.05], Opacity[1], 
+             DiskBox[{0.8660254037844386, 0.4999999999999993}, 
+              0.09999999999999994]}, InsetBox[
              StyleBox["5",
               StripOnInput->False,
               FontSize->14,
               FontWeight->Bold], {0.8660254037844386, 0.4999999999999993},
              BaseStyle->"Graphics"]}, {
-            {RGBColor[1, 0.5, 0], Thickness[0.05], Opacity[1], 
-             DiskBox[{1.8369701987210297*^-16, 1.}, 0.09999999999999994]}, 
+            DiskBox[{1.8369701987210297*^-16, 1.}, 0.09999999999999994], 
             InsetBox[
              StyleBox["6",
               StripOnInput->False,
@@ -1802,8 +1452,7 @@ Cell[BoxData[
        AllowKernelInitialization->False]],
      BaseStyle->{
        Directive[
-        RGBColor[0, 0, 1], 
-        Thickness[Large]]},
+        RGBColor[0, 0, 1], Thickness -> 0.02]},
      DefaultBaseStyle->{
       "NetworkGraphics", FrontEnd`GraphicsHighlightColor -> Hue[0.8, 1., 0.6]},
      FormatType->TraditionalForm,
@@ -1811,10 +1460,10 @@ Cell[BoxData[
  CellChangeTimes->{{3.707050634780266*^9, 3.707050657369094*^9}, 
    3.707050853472035*^9, {3.707067221483737*^9, 3.707067226619562*^9}, {
    3.7070678082965803`*^9, 3.707067836509112*^9}, 3.707147718850224*^9, 
-   3.707174320583387*^9},
+   3.707174320583387*^9, 3.707236815597541*^9, 3.7072368846287746`*^9},
  CellLabel->
-  "6/22/17 22:38:40 \
-Out[105]=",ExpressionUUID->"96691011-95cb-4b35-a31f-5b2ea13bd62b"]
+  "6/23/17 16:01:24 \
+Out[399]=",ExpressionUUID->"beaa35fb-da4c-4c1e-8060-3f9cfc2db44f"]
 }, Open  ]],
 
 Cell["\<\
@@ -1906,46 +1555,39 @@ Cell[CellGroupData[{
 
 Cell[BoxData[
  RowBox[{"allEdges6", " ", "=", " ", 
-  RowBox[{"Flatten", "[", " ", 
-   RowBox[{"Table", "[", " ", 
-    RowBox[{
-     RowBox[{"j", " ", "\[UndirectedEdge]", " ", "i"}], ",", " ", 
-     RowBox[{"{", 
-      RowBox[{"i", ",", " ", "1", ",", " ", "6"}], "}"}], ",", " ", 
-     RowBox[{"{", 
-      RowBox[{"j", ",", " ", "1", ",", " ", 
-       RowBox[{"i", " ", "-", " ", "1"}]}], "}"}]}], " ", "]"}], " ", 
-   "]"}]}]], "Code",
+  RowBox[{"EdgeList", "[", " ", 
+   RowBox[{"CompleteGraph", "[", "6", "]"}], " ", "]"}]}]], "Code",
  CellChangeTimes->{{3.7070412083550386`*^9, 3.707041219876152*^9}, {
-  3.7070446903747797`*^9, 3.707044692857992*^9}, {3.707052193399555*^9, 
-  3.707052215870995*^9}},
+   3.7070446903747797`*^9, 3.707044692857992*^9}, {3.707052193399555*^9, 
+   3.707052215870995*^9}, 3.707236896661038*^9},
  CellLabel->
-  "6/22/17 22:38:40 \
-In[106]:=",ExpressionUUID->"074d2195-44ea-4a98-9fb2-f96ae280697c"],
+  "6/23/17 16:01:38 \
+In[400]:=",ExpressionUUID->"074d2195-44ea-4a98-9fb2-f96ae280697c"],
 
 Cell[BoxData[
  RowBox[{"{", 
   RowBox[{
    RowBox[{"1", "\[UndirectedEdge]", "2"}], ",", 
    RowBox[{"1", "\[UndirectedEdge]", "3"}], ",", 
-   RowBox[{"2", "\[UndirectedEdge]", "3"}], ",", 
    RowBox[{"1", "\[UndirectedEdge]", "4"}], ",", 
-   RowBox[{"2", "\[UndirectedEdge]", "4"}], ",", 
-   RowBox[{"3", "\[UndirectedEdge]", "4"}], ",", 
    RowBox[{"1", "\[UndirectedEdge]", "5"}], ",", 
-   RowBox[{"2", "\[UndirectedEdge]", "5"}], ",", 
-   RowBox[{"3", "\[UndirectedEdge]", "5"}], ",", 
-   RowBox[{"4", "\[UndirectedEdge]", "5"}], ",", 
    RowBox[{"1", "\[UndirectedEdge]", "6"}], ",", 
+   RowBox[{"2", "\[UndirectedEdge]", "3"}], ",", 
+   RowBox[{"2", "\[UndirectedEdge]", "4"}], ",", 
+   RowBox[{"2", "\[UndirectedEdge]", "5"}], ",", 
    RowBox[{"2", "\[UndirectedEdge]", "6"}], ",", 
+   RowBox[{"3", "\[UndirectedEdge]", "4"}], ",", 
+   RowBox[{"3", "\[UndirectedEdge]", "5"}], ",", 
    RowBox[{"3", "\[UndirectedEdge]", "6"}], ",", 
+   RowBox[{"4", "\[UndirectedEdge]", "5"}], ",", 
    RowBox[{"4", "\[UndirectedEdge]", "6"}], ",", 
    RowBox[{"5", "\[UndirectedEdge]", "6"}]}], "}"}]], "Output",
  CellChangeTimes->{{3.7070672219288673`*^9, 3.707067228094225*^9}, 
-   3.707147719164453*^9, 3.707174320849029*^9},
+   3.707147719164453*^9, 3.707174320849029*^9, 3.707236815849951*^9, 
+   3.707236898424203*^9},
  CellLabel->
-  "6/22/17 22:38:40 \
-Out[106]=",ExpressionUUID->"c5e543d1-163f-4c26-8678-e934d333d5a8"]
+  "6/23/17 16:01:38 \
+Out[400]=",ExpressionUUID->"a6d75b6f-82d9-4783-9c06-f6949e47215a"]
 }, Open  ]],
 
 Cell["\<\
@@ -2072,8 +1714,8 @@ Cell[BoxData[{
    3.7071493276362553`*^9}, {3.707149443328623*^9, 3.707149479678945*^9}, 
    3.7071503683939457`*^9},
  CellLabel->
-  "6/22/17 22:38:41 \
-In[107]:=",ExpressionUUID->"003b151d-a21b-4005-bb1b-486dca5a532c"],
+  "6/23/17 16:01:53 \
+In[401]:=",ExpressionUUID->"003b151d-a21b-4005-bb1b-486dca5a532c"],
 
 Cell[BoxData[
  DynamicModuleBox[{$CellContext`r$$ = {}}, 
@@ -2286,10 +1928,11 @@ Cell[BoxData[
   3.707148143879088*^9, 3.7071482375235653`*^9, 3.707148300052894*^9, 
    3.707148467531052*^9, 3.7071488912937737`*^9, 3.707149002497458*^9, 
    3.707149274371894*^9, 3.707149334770356*^9, {3.707149452713789*^9, 
-   3.707149480878564*^9}, 3.7071743212881002`*^9},
+   3.707149480878564*^9}, 3.7071743212881002`*^9, 3.707236816110218*^9, 
+   3.707236913834806*^9},
  CellLabel->
-  "6/22/17 22:38:41 \
-Out[108]=",ExpressionUUID->"fb7c289f-3144-4db8-8fa8-9c3b18c3f234"]
+  "6/23/17 16:01:53 \
+Out[402]=",ExpressionUUID->"cd33b030-bf70-4e88-9b97-a11dac59c6c5"]
 }, Open  ]],
 
 Cell[TextData[{
@@ -2380,8 +2023,8 @@ Cell[BoxData[
   "]"}]], "Code",
  CellChangeTimes->{{3.7071742634134283`*^9, 3.707174362933092*^9}},
  CellLabel->
-  "6/22/17 22:39:23 \
-In[113]:=",ExpressionUUID->"464d6f82-308e-4e5e-8680-e492b79ef898"],
+  "6/23/17 16:00:16 \
+In[395]:=",ExpressionUUID->"464d6f82-308e-4e5e-8680-e492b79ef898"],
 
 Cell[BoxData[
  GraphicsBox[
@@ -2489,10 +2132,11 @@ Cell[BoxData[
    "NetworkGraphics", FrontEnd`GraphicsHighlightColor -> Hue[0.8, 1., 0.6]},
   FormatType->TraditionalForm,
   FrameTicks->None]], "Output",
- CellChangeTimes->{{3.707174336121871*^9, 3.70717436380599*^9}},
+ CellChangeTimes->{{3.707174336121871*^9, 3.70717436380599*^9}, 
+   3.707236816597096*^9},
  CellLabel->
-  "6/22/17 22:39:23 \
-Out[113]=",ExpressionUUID->"e84f9f68-ccb1-4fc6-9787-918bf3b5c9da"]
+  "6/23/17 16:00:16 \
+Out[395]=",ExpressionUUID->"1571f3dd-4c35-4fb7-acae-f40761bb1ee4"]
 }, Open  ]],
 
 Cell[TextData[{
@@ -2760,120 +2404,120 @@ Cell[2762, 74, 544, 7, 39, "Direction", "ExpressionUUID" -> \
 Cell[CellGroupData[{
 Cell[3331, 85, 824, 15, 79, "Code", "ExpressionUUID" -> \
 "946b7b79-9e78-4152-8981-1a2f46115509"],
-Cell[4158, 102, 7753, 148, 292, "Output", "ExpressionUUID" -> \
-"ba5f1857-e693-4110-9990-6cdf63be5b87"]
+Cell[4158, 102, 7775, 148, 292, "Output", "ExpressionUUID" -> \
+"7d953e55-805c-4786-be66-2050bae112b9"]
 }, Open  ]],
-Cell[11926, 253, 851, 18, 74, "Text", "ExpressionUUID" -> \
+Cell[11948, 253, 851, 18, 74, "Text", "ExpressionUUID" -> \
 "502d1db0-82d1-4b31-af91-03c5cae1628e"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[12814, 276, 418, 6, 78, "Section", "ExpressionUUID" -> \
+Cell[12836, 276, 418, 6, 78, "Section", "ExpressionUUID" -> \
 "f30ea53f-deff-444d-974a-28c8c2f3a895"],
-Cell[13235, 284, 1411, 35, 136, "Text", "ExpressionUUID" -> \
+Cell[13257, 284, 1411, 35, 136, "Text", "ExpressionUUID" -> \
 "502d1db0-82d1-4b31-af91-03c5cae1628e"],
-Cell[14649, 321, 595, 8, 39, "Direction", "ExpressionUUID" -> \
+Cell[14671, 321, 595, 8, 39, "Direction", "ExpressionUUID" -> \
 "f91531d9-7ef2-4f97-9564-efa3c23c39ac"],
 Cell[CellGroupData[{
-Cell[15269, 333, 2318, 41, 79, "Code", "ExpressionUUID" -> \
+Cell[15291, 333, 2069, 34, 79, "Code", "ExpressionUUID" -> \
 "d057c521-272f-4b8a-aef7-d6a84f40367c"],
-Cell[17590, 376, 670, 15, 54, "Output", "ExpressionUUID" -> \
-"315ef08b-f5e6-4526-82cd-de7162a31896"]
+Cell[17363, 369, 720, 16, 54, "Output", "ExpressionUUID" -> \
+"a641356f-b910-4763-b284-ce81f0109e64"]
 }, Open  ]],
-Cell[18275, 394, 613, 10, 39, "Direction", "ExpressionUUID" -> \
+Cell[18098, 388, 611, 10, 39, "Direction", "ExpressionUUID" -> \
 "f91531d9-7ef2-4f97-9564-efa3c23c39ac"],
 Cell[CellGroupData[{
-Cell[18913, 408, 2234, 38, 79, "Code", "ExpressionUUID" -> \
+Cell[18734, 402, 1960, 31, 79, "Code", "ExpressionUUID" -> \
 "6bbad41b-48e4-4314-b43d-a095201dfe96"],
-Cell[21150, 448, 815, 18, 54, "Output", "ExpressionUUID" -> \
-"a6d37562-43a4-4e38-abe0-ec1bd619d4bd"]
+Cell[20697, 435, 813, 18, 54, "Output", "ExpressionUUID" -> \
+"385aba3d-ccb3-48ed-84cf-af74ee3b6df0"]
 }, Open  ]],
-Cell[21980, 469, 662, 10, 39, "Direction", "ExpressionUUID" -> \
+Cell[21525, 456, 662, 10, 39, "Direction", "ExpressionUUID" -> \
 "f91531d9-7ef2-4f97-9564-efa3c23c39ac"],
 Cell[CellGroupData[{
-Cell[22667, 483, 2881, 52, 248, "Code", "ExpressionUUID" -> \
+Cell[22212, 470, 2881, 52, 248, "Code", "ExpressionUUID" -> \
 "2490feb8-2891-41b9-9551-d756035b177b"],
-Cell[25551, 537, 6892, 142, 473, "Output", "ExpressionUUID" -> \
-"74ac1fa3-87f7-4da2-8e61-f8f65c84b119"]
+Cell[25096, 524, 7024, 145, 473, "Output", "ExpressionUUID" -> \
+"15cce506-d7c0-4985-bdaf-a3538088ce29"]
 }, Open  ]],
-Cell[32458, 682, 133, 2, 54, "Input", "ExpressionUUID" -> \
+Cell[32135, 672, 133, 2, 54, "Input", "ExpressionUUID" -> \
 "cbba33d8-0ebf-4624-a612-0473ac84bb9b"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[32628, 689, 106, 1, 78, "Section", "ExpressionUUID" -> \
+Cell[32305, 679, 106, 1, 78, "Section", "ExpressionUUID" -> \
 "0e35401b-c3b4-4870-8438-98aaa3e6fe33"],
-Cell[32737, 692, 529, 14, 86, "Text", "ExpressionUUID" -> \
+Cell[32414, 682, 529, 14, 86, "Text", "ExpressionUUID" -> \
 "b733c66a-5b65-471c-b408-3b1c9676bc5c"],
-Cell[33269, 708, 690, 9, 39, "Direction", "ExpressionUUID" -> \
+Cell[32946, 698, 690, 9, 39, "Direction", "ExpressionUUID" -> \
 "f91531d9-7ef2-4f97-9564-efa3c23c39ac"],
 Cell[CellGroupData[{
-Cell[33984, 721, 2722, 60, 560, "Code", "ExpressionUUID" -> \
+Cell[33661, 711, 2722, 60, 560, "Code", "ExpressionUUID" -> \
 "ad5418f1-950d-451a-a7ff-d5bc176feedf"],
-Cell[36709, 783, 49159, 1033, 584, "Output", "ExpressionUUID" -> \
-"96691011-95cb-4b35-a31f-5b2ea13bd62b"]
+Cell[36386, 773, 33118, 692, 289, "Output", "ExpressionUUID" -> \
+"beaa35fb-da4c-4c1e-8060-3f9cfc2db44f"]
 }, Open  ]],
-Cell[85883, 1819, 621, 11, 133, "Text", "ExpressionUUID" -> \
+Cell[69519, 1468, 621, 11, 133, "Text", "ExpressionUUID" -> \
 "6227a837-2b01-4595-b9d3-2a2d5c2a4ec2"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[86541, 1835, 190, 2, 78, "Section", "ExpressionUUID" -> \
+Cell[70177, 1484, 190, 2, 78, "Section", "ExpressionUUID" -> \
 "a5b8c4c9-50ae-4e35-9928-96eb28196fe7"],
-Cell[86734, 1839, 888, 19, 133, "Text", "ExpressionUUID" -> \
+Cell[70370, 1488, 888, 19, 133, "Text", "ExpressionUUID" -> \
 "35c81488-4ca6-4420-981f-78cf9c7d07de"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[87659, 1863, 99, 1, 78, "Section", "ExpressionUUID" -> \
+Cell[71295, 1512, 99, 1, 78, "Section", "ExpressionUUID" -> \
 "7383c545-6c0a-4deb-bf71-93e8df763f52"],
-Cell[87761, 1866, 808, 19, 113, "Text", "ExpressionUUID" -> \
+Cell[71397, 1515, 808, 19, 113, "Text", "ExpressionUUID" -> \
 "d2e8940e-41b1-418c-9ce5-d6ca39c2ae5b"],
-Cell[88572, 1887, 692, 15, 40, "Direction", "ExpressionUUID" -> \
+Cell[72208, 1536, 692, 15, 40, "Direction", "ExpressionUUID" -> \
 "f91531d9-7ef2-4f97-9564-efa3c23c39ac"],
 Cell[CellGroupData[{
-Cell[89289, 1906, 708, 17, 79, "Code", "ExpressionUUID" -> \
+Cell[72925, 1555, 446, 9, 79, "Code", "ExpressionUUID" -> \
 "074d2195-44ea-4a98-9fb2-f96ae280697c"],
-Cell[90000, 1925, 1021, 22, 54, "Output", "ExpressionUUID" -> \
-"c5e543d1-163f-4c26-8678-e934d333d5a8"]
+Cell[73374, 1566, 1069, 23, 54, "Output", "ExpressionUUID" -> \
+"a6d75b6f-82d9-4783-9c06-f6949e47215a"]
 }, Open  ]],
-Cell[91036, 1950, 312, 5, 62, "Text", "ExpressionUUID" -> \
+Cell[74458, 1592, 312, 5, 62, "Text", "ExpressionUUID" -> \
 "7d958bdc-8265-4bbd-be4d-4bd390d44f8e"],
-Cell[91351, 1957, 691, 15, 40, "Direction", "ExpressionUUID" -> \
+Cell[74773, 1599, 691, 15, 40, "Direction", "ExpressionUUID" -> \
 "f91531d9-7ef2-4f97-9564-efa3c23c39ac"],
 Cell[CellGroupData[{
-Cell[92067, 1976, 4850, 99, 608, "Code", "ExpressionUUID" -> \
+Cell[75489, 1618, 4850, 99, 608, "Code", "ExpressionUUID" -> \
 "003b151d-a21b-4005-bb1b-486dca5a532c"],
-Cell[96920, 2077, 10092, 214, 544, "Output", "ExpressionUUID" -> \
-"fb7c289f-3144-4db8-8fa8-9c3b18c3f234"]
+Cell[80342, 1719, 10140, 215, 544, "Output", "ExpressionUUID" -> \
+"cd33b030-bf70-4e88-9b97-a11dac59c6c5"]
 }, Open  ]],
-Cell[107027, 2294, 973, 28, 117, "Text", "ExpressionUUID" -> \
+Cell[90497, 1937, 973, 28, 113, "Text", "ExpressionUUID" -> \
 "e531f165-f663-4af7-be98-7befe44bf72f"],
-Cell[108003, 2324, 824, 18, 40, "Direction", "ExpressionUUID" -> \
+Cell[91473, 1967, 824, 18, 40, "Direction", "ExpressionUUID" -> \
 "caa511dc-806f-424f-8a2b-c6dbe3bc2365"],
 Cell[CellGroupData[{
-Cell[108852, 2346, 1639, 37, 248, "Code", "ExpressionUUID" -> \
+Cell[92322, 1989, 1639, 37, 248, "Code", "ExpressionUUID" -> \
 "464d6f82-308e-4e5e-8680-e492b79ef898"],
-Cell[110494, 2385, 4896, 109, 464, "Output", "ExpressionUUID" -> \
-"e84f9f68-ccb1-4fc6-9787-918bf3b5c9da"]
+Cell[93964, 2028, 4922, 110, 464, "Output", "ExpressionUUID" -> \
+"1571f3dd-4c35-4fb7-acae-f40761bb1ee4"]
 }, Open  ]],
-Cell[115405, 2497, 658, 23, 38, "Text", "ExpressionUUID" -> \
+Cell[98901, 2141, 658, 23, 38, "Text", "ExpressionUUID" -> \
 "e7fc6415-ca6c-4edd-ad18-5dec5119ac7f"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[116100, 2525, 177, 3, 78, "Section", "ExpressionUUID" -> \
+Cell[99596, 2169, 177, 3, 78, "Section", "ExpressionUUID" -> \
 "e28e25cd-c682-446a-bb64-37e067e8457f"],
-Cell[116280, 2530, 2074, 39, 379, "Text", "ExpressionUUID" -> \
+Cell[99776, 2174, 2074, 39, 379, "Text", "ExpressionUUID" -> \
 "f3fb1a8f-86c1-476a-b191-dca640589604"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[118391, 2574, 179, 3, 74, "AuthorshipSection", "ExpressionUUID" -> \
+Cell[101887, 2218, 179, 3, 74, "AuthorshipSection", "ExpressionUUID" -> \
 "42680d10-3d1a-461c-afab-eec165779504"],
-Cell[118573, 2579, 220, 4, 30, "Authorship", "ExpressionUUID" -> \
+Cell[102069, 2223, 220, 4, 30, "Authorship", "ExpressionUUID" -> \
 "5102885a-34eb-44ab-80db-aa3710dbd08a"],
-Cell[118796, 2585, 211, 4, 30, "Authorship", "ExpressionUUID" -> \
+Cell[102292, 2229, 211, 4, 30, "Authorship", "ExpressionUUID" -> \
 "a955aad8-c1c5-41e7-ad9b-f592f4a82734"],
-Cell[119010, 2591, 234, 4, 30, "Authorship", "ExpressionUUID" -> \
+Cell[102506, 2235, 234, 4, 30, "Authorship", "ExpressionUUID" -> \
 "31ae3bf8-c288-4b0b-bca6-5f0155809418"],
-Cell[119247, 2597, 98, 1, 32, "FurtherExploration", "ExpressionUUID" -> \
+Cell[102743, 2241, 98, 1, 32, "FurtherExploration", "ExpressionUUID" -> \
 "52e9205f-3066-4eb6-9edd-0ff34db93e67"],
-Cell[119348, 2600, 95, 1, 32, "FurtherExploration", "ExpressionUUID" -> \
+Cell[102844, 2244, 95, 1, 32, "FurtherExploration", "ExpressionUUID" -> \
 "4c9f7675-eb3b-4c43-aad6-1a04cf3eeae5"]
 }, Open  ]]
 }, Open  ]]
