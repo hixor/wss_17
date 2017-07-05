@@ -1,0 +1,752 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     27877,        744]
+NotebookOptionsPosition[     25415,        682]
+NotebookOutlinePosition[     25793,        699]
+CellTagsIndexPosition[     25750,        696]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["CIFAR-10 AWS Script", "Title",ExpressionUUID->"981f2251-15d3-4002-b070-b05bc6e69103"],
+
+Cell[CellGroupData[{
+
+Cell["Data import", "Subsection",ExpressionUUID->"5f66fbda-b7e9-4d54-822c-01dc71de7b17"],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"cifar", " ", "=", " ", 
+   RowBox[{"ResourceObject", "[", "\"\<CIFAR-10\>\"", "]"}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"train", " ", "=", " ", 
+   RowBox[{"ResourceData", "[", 
+    RowBox[{"cifar", ",", " ", "\"\<TrainingData\>\""}], "]"}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"test", " ", "=", " ", 
+   RowBox[{"ResourceData", "[", 
+    RowBox[{"cifar", ",", " ", "\"\<TestData\>\""}], "]"}]}], ";"}]}], "Code",\
+ExpressionUUID->"82913d55-9d6b-40a7-828a-5f9ef7c63d13"],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"trainRand", " ", "=", " ", 
+   RowBox[{"RandomSample", "[", "train", "]"}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"trainingSet", " ", "=", " ", 
+   RowBox[{"trainRand", "[", 
+    RowBox[{"[", " ", 
+     RowBox[{";;", " ", "45000"}], "]"}], "]"}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"validationSet", " ", "=", " ", 
+   RowBox[{"trainRand", "[", 
+    RowBox[{"[", 
+     RowBox[{"45001", " ", ";;"}], " ", "]"}], "]"}]}], ";"}]}], "Code",Expres\
+sionUUID->"85c3e071-c11c-4718-9ef0-4af280d0fe6a"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"classes", " ", "=", " ", 
+  RowBox[{"Union", "@", 
+   RowBox[{"Values", "[", "train", "]"}]}]}]], "Code",ExpressionUUID->\
+"473b2fa3-c9c9-414b-b02c-8afe569aff5a"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"\<\"airplane\"\>", ",", "\<\"automobile\"\>", ",", "\<\"bird\"\>", 
+   ",", "\<\"cat\"\>", ",", "\<\"deer\"\>", ",", "\<\"dog\"\>", 
+   ",", "\<\"frog\"\>", ",", "\<\"horse\"\>", ",", "\<\"ship\"\>", 
+   ",", "\<\"truck\"\>"}], "}"}]], "Output",ExpressionUUID->"554ddea8-dfee-\
+4770-9c97-3747b65234be"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"lenet", " ", "=", " ", 
+  RowBox[{"NetChain", "[", 
+   RowBox[{
+    RowBox[{"{", "\n", "\t\t\t", 
+     RowBox[{
+      RowBox[{"ConvolutionLayer", "[", 
+       RowBox[{"20", ",", " ", "5"}], "]"}], ",", " ", "\n", "\t\t\t", "Ramp",
+       ",", " ", "\n", "\t\t\t", 
+      RowBox[{"PoolingLayer", "[", 
+       RowBox[{"2", ",", " ", "2"}], "]"}], ",", " ", "\n", "\t\t\t", 
+      RowBox[{"ConvolutionLayer", "[", 
+       RowBox[{"50", ",", " ", "5"}], "]"}], ",", " ", "\n", "\t\t\t", "Ramp",
+       ",", " ", "\n", "\t\t\t", 
+      RowBox[{"PoolingLayer", "[", 
+       RowBox[{"2", ",", " ", "2"}], "]"}], ",", " ", "\n", "\t\t\t", 
+      RowBox[{"FlattenLayer", "[", "]"}], ",", " ", "\n", "\t\t\t", "500", 
+      ",", " ", "\n", "\t\t\t", "Ramp", ",", " ", "\n", "\t\t\t", "10", ",", 
+      " ", 
+      RowBox[{"SoftmaxLayer", "[", "]"}]}], "\n", "\t\t", "}"}], ",", " ", 
+    "\n", "\t\t", 
+    RowBox[{"\"\<Output\>\"", " ", "\[Rule]", " ", 
+     RowBox[{"NetDecoder", "[", 
+      RowBox[{"{", 
+       RowBox[{"\"\<Class\>\"", ",", " ", "classes"}], "}"}], "]"}]}], ",", 
+    " ", "\n", "\t\t", 
+    RowBox[{"\"\<Input\>\"", " ", "->", " ", 
+     RowBox[{"NetEncoder", "[", 
+      RowBox[{"{", 
+       RowBox[{"\"\<Image\>\"", ",", " ", 
+        RowBox[{"{", 
+         RowBox[{"32", ",", " ", "32"}], "}"}]}], "}"}], "]"}]}]}], " ", "\n",
+    "\t", "]"}]}]], "Code",ExpressionUUID->"f4b44391-9b98-4952-8447-\
+f93eb7afa77e"],
+
+Cell[BoxData[
+ RowBox[{"weightLayers", " ", "=", " ", 
+  RowBox[{"{", 
+   RowBox[{"1", ",", "4", ",", "8", ",", "10"}], "}"}]}]], "Code",ExpressionUU\
+ID->"0af7e186-1c0d-43e8-8fde-e7fc4dbc5f3d"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", " ", 
+   RowBox[{
+    RowBox[{
+    "Defining", " ", "a", " ", "log", " ", "to", " ", "record", " ", 
+     "weights"}], ",", " ", 
+    RowBox[{
+    "gradients", " ", "and", " ", "batch", " ", "loss", " ", "at", " ", 
+     "training", " ", 
+     RowBox[{"checkpoints", "."}]}]}], " ", "*)"}], "\n", 
+  RowBox[{
+   RowBox[{"logFiles", " ", "=", " ", 
+    RowBox[{"Table", "[", 
+     RowBox[{
+      RowBox[{"CreateFile", "[", "]"}], ",", " ", "10"}], "]"}]}], 
+   ";"}]}]], "Code",ExpressionUUID->"f90617e8-7750-4e41-a470-f5b71006254d"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"appendToLog", "[", "n_", "]"}], " ", ":=", " ", 
+  RowBox[{
+   RowBox[{"PutAppend", "[", " ", "\n", "\t\t\t\t\t", 
+    RowBox[{
+     RowBox[{"<|", 
+      RowBox[{
+       RowBox[{"\"\<Weights\>\"", " ", "\[Rule]", " ", "#Weights"}], ",", 
+       "\n", "\t\t\t\t\t", 
+       RowBox[{"\"\<Gradients\>\"", " ", "\[Rule]", " ", "#Gradients"}], ",", 
+       " ", "\n", "\t\t\t\t\t", 
+       RowBox[{"\"\<BatchLoss\>\"", " ", "\[Rule]", " ", "#BatchLoss"}], ",", 
+       "\n", "\t\t\t\t\t", 
+       RowBox[{
+       "\"\<ValidationLoss\>\"", " ", "\[Rule]", " ", "#ValidationLoss"}]}], 
+      "|>"}], ",", " ", "\n", "\t\t\t\t", 
+     RowBox[{"logFiles", "[", 
+      RowBox[{"[", "n", "]"}], "]"}]}], " ", "]"}], "&"}]}]], "Code",Expressio\
+nUUID->"ca58cbf7-440b-4f9c-85d1-55bcbb43fd35"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"net", " ", "=", " ", 
+   RowBox[{"NetInitialize", "[", "\n", "\t\t", 
+    RowBox[{"Fold", "[", "\n", "\t\t\t", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"NetReplacePart", "[", 
+        RowBox[{"#", ",", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{"#2", ",", "\"\<Weights\>\""}], "}"}], " ", "\[Rule]", " ",
+           "Automatic"}]}], "]"}], "&"}], ",", "\n", "\t\t\t", "lenet", ",", 
+      "\n", "\t\t\t", "weightLayers"}], "\n", "\t\t", "]"}], "\n", "\t", 
+    "]"}]}], ";"}]], "Code",ExpressionUUID->"47a14b47-f22a-4c2b-9a79-\
+38f0b3cc473a"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", " ", 
+   RowBox[{"Freeze", " ", "both", " ", 
+    RowBox[{"conv", ".", " ", "layers", "."}]}], " ", "*)"}], "\n", 
+  RowBox[{
+   RowBox[{"net1", " ", "=", " ", "\n", "\t", 
+    RowBox[{"NetTrain", "[", "\n", "\t\t", 
+     RowBox[{"net", ",", "\n", "\t\t", "trainingSet", ",", "\n", "\t\t", 
+      RowBox[{"ValidationSet", " ", "\[Rule]", " ", "validationSet"}], ",", 
+      "\n", "\t\t", 
+      StyleBox[
+       RowBox[{"MaxTrainingRounds", " ", "\[Rule]", " ", "150"}], "Code"], 
+      StyleBox[",", "Code"], 
+      StyleBox["\n", "Code"], 
+      StyleBox["\t\t", "Code"], 
+      StyleBox[
+       RowBox[{"BatchSize", " ", "\[Rule]", " ", "100"}], "Code"], 
+      StyleBox[",", "Code"], 
+      StyleBox["\n", "Code"], 
+      StyleBox["\t\t", "Code"], 
+      RowBox[{
+       StyleBox["TrainingProgressFunction", "Code"], 
+       StyleBox[" ", "Code"], 
+       StyleBox["\[Rule]", "Code"], 
+       StyleBox[" ", "Code"], 
+       RowBox[{
+        StyleBox["{", "Code"], 
+        RowBox[{
+         StyleBox[
+          RowBox[{"appendToLog", "[", "1", "]"}], "Code"], 
+         StyleBox[",", "Code"], 
+         StyleBox[" ", "Code"], 
+         RowBox[{
+          StyleBox["\"\<Interval\>\"", "Code"], 
+          StyleBox[" ", "Code"], 
+          StyleBox["\[Rule]", "Code"], " ", 
+          RowBox[{"Quantity", "[", 
+           RowBox[{"5", ",", " ", "\"\<Rounds\>\""}], "]"}]}]}], "}"}]}], ",",
+       "\n", "\t\t", 
+      RowBox[{"TargetDevice", " ", "\[Rule]", " ", "\"\<GPU\>\""}], ",", 
+      "\[IndentingNewLine]", "\t\t", 
+      RowBox[{
+      "LearningRateMultipliers", " ", "\[Rule]", " ", "\n", "\t\t\t", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"1", " ", "\[Rule]", " ", "0"}], ",", " ", 
+         RowBox[{"4", " ", "\[Rule]", " ", "0"}]}], "}"}]}]}], 
+     "\[IndentingNewLine]", "]"}]}], ";"}]}]], "Code",ExpressionUUID->\
+"6a373236-0f8a-4b58-97ca-21c96d48bad7"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", " ", 
+   RowBox[{"Freeze", " ", "1", "st", " ", 
+    RowBox[{"conv", ".", " ", "layer", "."}]}], " ", "*)"}], "\n", 
+  RowBox[{
+   RowBox[{"net2", " ", "=", " ", "\n", "\t", 
+    RowBox[{"NetTrain", "[", "\n", "\t\t", 
+     RowBox[{"net", ",", "\n", "\t\t", "trainingSet", ",", "\n", "\t\t", 
+      RowBox[{"ValidationSet", " ", "\[Rule]", " ", "validationSet"}], ",", 
+      "\n", "\t\t", 
+      StyleBox[
+       RowBox[{"MaxTrainingRounds", " ", "\[Rule]", " ", "150"}], "Code"], 
+      StyleBox[",", "Code"], 
+      StyleBox["\n", "Code"], 
+      StyleBox["\t\t", "Code"], 
+      StyleBox[
+       RowBox[{"BatchSize", " ", "\[Rule]", " ", "100"}], "Code"], 
+      StyleBox[",", "Code"], 
+      StyleBox["\n", "Code"], 
+      StyleBox["\t\t", "Code"], 
+      RowBox[{
+       StyleBox["TrainingProgressFunction", "Code"], 
+       StyleBox[" ", "Code"], 
+       StyleBox["\[Rule]", "Code"], 
+       StyleBox[" ", "Code"], 
+       RowBox[{
+        StyleBox["{", "Code"], 
+        RowBox[{
+         StyleBox[
+          RowBox[{"appendToLog", "[", "2", "]"}], "Code"], 
+         StyleBox[",", "Code"], 
+         StyleBox[" ", "Code"], 
+         RowBox[{
+          StyleBox["\"\<Interval\>\"", "Code"], 
+          StyleBox[" ", "Code"], 
+          StyleBox["\[Rule]", "Code"], " ", 
+          RowBox[{"Quantity", "[", 
+           RowBox[{"5", ",", " ", "\"\<Rounds\>\""}], "]"}]}]}], "}"}]}], ",",
+       "\n", "\t\t", 
+      RowBox[{"TargetDevice", " ", "\[Rule]", " ", "\"\<GPU\>\""}], ",", 
+      "\[IndentingNewLine]", "\t\t", 
+      RowBox[{
+      "LearningRateMultipliers", " ", "\[Rule]", " ", "\n", "\t\t\t", 
+       RowBox[{"{", 
+        RowBox[{"1", " ", "\[Rule]", " ", "0"}], "}"}]}]}], 
+     "\[IndentingNewLine]", "]"}]}], ";"}]}]], "Code",ExpressionUUID->\
+"de088c59-4a2f-495e-9486-d83ab216be13"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", " ", 
+   RowBox[{"Freeze", " ", "2", "nd", " ", 
+    RowBox[{"conv", ".", " ", "layer", "."}]}], " ", "*)"}], "\n", 
+  RowBox[{
+   RowBox[{"net3", " ", "=", " ", "\n", "\t", 
+    RowBox[{"NetTrain", "[", "\n", "\t\t", 
+     RowBox[{"net", ",", "\n", "\t\t", "trainingSet", ",", "\n", "\t\t", 
+      RowBox[{"ValidationSet", " ", "\[Rule]", " ", "validationSet"}], ",", 
+      "\n", "\t\t", 
+      StyleBox[
+       RowBox[{"MaxTrainingRounds", " ", "\[Rule]", " ", "150"}], "Code"], 
+      StyleBox[",", "Code"], 
+      StyleBox["\n", "Code"], 
+      StyleBox["\t\t", "Code"], 
+      StyleBox[
+       RowBox[{"BatchSize", " ", "\[Rule]", " ", "100"}], "Code"], 
+      StyleBox[",", "Code"], 
+      StyleBox["\n", "Code"], 
+      StyleBox["\t\t", "Code"], 
+      RowBox[{
+       StyleBox["TrainingProgressFunction", "Code"], 
+       StyleBox[" ", "Code"], 
+       StyleBox["\[Rule]", "Code"], 
+       StyleBox[" ", "Code"], 
+       RowBox[{
+        StyleBox["{", "Code"], 
+        RowBox[{
+         StyleBox[
+          RowBox[{"appendToLog", "[", "3", "]"}], "Code"], 
+         StyleBox[",", "Code"], 
+         StyleBox[" ", "Code"], 
+         RowBox[{
+          StyleBox["\"\<Interval\>\"", "Code"], 
+          StyleBox[" ", "Code"], 
+          StyleBox["\[Rule]", "Code"], " ", 
+          RowBox[{"Quantity", "[", 
+           RowBox[{"5", ",", " ", "\"\<Rounds\>\""}], "]"}]}]}], "}"}]}], ",",
+       "\n", "\t\t", 
+      RowBox[{"TargetDevice", " ", "\[Rule]", " ", "\"\<GPU\>\""}], ",", 
+      "\[IndentingNewLine]", "\t\t", 
+      RowBox[{
+      "LearningRateMultipliers", " ", "\[Rule]", " ", "\n", "\t\t\t", 
+       RowBox[{"{", 
+        RowBox[{"4", " ", "\[Rule]", " ", "0"}], "}"}]}]}], 
+     "\[IndentingNewLine]", "]"}]}], ";"}]}]], "Code",ExpressionUUID->\
+"80a8b428-7dbc-486d-a307-640b7b0a0675"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", " ", 
+   RowBox[{"Freeze", " ", "both", " ", "linear", " ", 
+    RowBox[{"layers", "."}]}], " ", "*)"}], "\n", 
+  RowBox[{
+   RowBox[{"net4", " ", "=", " ", "\n", "\t", 
+    RowBox[{"NetTrain", "[", "\n", "\t\t", 
+     RowBox[{"net", ",", "\n", "\t\t", "trainingSet", ",", "\n", "\t\t", 
+      RowBox[{"ValidationSet", " ", "\[Rule]", " ", 
+       RowBox[{"Scaled", "[", "0.1", "]"}]}], ",", "\n", "\t\t", 
+      StyleBox[
+       RowBox[{"MaxTrainingRounds", " ", "\[Rule]", " ", "150"}], "Code"], 
+      StyleBox[",", "Code"], 
+      StyleBox["\n", "Code"], 
+      StyleBox["\t\t", "Code"], 
+      StyleBox[
+       RowBox[{"BatchSize", " ", "\[Rule]", " ", "100"}], "Code"], 
+      StyleBox[",", "Code"], 
+      StyleBox["\n", "Code"], 
+      StyleBox["\t\t", "Code"], 
+      RowBox[{
+       StyleBox["TrainingProgressFunction", "Code"], 
+       StyleBox[" ", "Code"], 
+       StyleBox["\[Rule]", "Code"], 
+       StyleBox[" ", "Code"], 
+       RowBox[{
+        StyleBox["{", "Code"], 
+        RowBox[{
+         StyleBox[
+          RowBox[{"appendToLog", "[", "4", "]"}], "Code"], 
+         StyleBox[",", "Code"], 
+         StyleBox[" ", "Code"], 
+         RowBox[{
+          StyleBox["\"\<Interval\>\"", "Code"], 
+          StyleBox[" ", "Code"], 
+          StyleBox["\[Rule]", "Code"], " ", 
+          RowBox[{"Quantity", "[", 
+           RowBox[{"5", ",", " ", "\"\<Rounds\>\""}], "]"}]}]}], "}"}]}], ",",
+       "\n", "\t\t", 
+      RowBox[{"TargetDevice", " ", "\[Rule]", " ", "\"\<GPU\>\""}], ",", 
+      "\[IndentingNewLine]", "\t\t", 
+      RowBox[{
+      "LearningRateMultipliers", " ", "\[Rule]", " ", "\n", "\t\t\t", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"8", " ", "\[Rule]", " ", "0"}], ",", " ", 
+         RowBox[{"10", " ", "\[Rule]", " ", "0"}]}], "}"}]}]}], 
+     "\[IndentingNewLine]", "]"}]}], ";"}]}]], "Code",ExpressionUUID->\
+"1b0793ef-1be3-45d2-864a-4a73eb3f3943"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", " ", 
+   RowBox[{"Freeze", " ", "1", "st", " ", "linear", " ", 
+    RowBox[{"layer", "."}]}], " ", "*)"}], "\n", 
+  RowBox[{
+   RowBox[{"net5", " ", "=", " ", "\n", "\t", 
+    RowBox[{"NetTrain", "[", "\n", "\t\t", 
+     RowBox[{"net", ",", "\n", "\t\t", "trainingSet", ",", "\n", "\t\t", 
+      RowBox[{"ValidationSet", " ", "\[Rule]", " ", 
+       RowBox[{"Scaled", "[", "0.1", "]"}]}], ",", "\n", "\t\t", 
+      StyleBox[
+       RowBox[{"MaxTrainingRounds", " ", "\[Rule]", " ", "150"}], "Code"], 
+      StyleBox[",", "Code"], 
+      StyleBox["\n", "Code"], 
+      StyleBox["\t\t", "Code"], 
+      StyleBox[
+       RowBox[{"BatchSize", " ", "\[Rule]", " ", "100"}], "Code"], 
+      StyleBox[",", "Code"], 
+      StyleBox["\n", "Code"], 
+      StyleBox["\t\t", "Code"], 
+      RowBox[{
+       StyleBox["TrainingProgressFunction", "Code"], 
+       StyleBox[" ", "Code"], 
+       StyleBox["\[Rule]", "Code"], 
+       StyleBox[" ", "Code"], 
+       RowBox[{
+        StyleBox["{", "Code"], 
+        RowBox[{
+         StyleBox[
+          RowBox[{"appendToLog", "[", "5", "]"}], "Code"], 
+         StyleBox[",", "Code"], 
+         StyleBox[" ", "Code"], 
+         RowBox[{
+          StyleBox["\"\<Interval\>\"", "Code"], 
+          StyleBox[" ", "Code"], 
+          StyleBox["\[Rule]", "Code"], " ", 
+          RowBox[{"Quantity", "[", 
+           RowBox[{"5", ",", " ", "\"\<Rounds\>\""}], "]"}]}]}], "}"}]}], ",",
+       "\n", "\t\t", 
+      RowBox[{"TargetDevice", " ", "\[Rule]", " ", "\"\<GPU\>\""}], ",", 
+      "\[IndentingNewLine]", "\t\t", 
+      RowBox[{
+      "LearningRateMultipliers", " ", "\[Rule]", " ", "\n", "\t\t\t", 
+       RowBox[{"{", 
+        RowBox[{"8", " ", "\[Rule]", " ", "0"}], "}"}]}]}], 
+     "\[IndentingNewLine]", "]"}]}], ";"}]}]], "Code",ExpressionUUID->\
+"877a044f-a07e-4609-8ad8-df193cd13bbb"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", " ", 
+   RowBox[{"Freeze", " ", "2", "nd", " ", "linear", " ", 
+    RowBox[{"layer", "."}]}], " ", "*)"}], "\n", 
+  RowBox[{
+   RowBox[{"net6", " ", "=", " ", "\n", "\t", 
+    RowBox[{"NetTrain", "[", "\n", "\t\t", 
+     RowBox[{"net", ",", "\n", "\t\t", "trainingSet", ",", "\n", "\t\t", 
+      RowBox[{"ValidationSet", " ", "\[Rule]", " ", 
+       RowBox[{"Scaled", "[", "0.1", "]"}]}], ",", "\n", "\t\t", 
+      StyleBox[
+       RowBox[{"MaxTrainingRounds", " ", "\[Rule]", " ", "150"}], "Code"], 
+      StyleBox[",", "Code"], 
+      StyleBox["\n", "Code"], 
+      StyleBox["\t\t", "Code"], 
+      StyleBox[
+       RowBox[{"BatchSize", " ", "\[Rule]", " ", "100"}], "Code"], 
+      StyleBox[",", "Code"], 
+      StyleBox["\n", "Code"], 
+      StyleBox["\t\t", "Code"], 
+      RowBox[{
+       StyleBox["TrainingProgressFunction", "Code"], 
+       StyleBox[" ", "Code"], 
+       StyleBox["\[Rule]", "Code"], 
+       StyleBox[" ", "Code"], 
+       RowBox[{
+        StyleBox["{", "Code"], 
+        RowBox[{
+         StyleBox[
+          RowBox[{"appendToLog", "[", "6", "]"}], "Code"], 
+         StyleBox[",", "Code"], 
+         StyleBox[" ", "Code"], 
+         RowBox[{
+          StyleBox["\"\<Interval\>\"", "Code"], 
+          StyleBox[" ", "Code"], 
+          StyleBox["\[Rule]", "Code"], " ", 
+          RowBox[{"Quantity", "[", 
+           RowBox[{"5", ",", " ", "\"\<Rounds\>\""}], "]"}]}]}], "}"}]}], ",",
+       "\n", "\t\t", 
+      RowBox[{"TargetDevice", " ", "\[Rule]", " ", "\"\<GPU\>\""}], ",", 
+      "\[IndentingNewLine]", "\t\t", 
+      RowBox[{
+      "LearningRateMultipliers", " ", "\[Rule]", " ", "\n", "\t\t\t", 
+       RowBox[{"{", 
+        RowBox[{"10", " ", "\[Rule]", " ", "0"}], "}"}]}]}], 
+     "\[IndentingNewLine]", "]"}]}], ";"}]}]], "Code",ExpressionUUID->\
+"79fae78a-70af-40ae-9432-2d498e84a1d7"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", " ", 
+   RowBox[{"Freeze", " ", "all", " ", "but", " ", "1", "st", " ", 
+    RowBox[{"conv", ".", " ", "layer", "."}]}], " ", "*)"}], "\n", 
+  RowBox[{
+   RowBox[{"net7", " ", "=", " ", "\n", "\t", 
+    RowBox[{"NetTrain", "[", "\n", "\t\t", 
+     RowBox[{"net", ",", "\n", "\t\t", "trainingSet", ",", "\n", "\t\t", 
+      RowBox[{"ValidationSet", " ", "\[Rule]", " ", "validationSet"}], ",", 
+      "\n", "\t\t", 
+      StyleBox[
+       RowBox[{"MaxTrainingRounds", " ", "\[Rule]", " ", "150"}], "Code"], 
+      StyleBox[",", "Code"], 
+      StyleBox["\n", "Code"], 
+      StyleBox["\t\t", "Code"], 
+      StyleBox[
+       RowBox[{"BatchSize", " ", "\[Rule]", " ", "100"}], "Code"], 
+      StyleBox[",", "Code"], 
+      StyleBox["\n", "Code"], 
+      StyleBox["\t\t", "Code"], 
+      RowBox[{
+       StyleBox["TrainingProgressFunction", "Code"], 
+       StyleBox[" ", "Code"], 
+       StyleBox["\[Rule]", "Code"], 
+       StyleBox[" ", "Code"], 
+       RowBox[{
+        StyleBox["{", "Code"], 
+        RowBox[{
+         StyleBox[
+          RowBox[{"appendToLog", "[", "7", "]"}], "Code"], 
+         StyleBox[",", "Code"], 
+         StyleBox[" ", "Code"], 
+         RowBox[{
+          StyleBox["\"\<Interval\>\"", "Code"], 
+          StyleBox[" ", "Code"], 
+          StyleBox["\[Rule]", "Code"], " ", 
+          RowBox[{"Quantity", "[", 
+           RowBox[{"5", ",", " ", "\"\<Rounds\>\""}], "]"}]}]}], "}"}]}], ",",
+       "\n", "\t\t", 
+      RowBox[{"TargetDevice", " ", "\[Rule]", " ", "\"\<GPU\>\""}], ",", 
+      "\[IndentingNewLine]", "\t\t", 
+      RowBox[{
+      "LearningRateMultipliers", " ", "\[Rule]", " ", "\n", "\t\t\t", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"4", " ", "\[Rule]", " ", "0"}], ",", " ", 
+         RowBox[{"8", " ", "\[Rule]", " ", "0"}], ",", " ", 
+         RowBox[{"10", " ", "\[Rule]", " ", "0"}]}], "}"}]}]}], 
+     "\[IndentingNewLine]", "]"}]}], ";"}]}]], "Code",ExpressionUUID->\
+"23e90420-d0f4-44d4-846d-dbea33b0970a"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", " ", 
+   RowBox[{"Freeze", " ", "all", " ", "but", " ", "2", "nd", " ", 
+    RowBox[{"conv", ".", " ", "layer"}]}], " ", "*)"}], "\n", 
+  RowBox[{
+   RowBox[{"net8", " ", "=", " ", "\n", "\t", 
+    RowBox[{"NetTrain", "[", "\n", "\t\t", 
+     RowBox[{"net", ",", "\n", "\t\t", "trainingSet", ",", "\n", "\t\t", 
+      RowBox[{"ValidationSet", " ", "\[Rule]", " ", "validationSet"}], ",", 
+      "\n", "\t\t", 
+      StyleBox[
+       RowBox[{"MaxTrainingRounds", " ", "\[Rule]", " ", "150"}], "Code"], 
+      StyleBox[",", "Code"], 
+      StyleBox["\n", "Code"], 
+      StyleBox["\t\t", "Code"], 
+      StyleBox[
+       RowBox[{"BatchSize", " ", "\[Rule]", " ", "100"}], "Code"], 
+      StyleBox[",", "Code"], 
+      StyleBox["\n", "Code"], 
+      StyleBox["\t\t", "Code"], 
+      RowBox[{
+       StyleBox["TrainingProgressFunction", "Code"], 
+       StyleBox[" ", "Code"], 
+       StyleBox["\[Rule]", "Code"], 
+       StyleBox[" ", "Code"], 
+       RowBox[{
+        StyleBox["{", "Code"], 
+        RowBox[{
+         StyleBox[
+          RowBox[{"appendToLog", "[", "8", "]"}], "Code"], 
+         StyleBox[",", "Code"], 
+         StyleBox[" ", "Code"], 
+         RowBox[{
+          StyleBox["\"\<Interval\>\"", "Code"], 
+          StyleBox[" ", "Code"], 
+          StyleBox["\[Rule]", "Code"], " ", 
+          RowBox[{"Quantity", "[", 
+           RowBox[{"5", ",", " ", "\"\<Rounds\>\""}], "]"}]}]}], "}"}]}], ",",
+       "\n", "\t\t", 
+      RowBox[{"TargetDevice", " ", "\[Rule]", " ", "\"\<GPU\>\""}], ",", 
+      "\[IndentingNewLine]", "\t\t", 
+      RowBox[{
+      "LearningRateMultipliers", " ", "\[Rule]", " ", "\n", "\t\t\t", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"1", " ", "\[Rule]", " ", "0"}], ",", " ", 
+         RowBox[{"8", " ", "\[Rule]", " ", "0"}], ",", " ", 
+         RowBox[{"10", " ", "\[Rule]", " ", "0"}]}], "}"}]}]}], 
+     "\[IndentingNewLine]", "]"}]}], ";"}]}]], "Code",ExpressionUUID->\
+"271fbe46-647a-40b9-80f1-5ffdfdb3cb96"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", " ", 
+   RowBox[{
+   "Freeze", " ", "all", " ", "but", " ", "1", "st", " ", "linear", " ", 
+    "layer"}], " ", "*)"}], "\n", 
+  RowBox[{
+   RowBox[{"net9", " ", "=", " ", "\n", "\t", 
+    RowBox[{"NetTrain", "[", "\n", "\t\t", 
+     RowBox[{"net", ",", "\n", "\t\t", "trainingSet", ",", "\n", "\t\t", 
+      RowBox[{"ValidationSet", " ", "\[Rule]", " ", "validationSet"}], ",", 
+      "\n", "\t\t", 
+      StyleBox[
+       RowBox[{"MaxTrainingRounds", " ", "\[Rule]", " ", "150"}], "Code"], 
+      StyleBox[",", "Code"], 
+      StyleBox["\n", "Code"], 
+      StyleBox["\t\t", "Code"], 
+      StyleBox[
+       RowBox[{"BatchSize", " ", "\[Rule]", " ", "100"}], "Code"], 
+      StyleBox[",", "Code"], 
+      StyleBox["\n", "Code"], 
+      StyleBox["\t\t", "Code"], 
+      RowBox[{
+       StyleBox["TrainingProgressFunction", "Code"], 
+       StyleBox[" ", "Code"], 
+       StyleBox["\[Rule]", "Code"], 
+       StyleBox[" ", "Code"], 
+       RowBox[{
+        StyleBox["{", "Code"], 
+        RowBox[{
+         StyleBox[
+          RowBox[{"appendToLog", "[", "9", "]"}], "Code"], 
+         StyleBox[",", "Code"], 
+         StyleBox[" ", "Code"], 
+         RowBox[{
+          StyleBox["\"\<Interval\>\"", "Code"], 
+          StyleBox[" ", "Code"], 
+          StyleBox["\[Rule]", "Code"], " ", 
+          RowBox[{"Quantity", "[", 
+           RowBox[{"5", ",", " ", "\"\<Rounds\>\""}], "]"}]}]}], "}"}]}], ",",
+       "\n", "\t\t", 
+      RowBox[{"TargetDevice", " ", "\[Rule]", " ", "\"\<GPU\>\""}], ",", 
+      "\[IndentingNewLine]", "\t\t", 
+      RowBox[{
+      "LearningRateMultipliers", " ", "\[Rule]", " ", "\n", "\t\t\t", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"1", " ", "\[Rule]", " ", "0"}], ",", " ", 
+         RowBox[{"4", " ", "\[Rule]", " ", "0"}], ",", " ", 
+         RowBox[{"10", " ", "\[Rule]", " ", "0"}]}], "}"}]}]}], 
+     "\[IndentingNewLine]", "]"}]}], ";"}]}]], "Code",ExpressionUUID->\
+"8a361b95-3db0-4852-87e5-69c80b698c6b"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", " ", 
+   RowBox[{
+   "Freeze", " ", "all", " ", "but", " ", "2", "nd", " ", "linear", " ", 
+    "layer"}], " ", "*)"}], "\n", 
+  RowBox[{
+   RowBox[{"net10", " ", "=", " ", "\n", "\t", 
+    RowBox[{"NetTrain", "[", "\n", "\t\t", 
+     RowBox[{"net", ",", "\n", "\t\t", "trainingSet", ",", "\n", "\t\t", 
+      RowBox[{"ValidationSet", " ", "\[Rule]", " ", "validationSet"}], ",", 
+      "\n", "\t\t", 
+      StyleBox[
+       RowBox[{"MaxTrainingRounds", " ", "\[Rule]", " ", "150"}], "Code"], 
+      StyleBox[",", "Code"], 
+      StyleBox["\n", "Code"], 
+      StyleBox["\t\t", "Code"], 
+      StyleBox[
+       RowBox[{"BatchSize", " ", "\[Rule]", " ", "100"}], "Code"], 
+      StyleBox[",", "Code"], 
+      StyleBox["\n", "Code"], 
+      StyleBox["\t\t", "Code"], 
+      RowBox[{
+       StyleBox["TrainingProgressFunction", "Code"], 
+       StyleBox[" ", "Code"], 
+       StyleBox["\[Rule]", "Code"], 
+       StyleBox[" ", "Code"], 
+       RowBox[{
+        StyleBox["{", "Code"], 
+        RowBox[{
+         StyleBox[
+          RowBox[{"appendToLog", "[", "10", "]"}], "Code"], 
+         StyleBox[",", "Code"], 
+         StyleBox[" ", "Code"], 
+         RowBox[{
+          StyleBox["\"\<Interval\>\"", "Code"], 
+          StyleBox[" ", "Code"], 
+          StyleBox["\[Rule]", "Code"], " ", 
+          RowBox[{"Quantity", "[", 
+           RowBox[{"5", ",", " ", "\"\<Rounds\>\""}], "]"}]}]}], "}"}]}], ",",
+       "\n", "\t\t", 
+      RowBox[{"TargetDevice", " ", "\[Rule]", " ", "\"\<GPU\>\""}], ",", 
+      "\[IndentingNewLine]", "\t\t", 
+      RowBox[{
+      "LearningRateMultipliers", " ", "\[Rule]", " ", "\n", "\t\t\t", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"1", " ", "\[Rule]", " ", "0"}], ",", " ", 
+         RowBox[{"4", " ", "\[Rule]", " ", "0"}], ",", " ", 
+         RowBox[{"8", " ", "\[Rule]", " ", "0"}]}], "}"}]}]}], 
+     "\[IndentingNewLine]", "]"}]}], ";"}]}]], "Code",ExpressionUUID->\
+"76c5403d-d01d-45e8-be62-029f15c602c9"]
+}, Open  ]]
+}, Open  ]]
+},
+Evaluator->"Kernel 1",
+WindowSize->{1274, 596},
+WindowMargins->{{Automatic, 0}, {Automatic, 26}},
+FrontEndVersion->"11.1 for Mac OS X x86 (32-bit, 64-bit Kernel) (April 27, \
+2017)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 91, 0, 115, "Title", "ExpressionUUID" -> \
+"981f2251-15d3-4002-b070-b05bc6e69103"],
+Cell[CellGroupData[{
+Cell[696, 26, 88, 0, 54, "Subsection", "ExpressionUUID" -> \
+"5f66fbda-b7e9-4d54-822c-01dc71de7b17"],
+Cell[787, 28, 507, 12, 114, "Code", "ExpressionUUID" -> \
+"82913d55-9d6b-40a7-828a-5f9ef7c63d13"],
+Cell[1297, 42, 527, 14, 114, "Code", "ExpressionUUID" -> \
+"85c3e071-c11c-4718-9ef0-4af280d0fe6a"],
+Cell[CellGroupData[{
+Cell[1849, 60, 186, 4, 65, "Code", "ExpressionUUID" -> \
+"473b2fa3-c9c9-414b-b02c-8afe569aff5a"],
+Cell[2038, 66, 342, 6, 40, "Output", "ExpressionUUID" -> \
+"554ddea8-dfee-4770-9c97-3747b65234be"]
+}, Open  ]],
+Cell[2395, 75, 1450, 33, 402, "Code", "ExpressionUUID" -> \
+"f4b44391-9b98-4952-8447-f93eb7afa77e"],
+Cell[3848, 110, 194, 4, 65, "Code", "ExpressionUUID" -> \
+"0af7e186-1c0d-43e8-8fde-e7fc4dbc5f3d"],
+Cell[4045, 116, 572, 16, 90, "Code", "ExpressionUUID" -> \
+"f90617e8-7750-4e41-a470-f5b71006254d"],
+Cell[4620, 134, 814, 19, 186, "Code", "ExpressionUUID" -> \
+"ca58cbf7-440b-4f9c-85d1-55bcbb43fd35"],
+Cell[5437, 155, 600, 15, 210, "Code", "ExpressionUUID" -> \
+"47a14b47-f22a-4c2b-9a79-38f0b3cc473a"],
+Cell[6040, 172, 1926, 49, 354, "Code", "ExpressionUUID" -> \
+"6a373236-0f8a-4b58-97ca-21c96d48bad7"],
+Cell[7969, 223, 1847, 47, 354, "Code", "ExpressionUUID" -> \
+"de088c59-4a2f-495e-9486-d83ab216be13"],
+Cell[9819, 272, 1847, 47, 354, "Code", "ExpressionUUID" -> \
+"80a8b428-7dbc-486d-a307-640b7b0a0675"],
+Cell[11669, 321, 1945, 49, 354, "Code", "ExpressionUUID" -> \
+"1b0793ef-1be3-45d2-864a-4a73eb3f3943"],
+Cell[13617, 372, 1865, 47, 354, "Code", "ExpressionUUID" -> \
+"877a044f-a07e-4609-8ad8-df193cd13bbb"],
+Cell[15485, 421, 1866, 47, 354, "Code", "ExpressionUUID" -> \
+"79fae78a-70af-40ae-9432-2d498e84a1d7"],
+Cell[17354, 470, 2014, 50, 354, "Code", "ExpressionUUID" -> \
+"23e90420-d0f4-44d4-846d-dbea33b0970a"],
+Cell[19371, 522, 2009, 50, 354, "Code", "ExpressionUUID" -> \
+"271fbe46-647a-40b9-80f1-5ffdfdb3cb96"],
+Cell[21383, 574, 2000, 51, 354, "Code", "ExpressionUUID" -> \
+"8a361b95-3db0-4852-87e5-69c80b698c6b"],
+Cell[23386, 627, 2001, 51, 354, "Code", "ExpressionUUID" -> \
+"76c5403d-d01d-45e8-be62-029f15c602c9"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+

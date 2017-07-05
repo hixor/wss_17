@@ -1,0 +1,1013 @@
+ 26     39    249    5.16e-2    5.14e-3    2.33e+0      15288      2m13s      6m26s
+ 26     40    137    2.23e-2    5.40e-3    2.39e+0      15482      2m15s      6m22s
+ 27     41      1    2.16e-2    1.05e-1    2.39e+0         18      2m23s      6m33s
+ 27     41    293    2.16e-2    3.53e-2    2.52e+0      15380      2m25s      6m29s
+ 28     42    183    4.74e-2    1.05e-2    2.50e+0      15627      2m27s      6m25s
+ 28     43     72    3.08e-2    1.31e-2    2.43e+0      15664      2m29s      6m21s
+ 29     43    381    3.08e-2    3.27e-3    2.43e+0      15526      2m31s      6m17s
+ 29     44    270    1.18e-2    1.31e-2    2.57e+0      15458      2m33s      6m13s
+ 30     45    159    3.60e-2    1.88e-2    2.52e+0      15708      2m35s      6m09s
+
+Export::h5error: Could not execute HDF5 interface operation "H5Dwrite"; returned code -1.
+
+General::stop: Further output of Export::h5error will be suppressed during this calculation.
+ 20     31    293    2.32e-2    7.60e-2    2.12e+0      15535      1m46s      6m53s
+ 21     32    182    6.52e-2    1.35e-2    2.06e+0      15574      1m48s      6m49s
+ 21     33     70    3.90e-2    4.18e-2    2.07e+0      15501      1m50s      6m44s
+ 22     33    379    3.90e-2    2.58e-2    2.07e+0      15330      1m52s      6m40s
+ 22     34    268    1.85e-2    2.29e-2    2.18e+0      15437      1m54s      6m35s
+ 23     35    157    2.74e-2    2.16e-2    2.22e+0      15567      1m56s      6m31s
+ 23     36      1    4.89e-2    3.26e-2    2.22e+0         18      2m03s      6m46s
+ 24     36    273    4.89e-2    2.72e-2    2.27e+0      15773      2m05s      6m43s
+ 24     37    162    2.54e-2    3.37e-3    2.25e+0      15528      2m07s      6m38s
+ 25     38     51    1.80e-2    3.98e-2    2.37e+0      15552      2m09s      6m34s
+ 25     38    361    1.80e-2    1.98e-2    2.37e+0      15518      2m11s      6m30s
+ 26     39    249    5.16e-2    5.14e-3    2.33e+0      15288      2m13s      6m26s
+ 26     40    137    2.23e-2    5.40e-3    2.39e+0      15482      2m15s      6m22s
+ 27     41      1    2.16e-2    1.05e-1    2.39e+0         18      2m23s      6m33s
+ 27     41    293    2.16e-2    3.53e-2    2.52e+0      15380      2m25s      6m29s
+ 28     42    183    4.74e-2    1.05e-2    2.50e+0      15627      2m27s      6m25s
+ 28     43     72    3.08e-2    1.31e-2    2.43e+0      15664      2m29s      6m21s
+ 29     43    381    3.08e-2    3.27e-3    2.43e+0      15526      2m31s      6m17s
+ 29     44    270    1.18e-2    1.31e-2    2.57e+0      15458      2m33s      6m13s
+ 30     45    159    3.60e-2    1.88e-2    2.52e+0      15708      2m35s      6m09s
+ 30     46      1    3.14e-2    3.57e-3    2.52e+0          0      6m28s     15m05s
+ 30     46    273    3.14e-2    2.91e-2    2.50e+0      15552      6m30s     14m50s
+ 31     47    163    2.67e-2    3.50e-3    2.52e+0      15708      6m32s     14m35s
+ 31     48     53    3.19e-2    5.99e-3    2.58e+0      15630      6m34s     14m20s
+ 32     48    362    3.19e-2    7.12e-2    2.58e+0      15291      6m36s     14m04s
+ 32     49    251    3.57e-2    3.48e-2    2.51e+0      15576      6m38s     13m50s
+ 33     50    140    2.14e-2    1.78e-3    2.61e+0      15605      6m40s     13m36s
+ 33     51      1    7.45e-3    1.14e-2    2.61e+0         17      6m47s     13m35s
+ 34     51    274    7.45e-3    1.95e-3    2.73e+0      15526      6m49s     13m22s
+ 34     52    163    5.40e-3    5.42e-3    2.83e+0      15662      6m51s     13m09s
+ 35     53     51    4.63e-2    8.17e-2    2.69e+0      15674      6m53s     12m56s
+ 35     53    361    4.63e-2    5.06e-3    2.69e+0      15411      6m55s     12m43s
+ 36     54    250    3.71e-2    7.64e-3    2.78e+0      15458      6m57s     12m30s
+ 36     55    139    2.21e-2    2.11e-3    2.78e+0      15627      6m59s     12m18s
+ 37     56      1    2.16e-2    2.62e-2    2.78e+0         18      7m07s     12m17s
+ 37     56    294    2.16e-2    3.10e-2    2.77e+0      15640      7m09s     12m05s
+ 38     57    184    3.50e-2    5.62e-3    2.81e+0      15632      7m11s     11m54s
+ 38     58     73    1.63e-2    1.52e-2    2.81e+0      15326      7m13s     11m42s
+ 39     58    383    1.63e-2    1.55e-2    2.81e+0      15366      7m15s     11m31s
+ 39     59    272    1.61e-2    1.01e-1    2.90e+0      15557      7m17s     11m20s
+ 40     60    161    2.46e-2    1.11e-2    2.90e+0      15494      7m19s     11m09s
+ 40     61      1    2.77e-2    3.67e-2    2.90e+0         17      7m26s     11m09s
+ 40     61    293    2.77e-2    2.65e-2    2.93e+0      15538      7m28s     10m59s
+ 41     62    181    1.52e-2    4.25e-2    3.01e+0      15555      7m30s     10m49s
+ 41     63     69    2.34e-2    1.77e-2    3.06e+0      15501      7m32s     10m39s
+ 42     63    377    2.34e-2    1.06e-2    3.06e+0      15456      7m34s     10m28s
+ 42     64    265    2.80e-2    4.46e-3    2.97e+0      15489      7m36s     10m19s
+ 43     65    153    7.84e-3    5.69e-3    2.99e+0      15605      7m38s     10m09s
+ 43     66      1    1.67e-2    5.99e-3    2.99e+0         17      7m45s     10m09s
+ 44     66    273    1.67e-2    4.99e-2    3.10e+0      15581      7m47s     10m00s
+ 44     67    161    3.88e-2    7.42e-3    2.99e+0      15487      7m49s      9m51s
+ 45     68     49    1.30e-2    1.86e-3    3.06e+0      15523      7m51s      9m42s
+ 45     68    359    1.30e-2    2.74e-2    3.06e+0      15645      7m53s      9m33s
+ 46     69    248    1.42e-2    3.30e-3    3.15e+0      15404      7m55s      9m24s
+ 46     70    137    3.38e-2    2.59e-2    3.25e+0      15601      7m57s      9m15s
+ 47     71      1    2.36e-2    2.17e-2    3.25e+0         17      8m05s      9m14s
+ 47     71    293    2.36e-2    9.44e-4    3.21e+0      15506      8m07s      9m06s
+ 48     72    183    8.81e-3    1.14e-3    3.18e+0      15662      8m09s      8m57s
+ 48     73     73    3.58e-3    1.29e-3    3.28e+0      15487      8m11s      8m49s
+ 49     73    383    3.58e-3    1.21e-3    3.28e+0      15649      8m13s      8m41s
+ 49     74    272    1.60e-3    2.46e-1    3.28e+0      15494      8m15s      8m33s
+ 50     75    161    6.01e-2    7.33e-2    3.10e+0      15728      8m17s      8m25s
+ 50     76      1    3.69e-2    3.97e-3    3.10e+0         17      8m24s      8m24s
+ 50     76    293    3.69e-2    4.96e-3    3.12e+0      15623      8m26s      8m16s
+ 51     77    182    1.05e-2    1.31e-4    3.10e+0      15593      8m28s      8m09s
+ 51     78     71    2.63e-3    2.98e-4    3.21e+0      15511      8m30s      8m01s
+ 52     78    381    2.63e-3    1.96e-2    3.21e+0      15635      8m32s      7m53s
+ 52     79    270    8.03e-3    1.44e-2    3.38e+0      15632      8m34s      7m46s
+ 53     80    159    3.99e-2    6.59e-4    3.31e+0      15509      8m36s      7m39s
+ 53     81      1    2.07e-2    1.26e-1    3.31e+0         17      8m44s      7m38s
+ 54     81    271    2.07e-2    5.34e-2    3.40e+0      15463      8m46s      7m32s
+ 54     82    160    2.40e-2    1.99e-2    3.36e+0      15674      8m48s      7m25s
+ 55     83     49    1.74e-2    1.85e-3    3.45e+0      15406      8m50s      7m18s
+ 55     83    359    1.74e-2    4.60e-3    3.45e+0      15494      8m52s      7m10s
+ 56     84    248    1.75e-2    1.20e-2    3.61e+0      15608      8m54s      7m04s
+ 56     85    137    1.19e-2    9.13e-3    3.63e+0      15513      8m56s      6m57s
+ 57     86      1    3.02e-2    4.33e-3    3.63e+0         17      9m03s      6m55s
+ 57     86    292    3.02e-2    7.99e-4    3.49e+0      15497      9m05s      6m49s
+ 58     87    180    1.31e-2    1.03e-2    3.52e+0      15319      9m07s      6m42s
+ 58     88     69    2.32e-2    1.98e-2    3.50e+0      15521      9m09s      6m36s
+ 59     88    378    2.32e-2    1.30e-2    3.50e+0      15550      9m11s      6m29s
+ 59     89    267    1.79e-2    1.13e-3    3.40e+0      15396      9m13s      6m23s
+ 60     90    156    8.28e-3    7.50e-2    3.63e+0      15406      9m15s      6m16s
+ 60     91      1    6.26e-3    3.32e-3    3.63e+0         17      9m23s      6m15s
+ 60     91    293    6.26e-3    1.57e-1    3.56e+0      15434      9m25s      6m09s
+ 61     92    182    2.77e-2    1.25e-2    3.76e+0      15657      9m27s      6m03s
+ 61     93     71    2.41e-2    4.89e-3    3.55e+0      15647      9m29s      5m56s
+ 62     93    380    2.41e-2    3.23e-3    3.55e+0      15545      9m31s      5m50s
+ 62     94    269    1.65e-2    2.22e-2    3.53e+0      15605      9m33s      5m44s
+ 63     95    158    1.95e-2    1.80e-3    3.59e+0      15533      9m35s      5m38s
+ 63     96      1    1.52e-2    5.60e-3    3.59e+0         17      9m42s      5m37s
+ 64     96    270    1.52e-2    3.24e-4    3.83e+0      15526      9m44s      5m31s
+ 64     97    159    2.08e-2    1.95e-3    3.67e+0      15649      9m46s      5m26s
+ 65     98     47    1.54e-2    1.10e-4    3.72e+0      15569      9m48s      5m20s
+ 65     98    356    1.54e-2    1.63e-3    3.72e+0      15263      9m50s      5m14s
+ 66     99    245    2.09e-2    3.62e-3    3.66e+0      15731      9m52s      5m08s
+ 66    100    134    1.95e-2    3.58e-3    3.79e+0      15618      9m54s      5m03s
+ 67    101      1    1.58e-2    3.74e-3    3.79e+0         17     10m02s      5m00s
+ 67    101    293    1.58e-2    2.22e-2    3.74e+0      15615     10m04s      4m55s
+ 68    102    183    1.37e-2    3.12e-2    3.99e+0      15652     10m06s      4m49s
+ 68    103     72    1.73e-2    4.43e-3    4.00e+0      15404     10m08s      4m44s
+ 69    103    382    1.73e-2    1.64e-2    4.00e+0      15620     10m10s      4m38s
+ 69    104    272    1.79e-2    3.27e-2    3.81e+0      15669     10m12s      4m33s
+ 70    105    162    9.42e-3    4.58e-3    3.95e+0      15625     10m14s      4m28s
+ 70    106      1    2.63e-2    2.29e-3    3.95e+0         17     10m21s      4m26s
+ 70    106    294    2.63e-2    8.02e-2    3.72e+0      15485     10m23s      4m21s
+ 71    107    184    1.43e-2    7.66e-4    3.93e+0      15432     10m25s      4m15s
+ 71    108     73    7.73e-3    4.41e-5    4.01e+0      15482     10m27s      4m10s
+ 72    108    383    7.73e-3    1.91e-3    4.01e+0      15608     10m29s      4m05s
+ 72    109    272    9.26e-3    2.89e-2    3.96e+0      15657     10m31s      4m00s
+ 73    110    161    2.89e-2    3.73e-2    3.98e+0      15501     10m33s      3m55s
+ 73    111      1    1.77e-2    1.26e-2    3.98e+0         17     10m40s      3m53s
+ 74    111    274    1.77e-2    2.54e-3    3.92e+0      15567     10m42s      3m48s
+ 74    112    163    1.11e-2    2.60e-3    3.92e+0      15637     10m44s      3m43s
+ 75    113     52    1.13e-2    9.76e-2    4.08e+0      15449     10m46s      3m38s
+ 75    113    361    1.13e-2    1.91e-2    4.08e+0      15530     10m48s      3m33s
+ 76    114    250    1.22e-2    5.81e-3    4.13e+0      15618     10m50s      3m28s
+ 76    115    139    2.02e-2    1.92e-1    4.25e+0      15591     10m52s      3m23s
+ 77    116      1    2.30e-2    3.14e-2    4.25e+0         17     11m00s      3m20s
+ 77    116    293    2.30e-2    2.38e-3    4.15e+0      15446     11m02s      3m16s
+ 78    117    182    1.44e-2    3.74e-2    4.15e+0      15632     11m04s      3m11s
+ 78    118     71    1.85e-2    1.38e-2    4.15e+0      15387     11m06s      3m06s
+ 79    118    380    1.85e-2    3.70e-3    4.15e+0      15542     11m08s      3m01s
+ 79    119    269    7.81e-3    1.28e-2    4.27e+0      15425     11m10s      2m57s
+ 80    120    158    2.09e-2    5.55e-4    4.13e+0      15603     11m12s      2m52s
+ 80    121      1    1.50e-2    3.18e-3    4.13e+0         17     11m19s      2m49s
+ 80    121    293    1.50e-2    5.51e-3    4.15e+0      15274     11m21s      2m45s
+ 81    122    182    1.68e-2    4.40e-2    4.55e+0      15542     11m23s      2m40s
+ 81    123     71    1.91e-2    5.89e-3    4.26e+0      15557     11m25s      2m36s
+ 82    123    381    1.91e-2    5.60e-4    4.26e+0      15605     11m27s      2m31s
+ 82    124    270    5.94e-3    2.66e-4    4.16e+0      15540     11m29s      2m26s
+ 83    125    159    4.52e-3    2.29e-3    4.35e+0      15684     11m31s      2m22s
+ 83    126      1    2.53e-2    5.21e-3    4.35e+0         17     11m39s      2m19s
+ 84    126    270    2.53e-2    1.19e-3    4.39e+0      15613     11m41s      2m15s
+ 84    127    159    1.81e-2    6.98e-4    4.22e+0      15574     11m43s      2m11s
+ 85    128     48    1.32e-2    1.88e-4    4.16e+0      15637     11m45s      2m06s
+ 85    128    358    1.32e-2    5.25e-2    4.16e+0      15511     11m47s      2m02s
+ 86    129    246    1.84e-2    1.11e-2    4.35e+0      15470     11m49s      1m57s
+ 86    130    135    1.12e-2    2.30e-4    4.37e+0      15513     11m51s      1m53s
+ 87    131      1    2.00e-2    1.19e-2    4.37e+0         17     11m58s      1m50s
+ 87    131    293    2.00e-2    7.10e-4    4.38e+0      15598     12m00s      1m46s
+ 88    132    181    1.32e-2    1.41e-3    4.25e+0      15463     12m02s      1m42s
+ 88    133     69    1.12e-2    1.04e-2    4.25e+0      15635     12m04s      1m37s
+ 89    133    379    1.12e-2    5.93e-2    4.25e+0      15406     12m06s      1m33s
+ 89    134    268    1.79e-2    1.13e-3    4.50e+0      15598     12m08s      1m29s
+ 90    135    157    1.86e-2    9.36e-3    4.40e+0      15530     12m10s      1m24s
+ 90    136      1    1.11e-2    7.82e-2    4.40e+0         17     12m18s      1m22s
+ 90    136    292    1.11e-2    4.96e-3    4.78e+0      15356     12m20s      1m17s
+ 91    137    180    2.04e-2    7.68e-4    4.43e+0      15497     12m22s      1m13s
+ 91    138     69    1.81e-2    9.12e-5    4.67e+0      15711     12m24s      1m09s
+ 92    138    378    1.81e-2    2.87e-3    4.67e+0      15569     12m26s      1m05s
+ 92    139    267    1.30e-2    2.06e-4    4.48e+0      15593     12m28s      1m01s
+ 93    140    156    4.85e-3    1.06e-4    4.35e+0      15647     12m30s        57s
+ 93    141      1    7.21e-3    2.04e-2    4.35e+0         17     12m37s        54s
+ 94    141    273    7.21e-3    3.39e-3    4.72e+0      15593     12m39s        50s
+ 94    142    163    2.82e-2    2.34e-2    4.60e+0      15485     12m41s        46s
+ 95    143     51    1.63e-2    2.50e-2    4.65e+0      15521     12m43s        42s
+ 95    143    360    1.63e-2    6.78e-3    4.65e+0      15610     12m45s        38s
+ 96    144    249    1.16e-2    1.55e-3    4.73e+0      15586     12m47s        34s
+ 96    145    138    1.06e-2    1.97e-3    4.54e+0      15446     12m49s        30s
+ 97    146      1    1.09e-2    7.54e-4    4.54e+0         17     12m57s        26s
+ 97    146    293    1.09e-2    4.21e-4    4.70e+0      15451     12m59s        22s
+ 98    147    182    1.62e-2    7.03e-4    4.65e+0      15608     13m01s        18s
+ 98    148     72    1.66e-2    1.96e-3    4.74e+0      15684     13m03s        15s
+ 99    148    382    1.66e-2    6.46e-2    4.74e+0      15613     13m05s        10s
+ 99    149    270    1.86e-2    7.48e-4    4.75e+0      15521     13m07s       7.1s
+100    150    159    9.92e-3    2.43e-2    4.70e+0      15686     13m09s       3.2s
+Training complete.
+
+ReadList::openw: OutputStream[/tmp/m00001154241, 10] is open for output.
+
+CreateDirectory::ioarg: I/O operation is not valid for /tmp/m00001854241.
+Starting training.
+  %  round  batch      round      batch       test     inputs       time       time
+      /150   /450       loss       loss       loss    /second    elapsed       left
+  0      1    308        ---    2.32e+0        ---      16576        2.s      7m18s
+
+NetTrain::interr: An internal error occurred. Please contact Wolfram Research.
+
+DeleteDirectory::strs: String or non-empty list of strings is expected at position 1 in DeleteDirectory[$Failed, DeleteContents -> True].
+
+Export::invnet2: The second argument in Export[/home/ubuntu/CIFAR_AWS2/checkpoints/net7/net7.wlnet, $Failed] is not a valid net.
+
+ClassifierMeasurements::wrgfunc: The first argument should be a ClassifierFunction instead of $Failed.
+
+ReadList::openw: OutputStream[/tmp/m00001254241, 11] is open for output.
+
+CreateDirectory::ioarg: I/O operation is not valid for /tmp/m00001954241.
+Starting training.
+
+NetTrain::interr: An internal error occurred. Please contact Wolfram Research.
+
+DeleteDirectory::strs: String or non-empty list of strings is expected at position 1 in DeleteDirectory[$Failed, DeleteContents -> True].
+
+Export::invnet2: The second argument in Export[/home/ubuntu/CIFAR_AWS2/checkpoints/net8/net8.wlnet, $Failed] is not a valid net.
+
+ClassifierMeasurements::wrgfunc: The first argument should be a ClassifierFunction instead of $Failed.
+
+ReadList::openw: OutputStream[/tmp/m00001354241, 12] is open for output.
+
+General::stop: Further output of ReadList::openw will be suppressed during this calculation.
+
+CreateDirectory::ioarg: I/O operation is not valid for /tmp/m00002054241.
+
+General::stop: Further output of CreateDirectory::ioarg will be suppressed during this calculation.
+Starting training.
+
+NetTrain::interr: An internal error occurred. Please contact Wolfram Research.
+
+General::stop: Further output of NetTrain::interr will be suppressed during this calculation.
+
+DeleteDirectory::strs: String or non-empty list of strings is expected at position 1 in DeleteDirectory[$Failed, DeleteContents -> True].
+
+General::stop: Further output of DeleteDirectory::strs will be suppressed during this calculation.
+
+Export::invnet2: The second argument in Export[/home/ubuntu/CIFAR_AWS2/checkpoints/net9/net9.wlnet, $Failed] is not a valid net.
+
+General::stop: Further output of Export::invnet2 will be suppressed during this calculation.
+
+ClassifierMeasurements::wrgfunc: The first argument should be a ClassifierFunction instead of $Failed.
+
+General::stop: Further output of ClassifierMeasurements::wrgfunc will be suppressed during this calculation.
+Starting training.
+ubuntu@ip-172-31-17-90:~/CIFAR_AWS2$ ls
+checkpoints  classifier_measurements  training_logs  trainingScript2.wl
+ubuntu@ip-172-31-17-90:~/CIFAR_AWS2$ ls checkpoints/
+net0  net1  net10  net2  net3  net4  net5  net6  net7  net8  net9
+ubuntu@ip-172-31-17-90:~/CIFAR_AWS2$ ls checkpoints/net6
+2017-07-04T22:39:12_0_006_02026_9.03e-1_1.05e+0.wlnet  2017-07-04T22:39:12_0_086_34426_3.02e-2_3.49e+0.wlnet
+2017-07-04T22:39:12_0_011_04051_5.27e-1_1.01e+0.wlnet  2017-07-04T22:39:12_0_091_36451_6.26e-3_3.56e+0.wlnet
+2017-07-04T22:39:12_0_016_06076_2.29e-1_1.16e+0.wlnet  2017-07-04T22:39:12_0_096_38476_1.52e-2_3.83e+0.wlnet
+./CIFAR_AWS2/checkpoints/._net10
+./CIFAR_AWS2/checkpoints/net10/
+./CIFAR_AWS2/checkpoints/._net2
+./CIFAR_AWS2/checkpoints/net2/
+./CIFAR_AWS2/checkpoints/._net3
+./CIFAR_AWS2/checkpoints/net3/
+./CIFAR_AWS2/checkpoints/._net4
+./CIFAR_AWS2/checkpoints/net4/
+./CIFAR_AWS2/checkpoints/._net5
+./CIFAR_AWS2/checkpoints/net5/
+./CIFAR_AWS2/checkpoints/._net6
+./CIFAR_AWS2/checkpoints/net6/
+./CIFAR_AWS2/checkpoints/._net7
+./CIFAR_AWS2/checkpoints/net7/
+./CIFAR_AWS2/checkpoints/._net8
+./CIFAR_AWS2/checkpoints/net8/
+./CIFAR_AWS2/checkpoints/._net9
+./CIFAR_AWS2/checkpoints/net9/
+./CIFAR_AWS2/checkpoints/net7/._.DS_Store
+./CIFAR_AWS2/checkpoints/net7/.DS_Store
+./CIFAR_AWS2/checkpoints/net3/._.DS_Store
+./CIFAR_AWS2/checkpoints/net3/.DS_Store
+ubuntu@ip-172-31-17-90:~$ cd CIFAR_AWS2/
+ubuntu@ip-172-31-17-90:~/CIFAR_AWS2$ screen
+[screen is terminating]
+ubuntu@ip-172-31-17-90:~/CIFAR_AWS2$ exit
+logout
+Connection to ec2-34-228-160-14.compute-1.amazonaws.com closed.
+[07:08 PM]hikarisorensen:~$ rsync -rave "ssh -i credentialfile.pem" ubuntu@remoteMachineID:~/experimentfolder/final.wlnet /path/on/your/local/computer/myremotlytrainednet.wlnet
+Warning: Identity file credentialfile.pem not accessible: No such file or directory.
+ssh: Could not resolve hostname remotemachineid: nodename nor servname provided, or not known
+rsync: connection unexpectedly closed (0 bytes received so far) [receiver]
+rsync error: unexplained error (code 255) at /BuildRoot/Library/Caches/com.apple.xbs/Sources/rsync/rsync-51/rsync/io.c(453) [receiver=2.6.9]
+[07:08 PM]hikarisorensen:~$ rsync -rave "ssh -i Wolfram_SummerSchool.pem" ubuntu@ec2-34-228-160-14.compute-1.amazonaws.com:~/CIFAR_AWS2/checkpoints/net6 /Users/hikarisorensen/Dropbox/00_Pika/WSS_17/CIFAR_AWS/CIFAR_AWS/checkpoints/net6
+receiving file list ... done
+net6/
+net6/2017-07-04T22:39:12_0_006_02026_9.03e-1_1.05e+0.wlnet
+net6/2017-07-04T22:39:12_0_011_04051_5.27e-1_1.01e+0.wlnet
+net6/2017-07-04T22:39:12_0_016_06076_2.29e-1_1.16e+0.wlnet
+net6/2017-07-04T22:39:12_0_021_08101_7.89e-2_1.53e+0.wlnet
+net6/2017-07-04T22:39:12_0_026_10126_6.60e-2_1.78e+0.wlnet
+net6/2017-07-04T22:39:12_0_031_12151_2.32e-2_2.12e+0.wlnet
+net6/2017-07-04T22:39:12_0_036_14176_4.89e-2_2.27e+0.wlnet
+net6/2017-07-04T22:39:12_0_041_16201_2.16e-2_2.52e+0.wlnet
+net6/2017-07-04T22:39:12_0_046_18226_3.14e-2_2.50e+0.wlnet
+net6/2017-07-04T22:39:12_0_051_20251_7.45e-3_2.73e+0.wlnet
+net6/2017-07-04T22:39:12_0_056_22276_2.16e-2_2.77e+0.wlnet
+net6/2017-07-04T22:39:12_0_061_24301_2.77e-2_2.93e+0.wlnet
+net6/2017-07-04T22:39:12_0_066_26326_1.67e-2_3.10e+0.wlnet
+net6/2017-07-04T22:39:12_0_071_28351_2.36e-2_3.21e+0.wlnet
+net6/2017-07-04T22:39:12_0_076_30376_3.69e-2_3.12e+0.wlnet
+net6/2017-07-04T22:39:12_0_081_32401_2.07e-2_3.40e+0.wlnet
+net6/2017-07-04T22:39:12_0_086_34426_3.02e-2_3.49e+0.wlnet
+net6/2017-07-04T22:39:12_0_091_36451_6.26e-3_3.56e+0.wlnet
+net6/2017-07-04T22:39:12_0_096_38476_1.52e-2_3.83e+0.wlnet
+net6/2017-07-04T22:39:12_0_101_40501_1.58e-2_3.74e+0.wlnet
+net6/2017-07-04T22:39:12_0_106_42526_2.63e-2_3.72e+0.wlnet
+net6/2017-07-04T22:39:12_0_111_44551_1.77e-2_3.92e+0.wlnet
+net6/2017-07-04T22:39:12_0_116_46576_2.30e-2_4.15e+0.wlnet
+net6/2017-07-04T22:39:12_0_121_48601_1.50e-2_4.15e+0.wlnet
+net6/2017-07-04T22:39:12_0_126_50626_2.53e-2_4.39e+0.wlnet
+net6/2017-07-04T22:39:12_0_131_52651_2.00e-2_4.38e+0.wlnet
+net6/2017-07-04T22:39:12_0_136_54676_1.11e-2_4.78e+0.wlnet
+net6/2017-07-04T22:39:12_0_141_56701_7.21e-3_4.72e+0.wlnet
+net6/2017-07-04T22:39:12_0_146_58726_1.09e-2_4.70e+0.wlnet
+net6/2017-07-04T22:39:12_0_150_60750_1.33e-2_4.81e+0.wlnet
+net6/net6.wlnet
+
+sent 704 bytes  received 13326503 bytes  987200.52 bytes/sec
+total size is 13320467  speedup is 1.00
+[07:11 PM]hikarisorensen:~$ cd Dropbox/00_Pika/WSS_17/
+[07:21 PM]hikarisorensen:~/Dropbox/00_Pika/WSS_17$ rsync -rave "ssh -i Wolfram_SummerSchool.pem" /Users/hikarisorensen/archive2.tar.bz2 ubuntu@ec2-34-228-160-14.compute-1.amazonaws.com:~
+building file list ... done
+archive2.tar.bz2
+
+sent 5385 bytes  received 42 bytes  723.60 bytes/sec
+total size is 5243  speedup is 0.97
+[08:27 PM]hikarisorensen:~/Dropbox/00_Pika/WSS_17$ rsync -rave "ssh -i Wolfram_SummerSchool.pem" /Users/hikarisorensen/archive3.tar.bz2 ubuntu@ec2-34-228-160-14.compute-1.amazonaws.com:~
+building file list ... done
+
+sent 96 bytes  received 20 bytes  77.33 bytes/sec
+total size is 5380  speedup is 46.38
+[08:27 PM]hikarisorensen:~/Dropbox/00_Pika/WSS_17$ ssh -i "Wolfram_SummerSchool.pem" ubuntu@ec2-34-228-160-14.compute-1.amazonaws.com
+===================================
+Deep Learning AMI for Ubuntu
+===================================
+The README file for the AMI : /home/ubuntu/src/AMI.README.md
+
+Tests for deep learning frameworks ➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜ /home/ubuntu/src/bin
+
+Welcome to Ubuntu 14.04.5 LTS (GNU/Linux 3.13.0-107-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com/
+
+  System information as of Wed Jul  5 00:27:25 UTC 2017
+
+  System load:  0.0                Processes:           134
+  Usage of /:   95.7% of 49.08GB   Users logged in:     0
+  Memory usage: 5%                 IP address for eth0: 172.31.17.90
+  Swap usage:   0%
+
+  => / is using 95.7% of 49.08GB
+  => There are 2 zombie processes.
+
+  Graph this data and manage this system at:
+    https://landscape.canonical.com/
+
+  Get cloud support with Ubuntu Advantage Cloud Guest:
+    http://www.ubuntu.com/business/services/cloud
+
+7 packages can be updated.
+7 updates are security updates.
+
+New release '16.04.2 LTS' available.
+Run 'do-release-upgrade' to upgrade to it.
+
+
+Last login: Tue Jul  4 22:37:58 2017 from pool-96-230-116-124.bstnma.fios.verizon.net
+ubuntu@ip-172-31-17-90:~$ ls
+archive2.tar.bz2  archive3.tar.bz2  CIFAR_AWS2  dl.wolframcdn.com  download  src
+ubuntu@ip-172-31-17-90:~$ tar -xjvf archive3.tar.bz2
+./._CIFAR_AWS2
+./CIFAR_AWS2/
+./CIFAR_AWS2/._.DS_Store
+./CIFAR_AWS2/.DS_Store
+tar: ./CIFAR_AWS2/.DS_Store: Wrote only 4096 of 6148 bytes
+./CIFAR_AWS2/._checkpoints
+tar: ./CIFAR_AWS2/._checkpoints: Cannot write: No space left on device
+./CIFAR_AWS2/checkpoints/
+./CIFAR_AWS2/._classifier_measurements
+./CIFAR_AWS2/classifier_measurements/
+./CIFAR_AWS2/._training_logs
+tar: ./CIFAR_AWS2/._training_logs: Cannot write: No space left on device
+./CIFAR_AWS2/training_logs/
+./CIFAR_AWS2/._trainingScript2.wl
+./CIFAR_AWS2/trainingScript2.wl
+tar: ./CIFAR_AWS2/trainingScript2.wl: Wrote only 4096 of 4608 bytes
+./CIFAR_AWS2/training_logs/._.DS_Store
+tar: ./CIFAR_AWS2/training_logs/._.DS_Store: Cannot write: No space left on device
+./CIFAR_AWS2/training_logs/.DS_Store
+./CIFAR_AWS2/training_logs/._net0
+tar: ./CIFAR_AWS2/training_logs/._net0: Cannot write: No space left on device
+./CIFAR_AWS2/training_logs/net0/
+./CIFAR_AWS2/training_logs/._net1
+./CIFAR_AWS2/training_logs/net1/
+./CIFAR_AWS2/training_logs/._net10
+tar: ./CIFAR_AWS2/training_logs/._net10: Cannot write: No space left on device
+./CIFAR_AWS2/training_logs/net10/
+./CIFAR_AWS2/training_logs/._net2
+./CIFAR_AWS2/training_logs/net2/
+./CIFAR_AWS2/training_logs/._net3
+tar: ./CIFAR_AWS2/training_logs/._net3: Cannot write: No space left on device
+./CIFAR_AWS2/training_logs/net3/
+./CIFAR_AWS2/training_logs/._net4
+./CIFAR_AWS2/training_logs/net4/
+./CIFAR_AWS2/training_logs/._net5
+tar: ./CIFAR_AWS2/training_logs/._net5: Cannot write: No space left on device
+./CIFAR_AWS2/training_logs/net5/
+./CIFAR_AWS2/training_logs/._net6
+./CIFAR_AWS2/training_logs/net6/
+./CIFAR_AWS2/training_logs/._net7
+tar: ./CIFAR_AWS2/training_logs/._net7: Cannot write: No space left on device
+./CIFAR_AWS2/training_logs/net7/
+./CIFAR_AWS2/training_logs/._net8
+./CIFAR_AWS2/training_logs/net8/
+./CIFAR_AWS2/training_logs/._net9
+tar: ./CIFAR_AWS2/training_logs/._net9: Cannot write: No space left on device
+./CIFAR_AWS2/training_logs/net9/
+./CIFAR_AWS2/training_logs/net7/._.DS_Store
+./CIFAR_AWS2/training_logs/net7/.DS_Store
+tar: ./CIFAR_AWS2/training_logs/net7/.DS_Store: Wrote only 3072 of 5124 bytes
+./CIFAR_AWS2/training_logs/net3/._.DS_Store
+tar: ./CIFAR_AWS2/training_logs/net3/._.DS_Store: Cannot write: No space left on device
+./CIFAR_AWS2/training_logs/net3/.DS_Store
+./CIFAR_AWS2/classifier_measurements/._.DS_Store
+tar: ./CIFAR_AWS2/classifier_measurements/._.DS_Store: Cannot write: No space left on device
+./CIFAR_AWS2/classifier_measurements/.DS_Store
+./CIFAR_AWS2/classifier_measurements/._net0
+tar: ./CIFAR_AWS2/classifier_measurements/._net0: Cannot write: No space left on device
+./CIFAR_AWS2/classifier_measurements/net0/
+./CIFAR_AWS2/classifier_measurements/._net1
+./CIFAR_AWS2/classifier_measurements/net1/
+./CIFAR_AWS2/classifier_measurements/._net10
+tar: ./CIFAR_AWS2/classifier_measurements/._net10: Cannot write: No space left on device
+./CIFAR_AWS2/classifier_measurements/net10/
+./CIFAR_AWS2/classifier_measurements/._net2
+./CIFAR_AWS2/classifier_measurements/net2/
+./CIFAR_AWS2/classifier_measurements/._net3
+tar: ./CIFAR_AWS2/classifier_measurements/._net3: Cannot write: No space left on device
+./CIFAR_AWS2/classifier_measurements/net3/
+./CIFAR_AWS2/classifier_measurements/._net4
+./CIFAR_AWS2/classifier_measurements/net4/
+./CIFAR_AWS2/classifier_measurements/._net5
+tar: ./CIFAR_AWS2/classifier_measurements/._net5: Cannot write: No space left on device
+./CIFAR_AWS2/classifier_measurements/net5/
+./CIFAR_AWS2/classifier_measurements/._net6
+./CIFAR_AWS2/classifier_measurements/net6/
+./CIFAR_AWS2/classifier_measurements/._net7
+tar: ./CIFAR_AWS2/classifier_measurements/._net7: Cannot write: No space left on device
+./CIFAR_AWS2/classifier_measurements/net7/
+./CIFAR_AWS2/classifier_measurements/._net8
+./CIFAR_AWS2/classifier_measurements/net8/
+./CIFAR_AWS2/classifier_measurements/._net9
+tar: ./CIFAR_AWS2/classifier_measurements/._net9: Cannot write: No space left on device
+./CIFAR_AWS2/classifier_measurements/net9/
+./CIFAR_AWS2/classifier_measurements/net7/._.DS_Store
+./CIFAR_AWS2/classifier_measurements/net7/.DS_Store
+tar: ./CIFAR_AWS2/classifier_measurements/net7/.DS_Store: Wrote only 4096 of 6148 bytes
+./CIFAR_AWS2/classifier_measurements/net3/._.DS_Store
+tar: ./CIFAR_AWS2/classifier_measurements/net3/._.DS_Store: Cannot write: No space left on device
+./CIFAR_AWS2/classifier_measurements/net3/.DS_Store
+./CIFAR_AWS2/checkpoints/._.DS_Store
+tar: ./CIFAR_AWS2/checkpoints/._.DS_Store: Cannot write: No space left on device
+./CIFAR_AWS2/checkpoints/.DS_Store
+./CIFAR_AWS2/checkpoints/._net0
+tar: ./CIFAR_AWS2/checkpoints/._net0: Cannot write: No space left on device
+./CIFAR_AWS2/checkpoints/net0/
+./CIFAR_AWS2/checkpoints/._net1
+./CIFAR_AWS2/checkpoints/net1/
+./CIFAR_AWS2/checkpoints/._net10
+tar: ./CIFAR_AWS2/checkpoints/._net10: Cannot write: No space left on device
+./CIFAR_AWS2/checkpoints/net10/
+./CIFAR_AWS2/checkpoints/._net2
+./CIFAR_AWS2/checkpoints/net2/
+./CIFAR_AWS2/checkpoints/._net3
+tar: ./CIFAR_AWS2/checkpoints/._net3: Cannot write: No space left on device
+./CIFAR_AWS2/checkpoints/net3/
+./CIFAR_AWS2/checkpoints/._net4
+./CIFAR_AWS2/checkpoints/net4/
+./CIFAR_AWS2/checkpoints/._net5
+tar: ./CIFAR_AWS2/checkpoints/._net5: Cannot write: No space left on device
+./CIFAR_AWS2/checkpoints/net5/
+./CIFAR_AWS2/checkpoints/._net6
+./CIFAR_AWS2/checkpoints/net6/
+./CIFAR_AWS2/checkpoints/._net7
+tar: ./CIFAR_AWS2/checkpoints/._net7: Cannot write: No space left on device
+./CIFAR_AWS2/checkpoints/net7/
+./CIFAR_AWS2/checkpoints/._net8
+./CIFAR_AWS2/checkpoints/net8/
+./CIFAR_AWS2/checkpoints/._net9
+tar: ./CIFAR_AWS2/checkpoints/._net9: Cannot write: No space left on device
+./CIFAR_AWS2/checkpoints/net9/
+./CIFAR_AWS2/checkpoints/net7/._.DS_Store
+./CIFAR_AWS2/checkpoints/net7/.DS_Store
+tar: ./CIFAR_AWS2/checkpoints/net7/.DS_Store: Wrote only 4096 of 6144 bytes
+./CIFAR_AWS2/checkpoints/net3/._.DS_Store
+tar: ./CIFAR_AWS2/checkpoints/net3/._.DS_Store: Cannot write: No space left on device
+./CIFAR_AWS2/checkpoints/net3/.DS_Store
+tar: Exiting with failure status due to previous errors
+ubuntu@ip-172-31-17-90:~$ ls
+archive2.tar.bz2  archive3.tar.bz2  CIFAR_AWS2  dl.wolframcdn.com  download  src
+ubuntu@ip-172-31-17-90:~$ rm CI-bash: cannot create temp file for here-document: No space left on device
+-bash: cannot create temp file for here-document: No space left on device
+^C
+ubuntu@ip-172-31-17-90:~$ rm CIFAR_AWS2 -r
+ubuntu@ip-172-31-17-90:~$ tar -xjvf archive3.tar.bz2
+./._CIFAR_AWS2
+./CIFAR_AWS2/
+./CIFAR_AWS2/._.DS_Store
+./CIFAR_AWS2/.DS_Store
+./CIFAR_AWS2/._checkpoints
+./CIFAR_AWS2/checkpoints/
+./CIFAR_AWS2/._classifier_measurements
+./CIFAR_AWS2/classifier_measurements/
+./CIFAR_AWS2/._training_logs
+./CIFAR_AWS2/training_logs/
+./CIFAR_AWS2/._trainingScript2.wl
+./CIFAR_AWS2/trainingScript2.wl
+./CIFAR_AWS2/training_logs/._.DS_Store
+./CIFAR_AWS2/training_logs/.DS_Store
+./CIFAR_AWS2/training_logs/._net0
+./CIFAR_AWS2/training_logs/net0/
+./CIFAR_AWS2/training_logs/._net1
+./CIFAR_AWS2/training_logs/net1/
+./CIFAR_AWS2/training_logs/._net10
+./CIFAR_AWS2/training_logs/net10/
+./CIFAR_AWS2/training_logs/._net2
+./CIFAR_AWS2/training_logs/net2/
+./CIFAR_AWS2/training_logs/._net3
+./CIFAR_AWS2/training_logs/net3/
+./CIFAR_AWS2/training_logs/._net4
+./CIFAR_AWS2/training_logs/net4/
+./CIFAR_AWS2/training_logs/._net5
+./CIFAR_AWS2/training_logs/net5/
+./CIFAR_AWS2/training_logs/._net6
+./CIFAR_AWS2/training_logs/net6/
+./CIFAR_AWS2/training_logs/._net7
+./CIFAR_AWS2/training_logs/net7/
+./CIFAR_AWS2/training_logs/._net8
+./CIFAR_AWS2/training_logs/net8/
+./CIFAR_AWS2/training_logs/._net9
+./CIFAR_AWS2/training_logs/net9/
+./CIFAR_AWS2/training_logs/net7/._.DS_Store
+./CIFAR_AWS2/training_logs/net7/.DS_Store
+./CIFAR_AWS2/training_logs/net3/._.DS_Store
+./CIFAR_AWS2/training_logs/net3/.DS_Store
+./CIFAR_AWS2/classifier_measurements/._.DS_Store
+./CIFAR_AWS2/classifier_measurements/.DS_Store
+./CIFAR_AWS2/classifier_measurements/._net0
+./CIFAR_AWS2/classifier_measurements/net0/
+./CIFAR_AWS2/classifier_measurements/._net1
+./CIFAR_AWS2/classifier_measurements/net1/
+./CIFAR_AWS2/classifier_measurements/._net10
+./CIFAR_AWS2/classifier_measurements/net10/
+./CIFAR_AWS2/classifier_measurements/._net2
+./CIFAR_AWS2/classifier_measurements/net2/
+./CIFAR_AWS2/classifier_measurements/._net3
+./CIFAR_AWS2/classifier_measurements/net3/
+./CIFAR_AWS2/classifier_measurements/._net4
+./CIFAR_AWS2/classifier_measurements/net4/
+./CIFAR_AWS2/classifier_measurements/._net5
+./CIFAR_AWS2/classifier_measurements/net5/
+./CIFAR_AWS2/classifier_measurements/._net6
+./CIFAR_AWS2/classifier_measurements/net6/
+./CIFAR_AWS2/classifier_measurements/._net7
+./CIFAR_AWS2/classifier_measurements/net7/
+./CIFAR_AWS2/classifier_measurements/._net8
+./CIFAR_AWS2/classifier_measurements/net8/
+./CIFAR_AWS2/classifier_measurements/._net9
+./CIFAR_AWS2/classifier_measurements/net9/
+./CIFAR_AWS2/classifier_measurements/net7/._.DS_Store
+./CIFAR_AWS2/classifier_measurements/net7/.DS_Store
+./CIFAR_AWS2/classifier_measurements/net3/._.DS_Store
+./CIFAR_AWS2/classifier_measurements/net3/.DS_Store
+./CIFAR_AWS2/checkpoints/._.DS_Store
+./CIFAR_AWS2/checkpoints/.DS_Store
+./CIFAR_AWS2/checkpoints/._net0
+./CIFAR_AWS2/checkpoints/net0/
+./CIFAR_AWS2/checkpoints/._net1
+./CIFAR_AWS2/checkpoints/net1/
+./CIFAR_AWS2/checkpoints/._net10
+./CIFAR_AWS2/checkpoints/net10/
+
+Screen version 4.01.00devel (GNU) 2-May-06
+
+Copyright (c) 2010 Juergen Weigert, Sadrul Habib Chowdhury
+Copyright (c) 2008, 2009 Juergen Weigert, Michael Schroeder, Micah Cowan, Sadrul Habib Chowdhury
+Copyright (c) 1993-2002, 2003, 2005, 2006, 2007 Juergen Weigert, Michael Schroeder
+Copyright (c) 1987 Oliver Laumann
+
+This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the
+Free Software Foundation; either version 3, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along with this program (see the file COPYING); if not, see
+http://www.gnu.org/licenses/, or contact Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02111-1301  USA.
+
+Send bugreports, fixes, enhancements, t-shirts, money, beer & pizza to screen-devel@gnu.org
+
+
+Capabilities:
++copy +remote-detach +power-detach +multi-attach +multi-user +font +color-256 +utf8 +rxvt +builtin-telnet
+
+                                                       [Press Space or Return to end.]
+ubuntu@ip-172-31-17-90:~/CIFAR_AWS2$ wolfram -script trainingScript3.wl
+./CIFAR_AWS2/checkpoints/._net2
+./CIFAR_AWS2/checkpoints/net2/
+./CIFAR_AWS2/checkpoints/._net3
+./CIFAR_AWS2/checkpoints/net3/
+./CIFAR_AWS2/checkpoints/._net4
+./CIFAR_AWS2/checkpoints/net4/
+./CIFAR_AWS2/checkpoints/._net5
+./CIFAR_AWS2/checkpoints/net5/
+./CIFAR_AWS2/checkpoints/._net6
+./CIFAR_AWS2/checkpoints/net6/
+./CIFAR_AWS2/checkpoints/._net7
+./CIFAR_AWS2/checkpoints/net7/
+./CIFAR_AWS2/checkpoints/._net8
+./CIFAR_AWS2/checkpoints/net8/
+./CIFAR_AWS2/checkpoints/._net9
+./CIFAR_AWS2/checkpoints/net9/
+./CIFAR_AWS2/checkpoints/net7/._.DS_Store
+./CIFAR_AWS2/checkpoints/net7/.DS_Store
+./CIFAR_AWS2/checkpoints/net3/._.DS_Store
+./CIFAR_AWS2/checkpoints/net3/.DS_Store
+ubuntu@ip-172-31-17-90:~$ ls
+archive2.tar.bz2  archive3.tar.bz2  CIFAR_AWS2  dl.wolframcdn.com  download  src
+ubuntu@ip-172-31-17-90:~$ cd CIFAR_AWS2/
+ubuntu@ip-172-31-17-90:~/CIFAR_AWS2$ screen
+[screen is terminating]
+ubuntu@ip-172-31-17-90:~/CIFAR_AWS2$ exit
+logout
+Connection to ec2-34-228-160-14.compute-1.amazonaws.com closed.
+[08:30 PM]hikarisorensen:~/Dropbox/00_Pika/WSS_17$ tar -cjvf archive4.tar.bz2 ./CIFAR_AWS3
+a ./CIFAR_AWS3
+a ./CIFAR_AWS3/.DS_Store
+a ./CIFAR_AWS3/checkpoints
+a ./CIFAR_AWS3/classifier_measurements
+a ./CIFAR_AWS3/training_logs
+a ./CIFAR_AWS3/trainingScript2.wl
+a ./CIFAR_AWS3/trainingScript3.wl
+a ./CIFAR_AWS3/training_logs/.DS_Store
+a ./CIFAR_AWS3/training_logs/net0
+a ./CIFAR_AWS3/training_logs/net1
+a ./CIFAR_AWS3/training_logs/net10
+a ./CIFAR_AWS3/training_logs/net2
+a ./CIFAR_AWS3/training_logs/net3
+a ./CIFAR_AWS3/training_logs/net4
+a ./CIFAR_AWS3/training_logs/net5
+a ./CIFAR_AWS3/training_logs/net6
+a ./CIFAR_AWS3/training_logs/net7
+a ./CIFAR_AWS3/training_logs/net8
+a ./CIFAR_AWS3/training_logs/net9
+a ./CIFAR_AWS3/training_logs/net7/.DS_Store
+a ./CIFAR_AWS3/training_logs/net3/.DS_Store
+a ./CIFAR_AWS3/classifier_measurements/.DS_Store
+a ./CIFAR_AWS3/classifier_measurements/net0
+a ./CIFAR_AWS3/classifier_measurements/net1
+a ./CIFAR_AWS3/classifier_measurements/net10
+a ./CIFAR_AWS3/classifier_measurements/net2
+a ./CIFAR_AWS3/classifier_measurements/net3
+a ./CIFAR_AWS3/classifier_measurements/net4
+a ./CIFAR_AWS3/classifier_measurements/net5
+a ./CIFAR_AWS3/classifier_measurements/net6
+a ./CIFAR_AWS3/classifier_measurements/net7
+a ./CIFAR_AWS3/classifier_measurements/net8
+a ./CIFAR_AWS3/classifier_measurements/net9
+a ./CIFAR_AWS3/classifier_measurements/net7/.DS_Store
+a ./CIFAR_AWS3/classifier_measurements/net3/.DS_Store
+a ./CIFAR_AWS3/checkpoints/.DS_Store
+a ./CIFAR_AWS3/checkpoints/net0
+a ./CIFAR_AWS3/checkpoints/net1
+a ./CIFAR_AWS3/checkpoints/net10
+a ./CIFAR_AWS3/checkpoints/net2
+a ./CIFAR_AWS3/checkpoints/net3
+a ./CIFAR_AWS3/checkpoints/net4
+a ./CIFAR_AWS3/checkpoints/net5
+a ./CIFAR_AWS3/checkpoints/net6
+a ./CIFAR_AWS3/checkpoints/net7
+a ./CIFAR_AWS3/checkpoints/net8
+a ./CIFAR_AWS3/checkpoints/net9
+a ./CIFAR_AWS3/checkpoints/net7/.DS_Store
+a ./CIFAR_AWS3/checkpoints/net3/.DS_Store
+[08:31 PM]hikarisorensen:~/Dropbox/00_Pika/WSS_17$ rsync -rave "ssh -i Wolfram_SummerSchool.pem" /Users/hikarisorensen/Dropbox/00_Pika/WSS_17/archive4.tar.bz2 ubuntu@ec2-34-228-160-14.compute-1.amazonaws.com:~
+building file list ... done
+archive4.tar.bz2
+
+sent 5999 bytes  received 42 bytes  1098.36 bytes/sec
+total size is 5857  speedup is 0.97
+[08:32 PM]hikarisorensen:~/Dropbox/00_Pika/WSS_17$ ssh -i "Wolfram_SummerSchool.pem" ubuntu@ec2-34-228-160-14.compute-1.amazonaws.com
+===================================
+Deep Learning AMI for Ubuntu
+===================================
+The README file for the AMI : /home/ubuntu/src/AMI.README.md
+
+Tests for deep learning frameworks ➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜➜ /home/ubuntu/src/bin
+
+Welcome to Ubuntu 14.04.5 LTS (GNU/Linux 3.13.0-107-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com/
+
+  System information as of Wed Jul  5 00:32:20 UTC 2017
+
+  System load:  0.0                Processes:           134
+  Usage of /:   95.7% of 49.08GB   Users logged in:     0
+  Memory usage: 5%                 IP address for eth0: 172.31.17.90
+  Swap usage:   0%
+
+  => / is using 95.7% of 49.08GB
+  => There are 2 zombie processes.
+
+  Graph this data and manage this system at:
+    https://landscape.canonical.com/
+
+  Get cloud support with Ubuntu Advantage Cloud Guest:
+    http://www.ubuntu.com/business/services/cloud
+
+7 packages can be updated.
+7 updates are security updates.
+
+New release '16.04.2 LTS' available.
+Run 'do-release-upgrade' to upgrade to it.
+
+
+Last login: Wed Jul  5 00:27:44 2017 from pool-96-230-116-124.bstnma.fios.verizon.net
+ubuntu@ip-172-31-17-90:~$ ls
+archive2.tar.bz2  archive3.tar.bz2  archive4.tar.bz2  CIFAR_AWS2  dl.wolframcdn.com  download  src
+ubuntu@ip-172-31-17-90:~$ tar -xjvf archive4.tar.bz2
+./._CIFAR_AWS3
+./CIFAR_AWS3/
+./CIFAR_AWS3/._.DS_Store
+./CIFAR_AWS3/.DS_Store
+./CIFAR_AWS3/._checkpoints
+./CIFAR_AWS3/checkpoints/
+./CIFAR_AWS3/._classifier_measurements
+./CIFAR_AWS3/classifier_measurements/
+./CIFAR_AWS3/._training_logs
+./CIFAR_AWS3/training_logs/
+./CIFAR_AWS3/._trainingScript2.wl
+./CIFAR_AWS3/trainingScript2.wl
+./CIFAR_AWS3/._trainingScript3.wl
+./CIFAR_AWS3/trainingScript3.wl
+./CIFAR_AWS3/training_logs/._.DS_Store
+./CIFAR_AWS3/training_logs/.DS_Store
+./CIFAR_AWS3/training_logs/._net0
+./CIFAR_AWS3/training_logs/net0/
+./CIFAR_AWS3/training_logs/._net1
+./CIFAR_AWS3/training_logs/net1/
+./CIFAR_AWS3/training_logs/._net10
+./CIFAR_AWS3/training_logs/net10/
+./CIFAR_AWS3/training_logs/._net2
+./CIFAR_AWS3/training_logs/net2/
+./CIFAR_AWS3/training_logs/._net3
+./CIFAR_AWS3/training_logs/net3/
+./CIFAR_AWS3/training_logs/._net4
+./CIFAR_AWS3/training_logs/net4/
+./CIFAR_AWS3/training_logs/._net5
+./CIFAR_AWS3/training_logs/net5/
+./CIFAR_AWS3/training_logs/._net6
+./CIFAR_AWS3/training_logs/net6/
+./CIFAR_AWS3/training_logs/._net7
+./CIFAR_AWS3/training_logs/net7/
+./CIFAR_AWS3/training_logs/._net8
+./CIFAR_AWS3/training_logs/net8/
+./CIFAR_AWS3/training_logs/._net9
+./CIFAR_AWS3/training_logs/net9/
+./CIFAR_AWS3/training_logs/net7/._.DS_Store
+./CIFAR_AWS3/training_logs/net7/.DS_Store
+./CIFAR_AWS3/training_logs/net3/._.DS_Store
+./CIFAR_AWS3/training_logs/net3/.DS_Store
+./CIFAR_AWS3/classifier_measurements/._.DS_Store
+./CIFAR_AWS3/classifier_measurements/.DS_Store
+./CIFAR_AWS3/classifier_measurements/._net0
+./CIFAR_AWS3/classifier_measurements/net0/
+./CIFAR_AWS3/classifier_measurements/._net1
+./CIFAR_AWS3/classifier_measurements/net1/
+./CIFAR_AWS3/classifier_measurements/._net10
+./CIFAR_AWS3/classifier_measurements/net10/
+./CIFAR_AWS3/classifier_measurements/._net2
+./CIFAR_AWS3/classifier_measurements/net2/
+./CIFAR_AWS3/classifier_measurements/._net3
+./CIFAR_AWS3/classifier_measurements/net3/
+./CIFAR_AWS3/classifier_measurements/._net4
+./CIFAR_AWS3/classifier_measurements/net4/
+./CIFAR_AWS3/classifier_measurements/._net5
+./CIFAR_AWS3/classifier_measurements/net5/
+./CIFAR_AWS3/classifier_measurements/._net6
+./CIFAR_AWS3/classifier_measurements/net6/
+./CIFAR_AWS3/classifier_measurements/._net7
+./CIFAR_AWS3/classifier_measurements/net7/
+./CIFAR_AWS3/classifier_measurements/._net8
+./CIFAR_AWS3/classifier_measurements/net8/
+./CIFAR_AWS3/classifier_measurements/._net9
+./CIFAR_AWS3/classifier_measurements/net9/
+./CIFAR_AWS3/classifier_measurements/net7/._.DS_Store
+./CIFAR_AWS3/classifier_measurements/net7/.DS_Store
+./CIFAR_AWS3/classifier_measurements/net3/._.DS_Store
+./CIFAR_AWS3/classifier_measurements/net3/.DS_Store
+./CIFAR_AWS3/checkpoints/._.DS_Store
+./CIFAR_AWS3/checkpoints/.DS_Store
+./CIFAR_AWS3/checkpoints/._net0
+./CIFAR_AWS3/checkpoints/net0/
+./CIFAR_AWS3/checkpoints/._net1
+./CIFAR_AWS3/checkpoints/net1/
+./CIFAR_AWS3/checkpoints/._net10
+./CIFAR_AWS3/checkpoints/net10/
+
+Screen version 4.01.00devel (GNU) 2-May-06
+
+Copyright (c) 2010 Juergen Weigert, Sadrul Habib Chowdhury
+Copyright (c) 2008, 2009 Juergen Weigert, Michael Schroeder, Micah Cowan, Sadrul Habib Chowdhury
+Copyright (c) 1993-2002, 2003, 2005, 2006, 2007 Juergen Weigert, Michael Schroeder
+Copyright (c) 1987 Oliver Laumann
+
+This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the
+Free Software Foundation; either version 3, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along with this program (see the file COPYING); if not, see
+http://www.gnu.org/licenses/, or contact Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02111-1301  USA.
+
+Send bugreports, fixes, enhancements, t-shirts, money, beer & pizza to screen-devel@gnu.org
+
+
+Capabilities:
++copy +remote-detach +power-detach +multi-attach +multi-user +font +color-256 +utf8 +rxvt +builtin-telnet
+
+                                                       [Press Space or Return to end.]
+ubuntu@ip-172-31-17-90:~/CIFAR_AWS3$ wolfram -script trainingScript3.wl
+[00:33:55] /home/dszeto/Desktop/mxnet0932_64/src/operator/./cudnn_convolution-inl.h:55: Running performance tests to find the best convolution algorithm, this can take a while... (setting env variable MXNET_CUDNN_AUTOTUNE_DEFAULT to 0 to disable)
+Starting training.
+  %  round  batch      round      batch       test     inputs       time       time
+      /150   /405       loss       loss       loss    /second    elapsed       left
+  0      1    302        ---    1.59e+0        ---      16239        2.s      6m41s
+  1      2    201    1.74e+0    1.49e+0    1.50e+0      15995        4.s      6m37s
+  1      3    100    1.41e+0    1.42e+0    1.37e+0      16051        6.s      6m35s
+  2      4      2    1.30e+0    1.16e+0    1.34e+0      41754        8.s      6m33s
+  3      4    322    1.30e+0    1.24e+0    1.34e+0      16046        10s      6m26s
+  3      5    219    1.23e+0    9.40e-1    1.27e+0      15997        12s      6m25s
+  3      6      1    1.17e+0    1.15e+0    1.27e+0         40        15s      7m34s
+[00:34:15] /home/dszeto/Desktop/mxnet0932_64/dmlc-core/include/dmlc/logging.h:300: [00:34:14] /home/dszeto/Desktop/mxnet0932_64/dmlc-core/src/io/local_filesys.cc:39: Check failed: std::fwrite(ptr, 1, size, fp_) == size FileStream.Write incomplete
+
+Stack trace returned 114 entries:
+[bt] (0) /usr/local/Wolfram/Mathematica/11.1/SystemFiles/Components/MXNetLink/LibraryResources/Linux-x86-64/libmxnet_wri.so(_ZN4dmlc2io10FileStream5WriteEPKvm+0x2e2) [0x7f3ed995f562]
+[bt] (1) /usr/local/Wolfram/Mathematica/11.1/SystemFiles/Components/MXNetLink/LibraryResources/Linux-x86-64/libmxnet_wri.so(_ZNK5mxnet7NDArray4SaveEPN4dmlc6StreamE+0x56c) [0x7f3ed8e3403c]
+[bt] (2) /usr/local/Wolfram/Mathematica/11.1/SystemFiles/Components/MXNetLink/LibraryResources/Linux-x86-64/libmxnet_wri.so(_ZN5mxnet7NDArray4SaveEPN4dmlc6StreamERKSt6vectorIS0_SaIS0_EERKS4_ISsSaISsEE+0x9e) [0x7f3ed8e3441e]
+[bt] (3) /usr/local/Wolfram/Mathematica/11.1/SystemFiles/Components/MXNetLink/LibraryResources/Linux-x86-64/libmxnet_wri.so(MXNDArraySave+0x265) [0x7f3ed8e28455]
+[bt] (4) /usr/local/Wolfram/Mathematica/11.1/SystemFiles/Components/MXNetLink/LibraryResources/Linux-x86-64/MXNetLink.so(WL_NDArraySave+0x2da) [0x7f3ee4117e1a]
+[bt] (5) /usr/local/Wolfram/Mathematica/11.1/SystemFiles/Libraries/Linux-x86-64/libWolframEngine.so(+0x1fa7c6b) [0x7f3f1c69dc6b]
+[bt] (6) /usr/local/Wolfram/Mathematica/11.1/SystemFiles/Libraries/Linux-x86-64/libWolframEngine.so(+0x721a12) [0x7f3f1ae17a12]
+[bt] (7) /usr/local/Wolfram/Mathematica/11.1/SystemFiles/Libraries/Linux-x86-64/libWolframEngine.so(+0x72232b) [0x7f3f1ae1832b]
+[bt] (8) /usr/local/Wolfram/Mathematica/11.1/SystemFiles/Libraries/Linux-x86-64/libWolframEngine.so(+0x722c0d) [0x7f3f1ae18c0d]
+[bt] (9) /usr/local/Wolfram/Mathematica/11.1/SystemFiles/Libraries/Linux-x86-64/libWolframEngine.so(+0x72100b) [0x7f3f1ae1700b]
+[bt] (10) /usr/local/Wolfram/Mathematica/11.1/SystemFiles/Libraries/Linux-x86-64/libWolframEngine.so(+0x72232b) [0x7f3f1ae1832b]
+[bt] (11) /usr/local/Wolfram/Mathematica/11.1/SystemFiles/Libraries/Linux-x86-64/libWolframEngine.so(+0x7234d1) [0x7f3f1ae194d1]
+[bt] (12) /usr/local/Wolfram/Mathematica/11.1/SystemFiles/Libraries/Linux-x86-64/libWolframEngine.so(+0x69e2b9) [0x7f3f1ad942b9]
+[bt] (13) /usr/local/Wolfram/Mathematica/11.1/SystemFiles/Libraries/Linux-x86-64/libWolframEngine.so(+0x721a12) [0x7f3f1ae17a12]
+[bt] (14) /usr/local/Wolfram/Mathematica/11.1/SystemFiles/Libraries/Linux-x86-64/libWolframEngine.so(+0x72232b) [0x7f3f1ae1832b]
+[bt] (15) /usr/local/Wolfram/Mathematica/11.1/SystemFiles/Libraries/Linux-x86-64/libWolframEngine.so(+0x7234d1) [0x7f3f1ae194d1]
+[bt] (16) /usr/local/Wolfram/Mathematica/11.1/SystemFiles/Libraries/Linux-x86-64/libWolframEngine.so(+0x5d0b25) [0x7f3f1acc6b25]
+[bt] (17) /usr/local/Wolfram/Mathematica/11.1/SystemFiles/Libraries/Linux-x86-64/libWolframEngine.so(+0x721a12) [0x7f3f1ae17a12]
+[bt] (18) /usr/local/Wolfram/Mathematica/11.1/SystemFiles/Libraries/Linux-x86-64/libWolframEngine.so(+0x72232b) [0x7f3f1ae1832b]
+[bt] (19) /usr/local/Wolfram/Mathematica/11.1/SystemFiles/Libraries/Linux-x86-64/libWolframEngine.so(+0x7234d1) [0x7f3f1ae194d1]
+[bt] (20) /usr/local/Wolfram/Mathematica/11.1/SystemFiles/Libraries/Linux-x86-64/libWolframEngine.so(+0x93914d) [0x7f3f1b02f14d]
+[bt] (21) /usr/local/Wolfram/Mathematica/11.1/SystemFiles/Libraries/Linux-x86-64/libWolframEngine.so(+0x721a12) [0x7f3f1ae17a12]
+[bt] (22) /usr/local/Wolfram/Mathematica/11.1/SystemFiles/Libraries/Linux-x86-64/libWolframEngine.so(+0x72232b) [0x7f3f1ae1832b]
+[bt] (23) /usr/local/Wolfram/Mathematica/11.1/SystemFiles/Libraries/Linux-x86-64/libWolframEngine.so(+0x7234d1) [0x7f3f1ae194d1]
+[bt] (24) /usr/local/Wolfram/Mathematica/11.1/SystemFiles/Libraries/Linux-x86-64/libWolframEngine.so(+0x69e2b9) [0x7f3f1ad942b9]
+[bt] (25) /usr/local/Wolfram/Mathematica/11.1/SystemFiles/Libraries/Linux-x86-64/libWolframEngine.so(+0x721a12) [0x7f3f1ae17a12]
+[bt] (26) /usr/local/Wolfram/Mathematica/11.1/SystemFiles/Libraries/Linux-x86-64/libWolframEngine.so(+0x72232b) [0x7f3f1ae1832b]
+[bt] (27) /usr/local/Wolfram/Mathematica/11.1/SystemFiles/Libraries/Linux-x86-64/libWolframEngine.so(+0x7234d1) [0x7f3f1ae194d1]
+[bt] (28) /usr/local/Wolfram/Mathematica/11.1/SystemFiles/Libraries/Linux-x86-64/libWolframEngine.so(+0x5d0b25) [0x7f3f1acc6b25]
+[bt] (29) /usr/local/Wolfram/Mathematica/11.1/SystemFiles/Libraries/Linux-x86-64/libWolframEngine.so(+0x721a12) [0x7f3f1ae17a12]
+[bt] (30) /usr/local/Wolfram/Mathematica/11.1/SystemFiles/Libraries/Linux-x86-64/libWolframEngine.so(+0x72232b) [0x7f3f1ae1832b]
+[bt] (31) /usr/local/Wolfram/Mathematica/11.1/SystemFiles/Libraries/Linux-x86-64/libWolframEngine.so(+0x7234d1) [0x7f3f1ae194d1]
+[bt] (32) /usr/local/Wolfram/Mathematica/11.1/SystemFiles/Libraries/Linux-x86-64/libWolframEngine.so(+0x69e2b9) [0x7f3f1ad942b9]
+[bt] (33) /usr/local/Wolfram/Mathematica/11.1/SystemFiles/Libraries/Linux-x86-64/libWolframEngine.so(+0x721a12) [0x7f3f1ae17a12]
+[bt] (34) /usr/local/Wolfram/Mathematica/11.1/SystemFiles/Libraries/Linux-x86-64/libWolframEngine.so(+0x72232b) [0x7f3f1ae1832b]
+[bt] (35) /usr/local/Wolfram/Mathematica/11.1/SystemFiles/Libraries/Linux-x86-64/libWolframEngine.so(+0x7234d1) [0x7f3f1ae194d1]
+[bt] (36) /usr/local/Wolfram/Mathematica/11.1/SystemFiles/Libraries/Linux-x86-64/libWolframEngine.so(+0x69e2b9) [0x7f3f1ad942b9]
+[bt] (37) /usr/local/Wolfram/Mathematica/11.1/SystemFiles/Libraries/Linux-x86-64/libWolframEngine.so(+0x721a12) [0x7f3f1ae17a12]
+[bt] (38) /usr/local/Wolfram/Mathematica/11.1/SystemFiles/Libraries/Linux-x86-64/libWolframEngine.so(+0x72232b) [0x7f3f1ae1832b]
+[bt] (39) /usr/local/Wolfram/Mathematica/11.1/SystemFiles/Libraries/Linux-x86-64/libWolframEngine.so(+0x7234d1) [0x7f3f1ae194d1]
+[bt] (40) /usr/local/Wolfram/Mathematica/11.1/SystemFiles/Libraries/Linux-x86-64/libWolframEngine.so(+0x69e2b9) [0x7f3f1ad942b9]
+[bt] (41) /usr/local/Wolfram/Mathematica/11.1/SystemFiles/Libraries/Linux-x86-64/libWolframEngine.so(+0x721a12) [0x7f3f1ae17a12]
+[bt] (42) /usr/local/Wolfram/Mathematica/11.1/SystemFiles/Libraries/Linux-x86-64/libWolframEngine.so(+0x72232b) [0x7f3f1ae1832b]
+[bt] (43) /usr/local/Wolfram/Mathematica/11.1/SystemFiles/Libraries/Linux-x86-64/libWolframEngine.so(+0x7234d1) [0x7f3f1ae194d1]
+[bt] (44) /usr/local/Wolfram/Mathematica/11.1/SystemFiles/Libraries/Linux-x86-64/libWolframEngine.so(+0x5e5d3a) [0x7f3f1acdbd3a]
+[bt] (45) /usr/local/Wolfram/Mathematica/11.1/SystemFiles/Libraries/Linux-x86-64/libWolframEngine.so(+0x5e8cae) [0x7f3f1acdecae]
+[bt] (46) /usr/local/Wolfram/Mathematica/11.1/SystemFiles/Libraries/Linux-x86-64/libWolframEngine.so(+0x5ec980) [0x7f3f1ace2980]
+[bt] (47) /usr/local/Wolfram/Mathematica/11.1/SystemFiles/Libraries/Linux-x86-64/libWolframEngine.so(+0x721a12) [0x7f3f1ae17a12]
+[bt] (48) /usr/local/Wolfram/Mathematica/11.1/SystemFiles/Libraries/Linux-x86-64/libWolframEngine.so(+0x72232b) [0x7f3f1ae1832b]
+[bt] (49) /usr/local/Wolfram/Mathematica/11.1/SystemFiles/Libraries/Linux-x86-64/libWolframEngine.so(+0x7234d1) [0x7f3f1ae194d1]
+[bt] (50) /usr/local/Wolfram/Mathematica/11.1/SystemFiles/Libraries/Linux-x86-64/libWolframEngine.so(+0x69e2b9) [0x7f3f1ad942b9]
+[bt] (51) /usr/local/Wolfram/Mathematica/11.1/SystemFiles/Libraries/Linux-x86-64/libWolframEngine.so(+0x721a12) [0x7f3f1ae17a12]
+[bt] (52) /usr/local/Wolfram/Mathematica/11.1/SystemFiles/Libraries/Linux-x86-64/libWolframEngine.so(+0x72232b) [0x7f3f1ae1832b]
+[bt] (53) /usr/local/Wolfram/Mathematica/11.1/SystemFiles/Libraries/Linux-x86-64/libWolframEngine.so(+0x7234d1) [0x7f3f1ae194d1]
+[bt] (54) /usr/local/Wolfram/Mathematica/11.1/SystemFiles/Libraries/Linux-x86-64/libWolframEngine.so(+0x5e5d3a) [0x7f3f1acdbd3a]
+[bt] (55) /usr/local/Wolfram/Mathematica/11.1/SystemFiles/Libraries/Linux-x86-64/libWolframEngine.so(+0x5e8cae) [0x7f3f1acdecae]
+[bt] (56) /usr/local/Wolfram/Mathematica/11.1/SystemFiles/Libraries/Linux-x86-64/libWolframEngine.so(+0x5ec980) [0x7f3f1ace2980]
+[bt] (57) /usr/local/Wolfram/Mathematica/11.1/SystemFiles/Libraries/Linux-x86-64/libWolframEngine.so(+0x721a12) [0x7f3f1ae17a12]
+[bt] (58) /usr/local/Wolfram/Mathematica/11.1/SystemFiles/Libraries/Linux-x86-64/libWolframEngine.so(+0x72232b) [0x7f3f1ae1832b]
+[bt] (59) /usr/local/Wolfram/Mathematica/11.1/SystemFiles/Libraries/Linux-x86-64/libWolframEngine.so(+0x7234d1) [0x7f3f1ae194d1]
+[bt] (60) /usr/local/Wolfram/Mathematica/11.1/SystemFiles/Libraries/Linux-x86-64/libWolframEngine.so(+0x69e2b9) [0x7f3f1ad942b9]
+[bt] (61) /usr/local/Wolfram/Mathematica/11.1/SystemFiles/Libraries/Linux-x86-64/libWolframEngine.so(+0x721a12) [0x7f3f1ae17a12]
+[bt] (62) /usr/local/Wolfram/Mathematica/11.1/SystemFiles/Libraries/Linux-x86-64/libWolframEngine.so(+0x72232b) [0x7f3f1ae1832b]
+[bt] (63) /usr/local/Wolfram/Mathematica/11.1/SystemFiles/Libraries/Linux-x86-64/libWolframEngine.so(+0x7234d1) [0x7f3f1ae194d1]
+[bt] (64) /usr/local/Wolfram/Mathematica/11.1/SystemFiles/Libraries/Linux-x86-64/libWolframEngine.so(+0x69e88e) [0x7f3f1ad9488e]
+[bt] (65) /usr/local/Wolfram/Mathematica/11.1/SystemFiles/Libraries/Linux-x86-64/libWolframEngine.so(+0x721a12) [0x7f3f1ae17a12]
+[bt] (66) /usr/local/Wolfram/Mathematica/11.1/SystemFiles/Libraries/Linux-x86-64/libWolframEngine.so(+0x72232b) [0x7f3f1ae1832b]
+[bt] (67) /usr/local/Wolfram/Mathematica/11.1/SystemFiles/Libraries/Linux-x86-64/libWolframEngine.so(+0x7234d1) [0x7f3f1ae194d1]
+[bt] (68) /usr/local/Wolfram/Mathematica/11.1/SystemFiles/Libraries/Linux-x86-64/libWolframEngine.so(+0x677956) [0x7f3f1ad6d956]
+[bt] (69) /usr/local/Wolfram/Mathematica/11.1/SystemFiles/Libraries/Linux-x86-64/libWolframEngine.so(+0x721a12) [0x7f3f1ae17a12]
+[bt] (70) /usr/local/Wolfram/Mathematica/11.1/SystemFiles/Libraries/Linux-x86-64/libWolframEngine.so(+0x72232b) [0x7f3f1ae1832b]
+[bt] (71) /usr/local/Wolfram/Mathematica/11.1/SystemFiles/Libraries/Linux-x86-64/libWolframEngine.so(+0x722c0d) [0x7f3f1ae18c0d]
+[bt] (72) /usr/local/Wolfram/Mathematica/11.1/SystemFiles/Libraries/Linux-x86-64/libWolframEngine.so(+0x72100b) [0x7f3f1ae1700b]
+[bt] (73) /usr/local/Wolfram/Mathematica/11.1/SystemFiles/Libraries/Linux-x86-64/libWolframEngine.so(+0x72232b) [0x7f3f1ae1832b]
+[bt] (74) /usr/local/Wolfram/Mathematica/11.1/SystemFiles/Libraries/Linux-x86-64/libWolframEngine.so(+0x7234d1) [0x7f3f1ae194d1]
+[bt] (75) /usr/local/Wolfram/Mathematica/11.1/SystemFiles/Libraries/Linux-x86-64/libWolframEngine.so(+0x69e2b9) [0x7f3f1ad942b9]
+[bt] (76) /usr/local/Wolfram/Mathematica/11.1/SystemFiles/Libraries/Linux-x86-64/libWolframEngine.so(+0x721a12) [0x7f3f1ae17a12]
+[bt] (77) /usr/local/Wolfram/Mathematica/11.1/SystemFiles/Libraries/Linux-x86-64/libWolframEngine.so(+0x72232b) [0x7f3f1ae1832b]
+[bt] (78) /usr/local/Wolfram/Mathematica/11.1/SystemFiles/Libraries/Linux-x86-64/libWolframEngine.so(+0x7234d1) [0x7f3f1ae194d1]
+[bt] (79) /usr/local/Wolfram/Mathematica/11.1/SystemFiles/Libraries/Linux-x86-64/libWolframEngine.so(+0x5d0b25) [0x7f3f1acc6b25]
+[bt] (80) /usr/local/Wolfram/Mathematica/11.1/SystemFiles/Libraries/Linux-x86-64/libWolframEngine.so(+0x721a12) [0x7f3f1ae17a12]
+[bt] (81) /usr/local/Wolfram/Mathematica/11.1/SystemFiles/Libraries/Linux-x86-64/libWolframEngine.so(+0x72232b) [0x7f3f1ae1832b]
+[bt] (82) /usr/local/Wolfram/Mathematica/11.1/SystemFiles/Libraries/Linux-x86-64/libWolframEngine.so(+0x7234d1) [0x7f3f1ae194d1]
+[bt] (83) /usr/local/Wolfram/Mathematica/11.1/SystemFiles/Libraries/Linux-x86-64/libWolframEngine.so(+0x6a036b) [0x7f3f1ad9636b]
+[bt] (84) /usr/local/Wolfram/Mathematica/11.1/SystemFiles/Libraries/Linux-x86-64/libWolframEngine.so(+0x721a12) [0x7f3f1ae17a12]
+[bt] (85) /usr/local/Wolfram/Mathematica/11.1/SystemFiles/Libraries/Linux-x86-64/libWolframEngine.so(+0x72232b) [0x7f3f1ae1832b]
+[bt] (86) /usr/local/Wolfram/Mathematica/11.1/SystemFiles/Libraries/Linux-x86-64/libWolframEngine.so(+0x7234d1) [0x7f3f1ae194d1]
+[bt] (87) /usr/local/Wolfram/Mathematica/11.1/SystemFiles/Libraries/Linux-x86-64/libWolframEngine.so(+0x6a036b) [0x7f3f1ad9636b]
+[bt] (88) /usr/local/Wolfram/Mathematica/11.1/SystemFiles/Libraries/Linux-x86-64/libWolframEngine.so(+0x721a12) [0x7f3f1ae17a12]
+[bt] (89) /usr/local/Wolfram/Mathematica/11.1/SystemFiles/Libraries/Linux-x86-64/libWolframEngine.so(+0x72232b) [0x7f3f1ae1832b]
+[bt] (90) /usr/local/Wolfram/Mathematica/11.1/SystemFiles/Libraries/Linux-x86-64/libWolframEngine.so(+0x7234d1) [0x7f3f1ae194d1]
+[bt] (91) /usr/local/Wolfram/Mathematica/11.1/SystemFiles/Libraries/Linux-x86-64/libWolframEngine.so(+0x69cded) [0x7f3f1ad92ded]
+[bt] (92) /usr/local/Wolfram/Mathematica/11.1/SystemFiles/Libraries/Linux-x86-64/libWolframEngine.so(+0x721a12) [0x7f3f1ae17a12]
+[bt] (93) /usr/local/Wolfram/Mathematica/11.1/SystemFiles/Libraries/Linux-x86-64/libWolframEngine.so(+0x72232b) [0x7f3f1ae1832b]
+[bt] (94) /usr/local/Wolfram/Mathematica/11.1/SystemFiles/Libraries/Linux-x86-64/libWolframEngine.so(+0x722c0d) [0x7f3f1ae18c0d]
+[bt] (95) /usr/local/Wolfram/Mathematica/11.1/SystemFiles/Libraries/Linux-x86-64/libWolframEngine.so(+0x72100b) [0x7f3f1ae1700b]
+[bt] (96) /usr/local/Wolfram/Mathematica/11.1/SystemFiles/Libraries/Linux-x86-64/libWolframEngine.so(+0x72232b) [0x7f3f1ae1832b]
+[bt] (97) /usr/local/Wolfram/Mathematica/11.1/SystemFiles/Libraries/Linux-x86-64/libWolframEngine.so(+0x722c0d) [0x7f3f1ae18c0d]
+[bt] (98) /usr/local/Wolfram/Mathematica/11.1/SystemFiles/Libraries/Linux-x86-64/libWolframEngine.so(+0x72100b) [0x7f3f1ae1700b]
+[bt] (99) /usr/local/Wolfram/Mathematica/11.1/SystemFiles/Libraries/Linux-x86-64/libWolframEngine.so(+0x72232b) [0x7f3f1ae1832b]
+[bt] (100) /usr/local/Wolfram/Mathematica/11.1/SystemFiles/Libraries/Linux-x86-64/libWolframEngine.so(+0x7234d1) [0x7f3f1ae194d1]
+[bt] (101) /usr/local/Wolfram/Mathematica/11.1/SystemFiles/Libraries/Linux-x86-64/libWolframEngine.so(+0x69e2b9) [0x7f3f1ad942b9]
+[bt] (102) /usr/local/Wolfram/Mathematica/11.1/SystemFiles/Libraries/Linux-x86-64/libWolframEngine.so(+0x721a12) [0x7f3f1ae17a12]
+[bt] (103) /usr/local/Wolfram/Mathematica/11.1/SystemFiles/Libraries/Linux-x86-64/libWolframEngine.so(+0x72232b) [0x7f3f1ae1832b]
+[bt] (104) /usr/local/Wolfram/Mathematica/11.1/SystemFiles/Libraries/Linux-x86-64/libWolframEngine.so(+0x7234d1) [0x7f3f1ae194d1]
+[bt] (105) /usr/local/Wolfram/Mathematica/11.1/SystemFiles/Libraries/Linux-x86-64/libWolframEngine.so(+0xd18729) [0x7f3f1b40e729]
+[bt] (106) /usr/local/Wolfram/Mathematica/11.1/SystemFiles/Libraries/Linux-x86-64/libWolframEngine.so(+0xd1ad99) [0x7f3f1b410d99]
+[bt] (107) /usr/local/Wolfram/Mathematica/11.1/SystemFiles/Libraries/Linux-x86-64/libWolframEngine.so(+0x721a12) [0x7f3f1ae17a12]
+[bt] (108) /usr/local/Wolfram/Mathematica/11.1/SystemFiles/Libraries/Linux-x86-64/libWolframEngine.so(+0x72232b) [0x7f3f1ae1832b]
+[bt] (109) /usr/local/Wolfram/Mathematica/11.1/SystemFiles/Libraries/Linux-x86-64/libWolframEngine.so(+0x7234d1) [0x7f3f1ae194d1]
+[bt] (110) /usr/local/Wolfram/Mathematica/11.1/SystemFiles/Libraries/Linux-x86-64/libWolframEngine.so(kernel_dll_main+0x127) [0x7f3f1a8aea86]
+[bt] (111) /usr/local/Wolfram/Mathematica/11.1/SystemFiles/Kernel/Binaries/Linux-x86-64/WolframKernel() [0x401321]
+[bt] (112) /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf5) [0x7f3f1225df45]
+[bt] (113) /usr/local/Wolfram/Mathematica/11.1/SystemFiles/Kernel/Binaries/Linux-x86-64/WolframKernel() [0x401351]
+
+CALL TO MXNDArraySave(fname, ndarrays.size(), ndarrays.data(), keys) FAILED WITH CODE -1
+
+NetTrain::interr: An internal error occurred. Please contact Wolfram Research.
+
+Export::invnet2: The second argument in Export[/home/ubuntu/CIFAR_AWS3/checkpoints/net5/net5.wlnet, $Failed] is not a valid net.
+
+ClassifierMeasurements::wrgfunc: The first argument should be a ClassifierFunction instead of $Failed.
+
+ClassifierMeasurements::wrgfunc: The first argument should be a ClassifierFunction instead of $Failed.
+
+ReadList::openw: OutputStream[/tmp/m00000565201, 4] is open for output.
+
+CreateDirectory::ioarg: I/O operation is not valid for /tmp/m00001165201.
+Starting training.
+  %  round  batch      round      batch       test     inputs       time       time
+      /150   /450       loss       loss       loss    /second    elapsed       left
+  0      1    311        ---    2.28e+0        ---      16647        2.s      7m13s
+
+NetTrain::interr: An internal error occurred. Please contact Wolfram Research.
+
+DeleteDirectory::strs: String or non-empty list of strings is expected at position 1 in DeleteDirectory[$Failed, DeleteContents -> True].
+
+Export::invnet2: The second argument in Export[/home/ubuntu/CIFAR_AWS3/checkpoints/net7/net7.wlnet, $Failed] is not a valid net.
+
+ClassifierMeasurements::wrgfunc: The first argument should be a ClassifierFunction instead of $Failed.
+
+General::stop: Further output of ClassifierMeasurements::wrgfunc will be suppressed during this calculation.
+
+ReadList::openw: OutputStream[/tmp/m00000665201, 5] is open for output.
+
+CreateDirectory::ioarg: I/O operation is not valid for /tmp/m00001265201.
+Starting training.
+
+NetTrain::interr: An internal error occurred. Please contact Wolfram Research.
+
+General::stop: Further output of NetTrain::interr will be suppressed during this calculation.
+
+DeleteDirectory::strs: String or non-empty list of strings is expected at position 1 in DeleteDirectory[$Failed, DeleteContents -> True].
+
+Export::invnet2: The second argument in Export[/home/ubuntu/CIFAR_AWS3/checkpoints/net8/net8.wlnet, $Failed] is not a valid net.
+
+General::stop: Further output of Export::invnet2 will be suppressed during this calculation.
+
+ReadList::openw: OutputStream[/tmp/m00000765201, 6] is open for output.
+
+General::stop: Further output of ReadList::openw will be suppressed during this calculation.
+
+CreateDirectory::ioarg: I/O operation is not valid for /tmp/m00001365201.
+
+General::stop: Further output of CreateDirectory::ioarg will be suppressed during this calculation.
+Starting training.
+
+DeleteDirectory::strs: String or non-empty list of strings is expected at position 1 in DeleteDirectory[$Failed, DeleteContents -> True].
+
+General::stop: Further output of DeleteDirectory::strs will be suppressed during this calculation.
+Starting training.
+ubuntu@ip-172-31-17-90:~/CIFAR_AWS3$

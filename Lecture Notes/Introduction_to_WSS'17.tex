@@ -1,0 +1,289 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}	
+
+\usepackage{amsmath,amsthm,amssymb,amscd}
+\usepackage[margin=3cm]{geometry}
+\usepackage{amsmath}
+\newlength{\tabcont}
+\setlength{\parindent}{0.0in}
+\setlength{\parskip}{0.05in}
+\parindent 0in
+\parskip 12pt
+\geometry{margin=1in, headsep=0.25in}
+\theoremstyle{definition}
+\newtheorem{defn}{Definition}
+\newtheorem{reg}{Rule}
+\newtheorem{exer}{Exercise}
+\newtheorem{note}{Note}
+
+\begin{document}
+
+\title{Introduction to WSS '17 - Lecture 1, 9am-10am}
+
+\thispagestyle{empty}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%   TITLE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{center}
+{\LARGE \bf Introduction to WSS '17, Track Introduction, Tools Overview - Lectures 1, 2, 3; 9am-12am}\\
+\medskip
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%   DATE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+{\Large \today}\\
+\smallskip
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%   COURSE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+{\large Wolfram Summer School 2017}
+\end{center}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%   ANNOUNCEMENTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Announcements}
+\begin{itemize}
+\item First half of day, lessons with Vitaliy, John
+\begin{itemize}
+\item John has glasses, tall and slim, dark brown hair, white man
+\end{itemize}
+\item Second half of day, Stephen lectures
+\begin{itemize}
+\item Stephen maybe talk about history of Summer School?
+\end{itemize}
+\item This week - going through lectures and meetings, and also doing homework. Homework should be done by Friday. Projects should be selected by then.
+\end{itemize}
+
+\noindent\hrulefill
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%   AGENDA
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section*{Agenda}
+\begin{enumerate}
+\item Summer School intro
+\item People
+\item School Structure
+\item Advice
+\item Homework
+\item Technical Tricks (Tools)
+\end{enumerate}
+
+\noindent\hrulefill
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%   RECAP
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%   TODAY
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Summer School Structure}
+
+\subsection{Vitaliy tells stories and stuff}
+
+For many people this school ends up being a turning point in their lives. Lots of people end up working here.
+
+Networking is important.
+
+We'll maybe rush through things. Ask questions if necessary. 
+
+\textbf{Insight:} We can always go to the alumni page and check folks out. 
+
+This year has 77 students!
+
+\subsection{Goal of SS}
+
+We have in the school top-level developers. We should learn first-hand from these people to learn how technology can be used to accomplish our goals. 
+
+Not trying to solve specific tasks, but for general-purpose problem-solving. Want to understand general framework for using tech in problem-solving. 
+
+\subsection{People}
+
+\subsubsection{Vitaliy}
+
+Physicist by training, came to WSS because he liked Wolfram and NKS. 
+
+Works for technology and communications kind of team.
+
+Serving as Academic Director for Science and Tech tracks.
+
+\subsubsection{John}
+
+Based in office of Stephen Wolfram.
+
+Head of Education track. 
+
+New initiative: Computational thinking initiative. 
+
+Also a historian. (Maybe the only one here?)
+
+\subsubsection{Etienne}
+
+Physicist, now does ML with Wolfram. Creates ML functions. Manager of ML team. In Boston, but originally from France.
+
+\subsubsection{Matel?}
+
+Physicist, last year in SS. In ML group at Wolfram, lives in Rome. 
+
+\subsubsection{Carlo}
+
+Also a physicist, but not in ML.
+
+\subsubsection{Joffra}
+
+Has identical twin here, also a physicist. Works with Vitaliy at Tech Comm and Strategies. 
+
+\subsubsection{Alison}
+
+Program coordinator, lives in Boston. 
+
+\subsubsection{Mark}
+
+Has undergrad in chemistry. Does applications programming in office of Stephen Wolfram. 
+
+\subsubsection{Andrea}
+
+Runs office in Somerville. 
+
+\subsubsection{Giulio}
+
+Physicist, hired to do Riemann processing and deep learning. 
+
+\subsubsection{Christopher Wolfram}
+
+TA for the last few years. Lives in Concord. Random disparate projects. 
+
+\subsubsection{Xavier}
+
+Physicist, first year as instructor. In france.
+
+\subsubsection{Evan}
+
+Tech support. 
+
+\subsubsection{Teja}
+
+Data acquisition.
+
+\subsubsection{Ricardo}
+
+Background in Econ. Full stack developer, lives in Rome. 
+
+\subsubsection{Ian}
+
+3rd year as instructor. Background in engineering, computer engineering. Works remote in Minnesota.
+
+\subsubsection{Ornad?}
+
+Joffra's twin. Doing right now PhD in Math.
+
+\subsubsection{Paul}
+
+Worked for Wolfram Research a while ago, was prof in Australia for 25 years. Lives in Perth.
+
+\subsubsection{Kyle}
+
+Did PhD in physics, did quantum computing (ask about qbits!). Works in getting access to disabled people. Teaching full time at MIT, materials science. Works on interesting project in education and tech. 
+
+\subsubsection{Matthew}
+
+Stephen's ``weasel" when writing NKS. Degree in physics, but PhD in mathematical logic at Carnegie Mellon. In Pittsburgh. Been at every summer school since beginning. 
+
+\subsubsection{Valentina}
+
+Degree in theoretical physics, specialized in complex systems. Data science consultant for IBM. First year as TA. 
+
+\subsubsection{Vladimir}
+
+Student in 2003, masters in CS. Studied computer science, neuroscience. Ran a Wolfram computational school in Cambodia.
+
+\section{Structure}
+
+\subsection{Lectures}
+
+In 1st and 2nd week, we learn technology. 
+
+Lectures are dedicated to giving you knowledge about how to efficiently complete your project. 
+
+Not always directly project-related, but generally useful. 
+
+\subsection{Round Table with Stephen Wolfram}
+
+Maybe up to 15 students, Stephen and instructors will have talk about backgrounds and get to know each other. 
+
+These round-table mealtime meetings begin today. 
+
+\subsection{Project selection with Stephen Wolfram}
+
+How to fuse interests with project to do. Highly scheduled - one after another. 
+
+\textbf{NOTE: Keep note of the schedule. }
+
+\subsection{Project description}
+
+Now, have project selected. Set deadline. Not only something that describes the problem, but should also describe strategy. How to use technology to complete project?
+
+\subsection{Homework}
+
+A fun thing (says Vitaliy)! Quick computational exploration. There's been a big explosion in computational capabilities. 
+
+(Vitaliy tells story): in Soviet Union, in high school, you had to study everything. No specialization. But now, people start learning about data, etc. Digital humanities. Vitaliy thinks that this is interesting. 
+
+So, homework: Learn how to do computational storytelling. Dedicated to attaching computation to a meaningful story. ``Might not take a lot of effort for you, but might get a really nice result."
+
+\subsection{Project Completion}
+
+Complete by Wednesday of 3rd week. Should involve some sort of executable, or some ``shippable" product. 
+
+After objects are done, give a kind of conference. Quick oral lectures, but a long poster session. 
+
+Oral presentations should start on Wednesday night of 3rd week. ``Teaser trailer for the movie. Want to entice people to come to your poster."
+
+\textbf{Keep in mind that this is a highly compressed schedule. }
+
+\subsection{Resume Builders}
+
+This is optional, but highly recommended. You can submit things that will be publishable by the Wolfram company. An important set of deliverables. Basically, we can go and work with Stephen on some specific project, if desired. 
+
+\section{Advice}
+
+\begin{itemize}
+\item Time management and balance will be key. 
+\item Seek out your advisors. 
+\item The idea is that this experience should be something that will be useful in the future. It's an opportunity to explore something with advice and guidance. Bear in mind that this is something that you can refer to later. 
+\item Don't forget that the point is to learn!
+\item Write an outline first and go over it with your mentor. You want to use this to formulate your thoughts. (Kyle)
+\end{itemize}
+
+\section{Homework}
+
+\begin{enumerate}
+\item Take some topic (e.g., some Wikipedia article).
+\item Now, think about how you'd communicate this as a computable document. 
+\item Think about this as a computational narrative, where code helps the story move along. 
+\item Supposed to be based on something you know. Take something that you're already knowledgeable of. 
+\item ``You have to write it so that your grandma would understand it."
+\item Think about this as if you need to explain a new concept.
+\end{enumerate}
+
+\subsection{Ideas:}
+
+\begin{enumerate}
+\item Musical scales and tonality.
+\item Ramsey Theory?
+\item Neural networks (or at least, a perceptron)
+\item Linear transformations
+\end{enumerate}
+
+
+\section{Technical Tricks}
+
+
+
+\end{document}

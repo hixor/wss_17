@@ -1,0 +1,103 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      3225,         95]
+NotebookOptionsPosition[      2754,         73]
+NotebookOutlinePosition[      3112,         89]
+CellTagsIndexPosition[      3069,         86]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"AppendTo", "[", 
+  RowBox[{"$Path", ",", "\"\<$UserBaseDirectory/Library/Mathematica\>\""}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.70707529273707*^9, 3.707075321797102*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"\<\"/Applications/Mathematica.app/Contents/AddOns/Applications\"\>\
+", ",", "\<\"/Applications/Mathematica.app/Contents/SystemFiles/Links\"\>", 
+   ",", "\<\"/Users/hikarisorensen/Library/Mathematica/Kernel\"\>", 
+   ",", "\<\"/Users/hikarisorensen/Library/Mathematica/Autoload\"\>", 
+   ",", "\<\"/Users/hikarisorensen/Library/Mathematica/Applications\"\>", 
+   ",", "\<\"/Library/Mathematica/Kernel\"\>", 
+   ",", "\<\"/Library/Mathematica/Autoload\"\>", 
+   ",", "\<\"/Library/Mathematica/Applications\"\>", ",", "\<\".\"\>", 
+   ",", "\<\"/Users/hikarisorensen\"\>", 
+   ",", "\<\"/Applications/Mathematica.app/Contents/AddOns/Packages\"\>", 
+   ",", "\<\"/Applications/Mathematica.app/Contents/SystemFiles/Autoload\"\>",
+    ",", "\<\"/Applications/Mathematica.app/Contents/AddOns/Autoload\"\>", 
+   ",", "\<\"/Applications/Mathematica.app/Contents/AddOns/Applications\"\>", 
+   ",", "\<\"/Applications/Mathematica.app/Contents/AddOns/ExtraPackages\"\>",
+    ",", "\<\"/Applications/Mathematica.app/Contents/SystemFiles/Kernel/\
+Packages\"\>", 
+   ",", "\<\"/Applications/Mathematica.app/Contents/Documentation/English/\
+System\"\>", 
+   ",", "\<\"/Applications/Mathematica.app/Contents/SystemFiles/Data/ICC\"\>",
+    ",", "\<\"$UserBaseDirectory/Library/Mathematica\"\>"}], "}"}]], "Output",\
+
+ CellChangeTimes->{3.7070753222943373`*^9}]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"<<", "NeuralNetworks`"}]], "Input",
+ CellChangeTimes->{{3.707075219636305*^9, 3.707075224048238*^9}, {
+  3.707075596546412*^9, 3.707075597477397*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"net", "=", 
+  RowBox[{
+  "NetModel", "[", "\"\<LeNet Trained on MNIST Data\>\"", "]"}]}]], "Input",
+ CellChangeTimes->{{3.707071061126327*^9, 3.707071061128042*^9}}],
+
+Cell[BoxData[
+ RowBox[{"NetModel", "[", "\<\"LeNet Trained on MNIST Data\"\>", 
+  "]"}]], "Output",
+ CellChangeTimes->{3.707071063247897*^9, 3.7070759672296963`*^9}]
+}, Open  ]]
+},
+WindowSize->{1131, 696},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+FrontEndVersion->"11.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (September \
+21, 2016)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 201, 4, 53, "Input"],
+Cell[784, 28, 1383, 23, 371, "Output"]
+}, Open  ]],
+Cell[2182, 54, 174, 3, 53, "Input"],
+Cell[CellGroupData[{
+Cell[2381, 61, 189, 4, 53, "Input"],
+Cell[2573, 67, 165, 3, 53, "Output"]
+}, Open  ]]
+}
+]
+*)
+

@@ -1,0 +1,160 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      3993,        151]
+NotebookOptionsPosition[      2780,        105]
+NotebookOutlinePosition[      3197,        122]
+CellTagsIndexPosition[      3154,        119]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["\<\
+Select Topics: 2017-06-19, 2pm
+WSS \[OpenCurlyQuote]17\
+\>", "Chapter",
+ CellChangeTimes->{{3.706801059083445*^9, 3.7068010906551743`*^9}, {
+  3.706885091784902*^9, 3.706885141852902*^9}}],
+
+Cell["", "Text",
+ CellChangeTimes->{{3.706801371367866*^9, 3.706801372985664*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ StyleBox["Agenda\n", "Section"],
+ StyleBox["1. First item\n2. Second Item", "Item"],
+ "\n"
+}], "Subtitle",
+ CellChangeTimes->{{3.706801189734564*^9, 3.7068012221960087`*^9}, {
+  3.706801289617271*^9, 3.706801298794367*^9}, {3.7068013490682096`*^9, 
+  3.706801369191888*^9}, {3.706801501948983*^9, 3.706801510157456*^9}, {
+  3.706802432418416*^9, 3.706802476717619*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["Section 1", "Section",
+ CellChangeTimes->{{3.7068011018891706`*^9, 3.706801103216621*^9}}],
+
+Cell["Text", "Text",
+ CellChangeTimes->{{3.7068011134624863`*^9, 3.7068011141387167`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"2", "+", "2"}]], "Input"],
+
+Cell[BoxData["4"], "Output"]
+}, Open  ]],
+
+Cell["Text", "Text",
+ CellChangeTimes->{{3.7068011203083963`*^9, 3.706801121018155*^9}}],
+
+Cell[BoxData[
+ RowBox[{"2", "+", "2"}]], "DisplayFormula"],
+
+Cell[CellGroupData[{
+
+Cell["Item", "Item",
+ CellChangeTimes->{{3.7068011238251266`*^9, 3.7068011460467377`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["Subitem", "Subitem",
+ CellChangeTimes->{{3.706801129529564*^9, 3.706801130666216*^9}}],
+
+Cell["Subitem", "Subitem",
+ CellChangeTimes->{{3.7068011325763702`*^9, 3.7068011336664267`*^9}}],
+
+Cell["Subitem paragraph text", "SubitemParagraph",
+ CellChangeTimes->{{3.7068011360512667`*^9, 3.706801139340097*^9}}]
+}, Open  ]],
+
+Cell["Item", "Item",
+ CellChangeTimes->{{3.706801143051495*^9, 3.706801143432959*^9}}],
+
+Cell["Item paragraph text", "ItemParagraph",
+ CellChangeTimes->{{3.7068011486351624`*^9, 3.706801151173456*^9}}]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Section 2", "Section",
+ CellChangeTimes->{{3.706801153488446*^9, 3.706801155706732*^9}}],
+
+Cell["Text and formula", "Text",
+ CellChangeTimes->{{3.706801161317081*^9, 3.7068011711867933`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"2", "+", "2"}]], "DisplayFormulaNumbered"]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{766, 752},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+FrontEndVersion->"10.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (June 27, \
+2014)",
+StyleDefinitions->FrontEnd`FileName[{"Utility"}, "Notepad.nb", 
+  CharacterEncoding -> "UTF-8"]
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 198, 5, 109, "Chapter"],
+Cell[781, 29, 82, 1, 29, "Text"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[900, 35, 386, 8, 123, "Subtitle"],
+Cell[CellGroupData[{
+Cell[1311, 47, 96, 1, 65, "Section"],
+Cell[1410, 50, 90, 1, 29, "Text"],
+Cell[CellGroupData[{
+Cell[1525, 55, 49, 1, 28, "Input"],
+Cell[1577, 58, 28, 0, 28, "Output"]
+}, Open  ]],
+Cell[1620, 61, 88, 1, 29, "Text"],
+Cell[1711, 64, 58, 1, 22, "DisplayFormula"],
+Cell[CellGroupData[{
+Cell[1794, 69, 90, 1, 23, "Item"],
+Cell[CellGroupData[{
+Cell[1909, 74, 92, 1, 23, "Subitem"],
+Cell[2004, 77, 96, 1, 23, "Subitem"],
+Cell[2103, 80, 118, 1, 20, "SubitemParagraph"]
+}, Open  ]],
+Cell[2236, 84, 86, 1, 23, "Item"],
+Cell[2325, 87, 112, 1, 20, "ItemParagraph"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2486, 94, 94, 1, 65, "Section"],
+Cell[2583, 97, 100, 1, 29, "Text"],
+Cell[2686, 100, 66, 1, 23, "DisplayFormulaNumbered"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
